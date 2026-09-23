@@ -7850,7 +7850,7 @@
       ],
       "size": [
         1138.758447983172,
-        757.2812067270995
+        106
       ],
       "flags": {},
       "order": 220,
@@ -8013,33 +8013,6 @@
       "bgcolor": "#653"
     },
     {
-      "id": 729,
-      "type": "MarkdownNote",
-      "pos": [
-        -2255.599434765464,
-        4765.195330899688
-      ],
-      "size": [
-        512.1569805878974,
-        318.3096110530696
-      ],
-      "flags": {},
-      "order": 117,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Custom Nodes",
-      "properties": {},
-      "widgets_values": [
-        "\n````markdown\n## Required Custom Nodes\n\nこのワークフローでは、以下のカスタムノードを使用します。\n\n\n### ComfyUI Managerからインストール可能\n\n* `rgthree-comfy`\n  - Repository: `rgthree/rgthree-comfy`\n  - 使用ノード:\n    - `Any Switch`\n    - `Fast Groups Bypasser`\n\n* `ComfyUI-KJNodes`\n  - Repository: `kijai/ComfyUI-KJNodes`\n  - 使用ノード:\n    - `GetNode / SetNode`\n    - `Patch SageAttention`\n    - `MiniMax H3 Memory Efficient SageAttention Patch`\n    - `MiniMax H3 Low VRAM Attention`\n    - `MiniMax H3 Chunk FeedForward`\n\n* `ComfyUI_NVIDIA_RTX_Nodes`\n  - Repository: `Comfy-Org/Nvidia_RTX_Nodes_ComfyUI`\n  - 使用ノード:\n    - `RTX Video Super Resolution`\n\n* `ComfyUI-VideoHelperSuite`\n  - Repository: `Kosinkadink/ComfyUI-VideoHelperSuite`\n  - 使用ノード:\n    - `VHS_LoadAudioUpload`\n\n\n### 手動インストール / Git clone\n\n* `ComfyUI-H3-Motion-Context-MultiRef`\n  - Repository: `seitanism/ComfyUI-H3-Motion-Context-MultiRef`\n  - Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/seitanism/ComfyUI-H3-Motion-Context-MultiRef.git\n```\n* 使用ノード:\n\n  * `MiniMaxH3SongMaskedAVContext`\n  * `MiniMaxH3MotionContextTrim`\n\n\n\n* `ComfyUI-MiniMax-H3-PDD-Acc`\n\n  * Repository: `Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc`\n  * Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc.git\n```\n* 使用ノード:\n\n  * `MiniMaxH3PDDAccApply`\n\n* 初回起動時に、以下のフォルダが作成されます。\n\n```text\nComfyUI/models/pdd_acc/\n```\n\n\n* `ComfyUI-H3-FaceRefine`\n\n  * Repository: `Carasibana/ComfyUI-H3-FaceRefine`\n  * Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/Carasibana/ComfyUI-H3-FaceRefine.git\n```\n* 使用ノード:\n\n  * `H3FaceTrackCrop`\n  * `H3InjectVideoLatent`\n  * `H3PerFrameDenoise`\n  * `H3FaceStitch`\n\n* `ComfyUI-H3-FaceAutoBypass`\n\n  * Repository: `<YOUR_GITHUB_NAME>/ComfyUI-H3-FaceAutoBypass`\n  * Face Refine補助用カスタムノード\n  * Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/<YOUR_GITHUB_NAME>/ComfyUI-H3-FaceAutoBypass.git\n```\n* 使用ノード:\n\n  * `H3FacePresenceGate`\n  * `H3LazyImageSwitch`\n\n\n### ComfyUI標準ノード\n\n以下は現在のComfyUI本体に含まれるため、追加カスタムノードは不要です。\n\n* `MiniMaxH3ReferenceToVideo`\n* `MiniMaxH3SigmaShift`\n* `ResolutionSelector`\n* `BasicScheduler`\n* `BasicGuider`\n* `KSamplerSelect`\n* `SamplerCustomAdvanced`\n* `RandomNoise`\n* `ComfyMathExpression`\n* `UNETLoader`\n* `CLIPLoader`\n* `VAELoader`\n* `VAEDecode`\n* `LoadImage`\n* `LoraLoaderModelOnly`\n* `BatchImages`\n* `TrimAudioDuration`\n* `AudioConcatenate`\n* `EmptyAudio`\n* `GetImageSizeAndCount`\n* `PreviewImage`\n* `CreateVideo`\n* `SaveVideo`\n"
-      ],
-      "widgets_values_named": {
-        "text": "\n````markdown\n## Required Custom Nodes\n\nこのワークフローでは、以下のカスタムノードを使用します。\n\n\n### ComfyUI Managerからインストール可能\n\n* `rgthree-comfy`\n  - Repository: `rgthree/rgthree-comfy`\n  - 使用ノード:\n    - `Any Switch`\n    - `Fast Groups Bypasser`\n\n* `ComfyUI-KJNodes`\n  - Repository: `kijai/ComfyUI-KJNodes`\n  - 使用ノード:\n    - `GetNode / SetNode`\n    - `Patch SageAttention`\n    - `MiniMax H3 Memory Efficient SageAttention Patch`\n    - `MiniMax H3 Low VRAM Attention`\n    - `MiniMax H3 Chunk FeedForward`\n\n* `ComfyUI_NVIDIA_RTX_Nodes`\n  - Repository: `Comfy-Org/Nvidia_RTX_Nodes_ComfyUI`\n  - 使用ノード:\n    - `RTX Video Super Resolution`\n\n* `ComfyUI-VideoHelperSuite`\n  - Repository: `Kosinkadink/ComfyUI-VideoHelperSuite`\n  - 使用ノード:\n    - `VHS_LoadAudioUpload`\n\n\n### 手動インストール / Git clone\n\n* `ComfyUI-H3-Motion-Context-MultiRef`\n  - Repository: `seitanism/ComfyUI-H3-Motion-Context-MultiRef`\n  - Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/seitanism/ComfyUI-H3-Motion-Context-MultiRef.git\n```\n* 使用ノード:\n\n  * `MiniMaxH3SongMaskedAVContext`\n  * `MiniMaxH3MotionContextTrim`\n\n\n\n* `ComfyUI-MiniMax-H3-PDD-Acc`\n\n  * Repository: `Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc`\n  * Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc.git\n```\n* 使用ノード:\n\n  * `MiniMaxH3PDDAccApply`\n\n* 初回起動時に、以下のフォルダが作成されます。\n\n```text\nComfyUI/models/pdd_acc/\n```\n\n\n* `ComfyUI-H3-FaceRefine`\n\n  * Repository: `Carasibana/ComfyUI-H3-FaceRefine`\n  * Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/Carasibana/ComfyUI-H3-FaceRefine.git\n```\n* 使用ノード:\n\n  * `H3FaceTrackCrop`\n  * `H3InjectVideoLatent`\n  * `H3PerFrameDenoise`\n  * `H3FaceStitch`\n\n* `ComfyUI-H3-FaceAutoBypass`\n\n  * Repository: `<YOUR_GITHUB_NAME>/ComfyUI-H3-FaceAutoBypass`\n  * Face Refine補助用カスタムノード\n  * Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/<YOUR_GITHUB_NAME>/ComfyUI-H3-FaceAutoBypass.git\n```\n* 使用ノード:\n\n  * `H3FacePresenceGate`\n  * `H3LazyImageSwitch`\n\n\n### ComfyUI標準ノード\n\n以下は現在のComfyUI本体に含まれるため、追加カスタムノードは不要です。\n\n* `MiniMaxH3ReferenceToVideo`\n* `MiniMaxH3SigmaShift`\n* `ResolutionSelector`\n* `BasicScheduler`\n* `BasicGuider`\n* `KSamplerSelect`\n* `SamplerCustomAdvanced`\n* `RandomNoise`\n* `ComfyMathExpression`\n* `UNETLoader`\n* `CLIPLoader`\n* `VAELoader`\n* `VAEDecode`\n* `LoadImage`\n* `LoraLoaderModelOnly`\n* `BatchImages`\n* `TrimAudioDuration`\n* `AudioConcatenate`\n* `EmptyAudio`\n* `GetImageSizeAndCount`\n* `PreviewImage`\n* `CreateVideo`\n* `SaveVideo`\n"
-      },
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 132,
       "type": "PrimitiveFloat",
       "pos": [
@@ -8051,7 +8024,7 @@
         58
       ],
       "flags": {},
-      "order": 118,
+      "order": 117,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8088,7 +8061,7 @@
         58
       ],
       "flags": {},
-      "order": 119,
+      "order": 118,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8125,7 +8098,7 @@
         58
       ],
       "flags": {},
-      "order": 120,
+      "order": 119,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8162,7 +8135,7 @@
         58
       ],
       "flags": {},
-      "order": 121,
+      "order": 120,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8201,7 +8174,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 122,
+      "order": 121,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8238,7 +8211,7 @@
         58
       ],
       "flags": {},
-      "order": 123,
+      "order": 122,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8275,7 +8248,7 @@
         58
       ],
       "flags": {},
-      "order": 124,
+      "order": 123,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8349,7 +8322,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 125,
+      "order": 124,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8386,7 +8359,7 @@
         801.4316412074013
       ],
       "flags": {},
-      "order": 126,
+      "order": 125,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8423,7 +8396,7 @@
         730.7957195247527
       ],
       "flags": {},
-      "order": 127,
+      "order": 126,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8460,7 +8433,7 @@
         730.7957195247527
       ],
       "flags": {},
-      "order": 128,
+      "order": 127,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8497,7 +8470,7 @@
         730.7957195247527
       ],
       "flags": {},
-      "order": 129,
+      "order": 128,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8534,7 +8507,7 @@
         730.7957195247527
       ],
       "flags": {},
-      "order": 130,
+      "order": 129,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8571,7 +8544,7 @@
         730.7957195247527
       ],
       "flags": {},
-      "order": 131,
+      "order": 130,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8608,7 +8581,7 @@
         730.7957195247527
       ],
       "flags": {},
-      "order": 132,
+      "order": 131,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8645,7 +8618,7 @@
         326
       ],
       "flags": {},
-      "order": 133,
+      "order": 132,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8686,7 +8659,7 @@
         326
       ],
       "flags": {},
-      "order": 134,
+      "order": 133,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8729,7 +8702,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 135,
+      "order": 134,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -8770,7 +8743,7 @@
         326
       ],
       "flags": {},
-      "order": 136,
+      "order": 135,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8813,7 +8786,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 137,
+      "order": 136,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -8854,7 +8827,7 @@
         326
       ],
       "flags": {},
-      "order": 138,
+      "order": 137,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8895,7 +8868,7 @@
         370.59338490065875
       ],
       "flags": {},
-      "order": 139,
+      "order": 138,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8936,7 +8909,7 @@
         326
       ],
       "flags": {},
-      "order": 140,
+      "order": 139,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8979,7 +8952,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 141,
+      "order": 140,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -9020,7 +8993,7 @@
         370.59338490065875
       ],
       "flags": {},
-      "order": 142,
+      "order": 141,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9061,7 +9034,7 @@
         326
       ],
       "flags": {},
-      "order": 143,
+      "order": 142,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9104,7 +9077,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 144,
+      "order": 143,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -9145,7 +9118,7 @@
         370.59338490065875
       ],
       "flags": {},
-      "order": 145,
+      "order": 144,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9186,7 +9159,7 @@
         326
       ],
       "flags": {},
-      "order": 146,
+      "order": 145,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9229,7 +9202,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 147,
+      "order": 146,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -9270,7 +9243,7 @@
         358.70181559381854
       ],
       "flags": {},
-      "order": 148,
+      "order": 147,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9311,7 +9284,7 @@
         326
       ],
       "flags": {},
-      "order": 149,
+      "order": 148,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9354,7 +9327,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 150,
+      "order": 149,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -9395,7 +9368,7 @@
         370.59338490065875
       ],
       "flags": {},
-      "order": 151,
+      "order": 150,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9436,7 +9409,7 @@
         332.5403631187619
       ],
       "flags": {},
-      "order": 152,
+      "order": 151,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9479,7 +9452,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 153,
+      "order": 152,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -9520,7 +9493,7 @@
         202
       ],
       "flags": {},
-      "order": 154,
+      "order": 153,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9555,7 +9528,7 @@
         90
       ],
       "flags": {},
-      "order": 155,
+      "order": 154,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -10624,6 +10597,33 @@
           }
         }
       }
+    },
+    {
+      "id": 729,
+      "type": "MarkdownNote",
+      "pos": [
+        -2255.599434765464,
+        4765.195330899688
+      ],
+      "size": [
+        512.1569805878974,
+        318.3096110530696
+      ],
+      "flags": {},
+      "order": 155,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Custom Nodes",
+      "properties": {},
+      "widgets_values": [
+        "\n````markdown\n## Required Custom Nodes\n\nこのワークフローでは、以下のカスタムノードを使用します。\n\n\n### ComfyUI Managerからインストール可能\n\n* `rgthree-comfy`\n  - Repository: `rgthree/rgthree-comfy`\n  - 使用ノード:\n    - `Any Switch`\n    - `Fast Groups Bypasser`\n\n* `ComfyUI-KJNodes`\n  - Repository: `kijai/ComfyUI-KJNodes`\n  - 使用ノード:\n    - `GetNode / SetNode`\n    - `Patch SageAttention`\n    - `MiniMax H3 Memory Efficient SageAttention Patch`\n    - `MiniMax H3 Low VRAM Attention`\n    - `MiniMax H3 Chunk FeedForward`\n\n* `ComfyUI_NVIDIA_RTX_Nodes`\n  - Repository: `Comfy-Org/Nvidia_RTX_Nodes_ComfyUI`\n  - 使用ノード:\n    - `RTX Video Super Resolution`\n\n* `ComfyUI-VideoHelperSuite`\n  - Repository: `Kosinkadink/ComfyUI-VideoHelperSuite`\n  - 使用ノード:\n    - `VHS_LoadAudioUpload`\n\n\n### 手動インストール / Git clone\n\n* `ComfyUI-H3-Motion-Context-MultiRef`\n  - Repository: `seitanism/ComfyUI-H3-Motion-Context-MultiRef`\n  - Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/seitanism/ComfyUI-H3-Motion-Context-MultiRef.git\n```\n* 使用ノード:\n\n  * `MiniMaxH3SongMaskedAVContext`\n  * `MiniMaxH3MotionContextTrim`\n\n\n\n* `ComfyUI-MiniMax-H3-PDD-Acc`\n\n  * Repository: `Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc`\n  * Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc.git\n```\n* 使用ノード:\n\n  * `MiniMaxH3PDDAccApply`\n\n* 初回起動時に、以下のフォルダが作成されます。\n\n```text\nComfyUI/models/pdd_acc/\n```\n\n\n* `ComfyUI-H3-FaceRefine`\n\n  * Repository: `Carasibana/ComfyUI-H3-FaceRefine`\n  * Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/Carasibana/ComfyUI-H3-FaceRefine.git\n```\n* 使用ノード:\n\n  * `H3FaceTrackCrop`\n  * `H3InjectVideoLatent`\n  * `H3PerFrameDenoise`\n  * `H3FaceStitch`\n\n* `ComfyUI-H3-FaceAutoBypass`\n\n  * Repository: `<YOUR_GITHUB_NAME>/ComfyUI-H3-FaceAutoBypass`\n  * Face Refine補助用カスタムノード\n  * Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/fukkun2705-commits/ComfyUI-H3-FaceAutoBypass.git\n```\n* 使用ノード:\n\n  * `H3FacePresenceGate`\n  * `H3LazyImageSwitch`\n\n\n### ComfyUI標準ノード\n\n以下は現在のComfyUI本体に含まれるため、追加カスタムノードは不要です。\n\n* `MiniMaxH3ReferenceToVideo`\n* `MiniMaxH3SigmaShift`\n* `ResolutionSelector`\n* `BasicScheduler`\n* `BasicGuider`\n* `KSamplerSelect`\n* `SamplerCustomAdvanced`\n* `RandomNoise`\n* `ComfyMathExpression`\n* `UNETLoader`\n* `CLIPLoader`\n* `VAELoader`\n* `VAEDecode`\n* `LoadImage`\n* `LoraLoaderModelOnly`\n* `BatchImages`\n* `TrimAudioDuration`\n* `AudioConcatenate`\n* `EmptyAudio`\n* `GetImageSizeAndCount`\n* `PreviewImage`\n* `CreateVideo`\n* `SaveVideo`\n"
+      ],
+      "widgets_values_named": {
+        "text": "\n````markdown\n## Required Custom Nodes\n\nこのワークフローでは、以下のカスタムノードを使用します。\n\n\n### ComfyUI Managerからインストール可能\n\n* `rgthree-comfy`\n  - Repository: `rgthree/rgthree-comfy`\n  - 使用ノード:\n    - `Any Switch`\n    - `Fast Groups Bypasser`\n\n* `ComfyUI-KJNodes`\n  - Repository: `kijai/ComfyUI-KJNodes`\n  - 使用ノード:\n    - `GetNode / SetNode`\n    - `Patch SageAttention`\n    - `MiniMax H3 Memory Efficient SageAttention Patch`\n    - `MiniMax H3 Low VRAM Attention`\n    - `MiniMax H3 Chunk FeedForward`\n\n* `ComfyUI_NVIDIA_RTX_Nodes`\n  - Repository: `Comfy-Org/Nvidia_RTX_Nodes_ComfyUI`\n  - 使用ノード:\n    - `RTX Video Super Resolution`\n\n* `ComfyUI-VideoHelperSuite`\n  - Repository: `Kosinkadink/ComfyUI-VideoHelperSuite`\n  - 使用ノード:\n    - `VHS_LoadAudioUpload`\n\n\n### 手動インストール / Git clone\n\n* `ComfyUI-H3-Motion-Context-MultiRef`\n  - Repository: `seitanism/ComfyUI-H3-Motion-Context-MultiRef`\n  - Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/seitanism/ComfyUI-H3-Motion-Context-MultiRef.git\n```\n* 使用ノード:\n\n  * `MiniMaxH3SongMaskedAVContext`\n  * `MiniMaxH3MotionContextTrim`\n\n\n\n* `ComfyUI-MiniMax-H3-PDD-Acc`\n\n  * Repository: `Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc`\n  * Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc.git\n```\n* 使用ノード:\n\n  * `MiniMaxH3PDDAccApply`\n\n* 初回起動時に、以下のフォルダが作成されます。\n\n```text\nComfyUI/models/pdd_acc/\n```\n\n\n* `ComfyUI-H3-FaceRefine`\n\n  * Repository: `Carasibana/ComfyUI-H3-FaceRefine`\n  * Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/Carasibana/ComfyUI-H3-FaceRefine.git\n```\n* 使用ノード:\n\n  * `H3FaceTrackCrop`\n  * `H3InjectVideoLatent`\n  * `H3PerFrameDenoise`\n  * `H3FaceStitch`\n\n* `ComfyUI-H3-FaceAutoBypass`\n\n  * Repository: `<YOUR_GITHUB_NAME>/ComfyUI-H3-FaceAutoBypass`\n  * Face Refine補助用カスタムノード\n  * Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/fukkun2705-commits/ComfyUI-H3-FaceAutoBypass.git\n```\n* 使用ノード:\n\n  * `H3FacePresenceGate`\n  * `H3LazyImageSwitch`\n\n\n### ComfyUI標準ノード\n\n以下は現在のComfyUI本体に含まれるため、追加カスタムノードは不要です。\n\n* `MiniMaxH3ReferenceToVideo`\n* `MiniMaxH3SigmaShift`\n* `ResolutionSelector`\n* `BasicScheduler`\n* `BasicGuider`\n* `KSamplerSelect`\n* `SamplerCustomAdvanced`\n* `RandomNoise`\n* `ComfyMathExpression`\n* `UNETLoader`\n* `CLIPLoader`\n* `VAELoader`\n* `VAEDecode`\n* `LoadImage`\n* `LoraLoaderModelOnly`\n* `BatchImages`\n* `TrimAudioDuration`\n* `AudioConcatenate`\n* `EmptyAudio`\n* `GetImageSizeAndCount`\n* `PreviewImage`\n* `CreateVideo`\n* `SaveVideo`\n"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -12910,9 +12910,7 @@
             ],
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced"
-            },
-            "widgets_values": [],
-            "widgets_values_named": {}
+            }
           },
           {
             "id": 203,
@@ -13617,9 +13615,7 @@
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced",
               "cnr_id": "comfy-core"
-            },
-            "widgets_values": [],
-            "widgets_values_named": {}
+            }
           },
           {
             "id": 542,
@@ -15395,9 +15391,7 @@
             ],
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced"
-            },
-            "widgets_values": [],
-            "widgets_values_named": {}
+            }
           },
           {
             "id": 325,
@@ -17878,9 +17872,7 @@
             ],
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced"
-            },
-            "widgets_values": [],
-            "widgets_values_named": {}
+            }
           },
           {
             "id": 634,
@@ -20361,9 +20353,7 @@
             ],
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced"
-            },
-            "widgets_values": [],
-            "widgets_values_named": {}
+            }
           },
           {
             "id": 355,
@@ -21280,9 +21270,7 @@
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced",
               "cnr_id": "comfy-core"
-            },
-            "widgets_values": [],
-            "widgets_values_named": {}
+            }
           },
           {
             "id": 587,
@@ -22846,9 +22834,7 @@
             ],
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced"
-            },
-            "widgets_values": [],
-            "widgets_values_named": {}
+            }
           },
           {
             "id": 383,
@@ -23721,9 +23707,7 @@
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced",
               "cnr_id": "comfy-core"
-            },
-            "widgets_values": [],
-            "widgets_values_named": {}
+            }
           },
           {
             "id": 600,
@@ -25331,9 +25315,7 @@
             ],
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced"
-            },
-            "widgets_values": [],
-            "widgets_values_named": {}
+            }
           },
           {
             "id": 411,
@@ -26250,9 +26232,7 @@
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced",
               "cnr_id": "comfy-core"
-            },
-            "widgets_values": [],
-            "widgets_values_named": {}
+            }
           },
           {
             "id": 613,
@@ -29608,10 +29588,10 @@
       "favorites": []
     },
     "ds": {
-      "scale": 0.37974730869486095,
+      "scale": 0.4594942435207823,
       "offset": [
-        2759.9230212700795,
-        -4391.993837637595
+        2542.5561904527544,
+        -4458.1237647455455
       ]
     }
   },
