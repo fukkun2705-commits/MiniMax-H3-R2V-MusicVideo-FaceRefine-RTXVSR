@@ -7149,161 +7149,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 515,
-      "type": "2ecfe0c0-653c-4ab4-a5aa-8f994420ad99",
-      "pos": [
-        1822.8458972948958,
-        4796.362456720552
-      ],
-      "size": [
-        223.634765625,
-        403.0457881907405
-      ],
-      "flags": {},
-      "order": 174,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 854
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 855
-        },
-        {
-          "name": "audio_vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": 856
-        },
-        {
-          "label": "ref_image_0",
-          "name": "ref_images.ref_image_0",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 857
-        },
-        {
-          "name": "ref_images.ref_image_1",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 858
-        },
-        {
-          "name": "prompt",
-          "type": "STRING",
-          "widget": {
-            "name": "prompt"
-          },
-          "link": 859
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "widget": {
-            "name": "width"
-          },
-          "link": 860
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "widget": {
-            "name": "height"
-          },
-          "link": 861
-        },
-        {
-          "name": "length",
-          "type": "INT",
-          "widget": {
-            "name": "length"
-          },
-          "link": 862
-        },
-        {
-          "name": "audio_vae_1",
-          "type": "VAE",
-          "link": 863
-        },
-        {
-          "name": "master_audio",
-          "type": "AUDIO",
-          "link": 864
-        },
-        {
-          "name": "vae_1",
-          "shape": 7,
-          "type": "VAE",
-          "link": 865
-        },
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 876
-        },
-        {
-          "name": "sigmas",
-          "type": "SIGMAS",
-          "link": 877
-        },
-        {
-          "label": "ref_image_2",
-          "name": "ref_images.ref_image_2",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 875
-        },
-        {
-          "name": "face_model",
-          "type": "MODEL",
-          "link": 1204
-        }
-      ],
-      "outputs": [
-        {
-          "label": "Set_Source Latent",
-          "name": "output",
-          "type": "LATENT",
-          "links": [
-            868
-          ]
-        },
-        {
-          "name": "SAMPLER",
-          "type": "SAMPLER",
-          "links": [
-            870
-          ]
-        },
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "links": [
-            1131
-          ]
-        }
-      ],
-      "properties": {
-        "previewExposures": []
-      },
-      "widgets_values": [
-        "",
-        864,
-        480,
-        124
-      ],
-      "widgets_values_named": {
-        "prompt": "",
-        "width": 864,
-        "height": 480,
-        "length": 124
-      }
-    },
-    {
       "id": 723,
       "type": "GetNode",
       "pos": [
@@ -7932,60 +7777,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 732,
-      "type": "MarkdownNote",
-      "pos": [
-        -2272.1617703148663,
-        5562.594450444132
-      ],
-      "size": [
-        531.9505088787671,
-        554.4198351208597
-      ],
-      "flags": {},
-      "order": 114,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Model Storage Location  Stability Matrix用",
-      "properties": {},
-      "widgets_values": [
-        "### Stability Matrix用\n\nStability Matrixでは共有Modelsを使用している場合と、\nPackage内の `models` フォルダを直接使用している場合があります\n\n```text\n📂 Data/\n└── 📂 Packages/\n    └── 📂 <ComfyUI Package Name>/\n        │\n        ├── 📂 custom_nodes/\n        │   ├── 📂 rgthree-comfy/\n        │   ├── 📂 ComfyUI-KJNodes/\n        │   ├── 📂 Nvidia_RTX_Nodes_ComfyUI/\n        │   ├── 📂 ComfyUI-VideoHelperSuite/\n        │   ├── 📂 ComfyUI-H3-Motion-Context-MultiRef/\n        │   ├── 📂 ComfyUI-MiniMax-H3-PDD-Acc/\n        │   ├── 📂 ComfyUI-H3-FaceRefine/\n        │   └── 📂 ComfyUI-H3-FaceAutoBypass/\n        │\n        └── 📂 models/\n            │\n            ├── 📂 diffusion_models/\n            │   ├── minimax_h3_fused_refdelta_r1024_turbo8_mystic07_int8_convrot.safetensors\n            │   └── minimax_h3_ref2va_pruned_int8_convrot.safetensors\n            │\n            ├── 📂 text_encoders/\n            │   └── qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors\n            │\n            ├── 📂 vae/\n            │   ├── minimax_h3_video_vae_int8_convrot.safetensors\n            │   └── minimax_h3_audio_vae_fp32.safetensors\n            │\n            ├── 📂 pdd_acc/\n            │   └── MiniMax-H3-Ref2VA-Acc-8Step.safetensors\n            │\n            └── 📂 ultralytics/\n                ├── 📂 bbox/\n                │   └── face_yolov8m.pt\n                │\n                └── 📂 segm/\n                    └── person_yolov8m-seg.pt"
-      ],
-      "widgets_values_named": {
-        "text": "### Stability Matrix用\n\nStability Matrixでは共有Modelsを使用している場合と、\nPackage内の `models` フォルダを直接使用している場合があります\n\n```text\n📂 Data/\n└── 📂 Packages/\n    └── 📂 <ComfyUI Package Name>/\n        │\n        ├── 📂 custom_nodes/\n        │   ├── 📂 rgthree-comfy/\n        │   ├── 📂 ComfyUI-KJNodes/\n        │   ├── 📂 Nvidia_RTX_Nodes_ComfyUI/\n        │   ├── 📂 ComfyUI-VideoHelperSuite/\n        │   ├── 📂 ComfyUI-H3-Motion-Context-MultiRef/\n        │   ├── 📂 ComfyUI-MiniMax-H3-PDD-Acc/\n        │   ├── 📂 ComfyUI-H3-FaceRefine/\n        │   └── 📂 ComfyUI-H3-FaceAutoBypass/\n        │\n        └── 📂 models/\n            │\n            ├── 📂 diffusion_models/\n            │   ├── minimax_h3_fused_refdelta_r1024_turbo8_mystic07_int8_convrot.safetensors\n            │   └── minimax_h3_ref2va_pruned_int8_convrot.safetensors\n            │\n            ├── 📂 text_encoders/\n            │   └── qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors\n            │\n            ├── 📂 vae/\n            │   ├── minimax_h3_video_vae_int8_convrot.safetensors\n            │   └── minimax_h3_audio_vae_fp32.safetensors\n            │\n            ├── 📂 pdd_acc/\n            │   └── MiniMax-H3-Ref2VA-Acc-8Step.safetensors\n            │\n            └── 📂 ultralytics/\n                ├── 📂 bbox/\n                │   └── face_yolov8m.pt\n                │\n                └── 📂 segm/\n                    └── person_yolov8m-seg.pt"
-      },
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 731,
-      "type": "MarkdownNote",
-      "pos": [
-        -2268.693857173596,
-        6165.6165891220235
-      ],
-      "size": [
-        525.9862560042773,
-        471.4970959818047
-      ],
-      "flags": {},
-      "order": 115,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Model Storage Location  公式版ComfyUI",
-      "properties": {},
-      "widgets_values": [
-        "### Standard ComfyUI\n\n```text\n📂 ComfyUI/\n├── 📂 custom_nodes/\n│   ├── 📂 rgthree-comfy/\n│   ├── 📂 ComfyUI-KJNodes/\n│   ├── 📂 Nvidia_RTX_Nodes_ComfyUI/\n│   ├── 📂 ComfyUI-VideoHelperSuite/\n│   ├── 📂 ComfyUI-H3-Motion-Context-MultiRef/\n│   ├── 📂 ComfyUI-MiniMax-H3-PDD-Acc/\n│   ├── 📂 ComfyUI-H3-FaceRefine/\n│   └── 📂 ComfyUI-H3-FaceAutoBypass/\n│\n└── 📂 models/\n    │\n    ├── 📂 diffusion_models/\n    │   ├── minimax_h3_fused_refdelta_r1024_turbo8_mystic07_int8_convrot.safetensors\n    │   └── minimax_h3_ref2va_pruned_int8_convrot.safetensors\n    │\n    ├── 📂 text_encoders/\n    │   └── qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors\n    │\n    ├── 📂 vae/\n    │   ├── minimax_h3_video_vae_int8_convrot.safetensors\n    │   └── minimax_h3_audio_vae_fp32.safetensors\n    │\n    ├── 📂 pdd_acc/\n    │   └── MiniMax-H3-Ref2VA-Acc-8Step.safetensors\n    │\n    └── 📂 ultralytics/\n        ├── 📂 bbox/\n        │   └── face_yolov8m.pt\n        │\n        └── 📂 segm/\n            └── person_yolov8m-seg.pt"
-      ],
-      "widgets_values_named": {
-        "text": "### Standard ComfyUI\n\n```text\n📂 ComfyUI/\n├── 📂 custom_nodes/\n│   ├── 📂 rgthree-comfy/\n│   ├── 📂 ComfyUI-KJNodes/\n│   ├── 📂 Nvidia_RTX_Nodes_ComfyUI/\n│   ├── 📂 ComfyUI-VideoHelperSuite/\n│   ├── 📂 ComfyUI-H3-Motion-Context-MultiRef/\n│   ├── 📂 ComfyUI-MiniMax-H3-PDD-Acc/\n│   ├── 📂 ComfyUI-H3-FaceRefine/\n│   └── 📂 ComfyUI-H3-FaceAutoBypass/\n│\n└── 📂 models/\n    │\n    ├── 📂 diffusion_models/\n    │   ├── minimax_h3_fused_refdelta_r1024_turbo8_mystic07_int8_convrot.safetensors\n    │   └── minimax_h3_ref2va_pruned_int8_convrot.safetensors\n    │\n    ├── 📂 text_encoders/\n    │   └── qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors\n    │\n    ├── 📂 vae/\n    │   ├── minimax_h3_video_vae_int8_convrot.safetensors\n    │   └── minimax_h3_audio_vae_fp32.safetensors\n    │\n    ├── 📂 pdd_acc/\n    │   └── MiniMax-H3-Ref2VA-Acc-8Step.safetensors\n    │\n    └── 📂 ultralytics/\n        ├── 📂 bbox/\n        │   └── face_yolov8m.pt\n        │\n        └── 📂 segm/\n            └── person_yolov8m-seg.pt"
-      },
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 159,
       "type": "MarkdownNote",
       "pos": [
@@ -7997,7 +7788,7 @@
         381.9695877953418
       ],
       "flags": {},
-      "order": 116,
+      "order": 114,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -8024,7 +7815,7 @@
         58
       ],
       "flags": {},
-      "order": 117,
+      "order": 115,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8061,7 +7852,7 @@
         58
       ],
       "flags": {},
-      "order": 118,
+      "order": 116,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8098,7 +7889,7 @@
         58
       ],
       "flags": {},
-      "order": 119,
+      "order": 117,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8135,7 +7926,7 @@
         58
       ],
       "flags": {},
-      "order": 120,
+      "order": 118,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8174,7 +7965,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 121,
+      "order": 119,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8211,7 +8002,7 @@
         58
       ],
       "flags": {},
-      "order": 122,
+      "order": 120,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8248,7 +8039,7 @@
         58
       ],
       "flags": {},
-      "order": 123,
+      "order": 121,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8322,7 +8113,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 124,
+      "order": 122,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8359,7 +8150,7 @@
         801.4316412074013
       ],
       "flags": {},
-      "order": 125,
+      "order": 123,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8396,7 +8187,7 @@
         730.7957195247527
       ],
       "flags": {},
-      "order": 126,
+      "order": 124,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8433,7 +8224,7 @@
         730.7957195247527
       ],
       "flags": {},
-      "order": 127,
+      "order": 125,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8470,7 +8261,7 @@
         730.7957195247527
       ],
       "flags": {},
-      "order": 128,
+      "order": 126,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8507,7 +8298,7 @@
         730.7957195247527
       ],
       "flags": {},
-      "order": 129,
+      "order": 127,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8544,7 +8335,7 @@
         730.7957195247527
       ],
       "flags": {},
-      "order": 130,
+      "order": 128,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8581,7 +8372,7 @@
         730.7957195247527
       ],
       "flags": {},
-      "order": 131,
+      "order": 129,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8618,7 +8409,7 @@
         326
       ],
       "flags": {},
-      "order": 132,
+      "order": 130,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8659,7 +8450,7 @@
         326
       ],
       "flags": {},
-      "order": 133,
+      "order": 131,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8702,7 +8493,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 134,
+      "order": 132,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -8743,7 +8534,7 @@
         326
       ],
       "flags": {},
-      "order": 135,
+      "order": 133,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8786,7 +8577,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 136,
+      "order": 134,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -8827,7 +8618,7 @@
         326
       ],
       "flags": {},
-      "order": 137,
+      "order": 135,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8868,7 +8659,7 @@
         370.59338490065875
       ],
       "flags": {},
-      "order": 138,
+      "order": 136,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8909,7 +8700,7 @@
         326
       ],
       "flags": {},
-      "order": 139,
+      "order": 137,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8952,7 +8743,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 140,
+      "order": 138,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -8993,7 +8784,7 @@
         370.59338490065875
       ],
       "flags": {},
-      "order": 141,
+      "order": 139,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9034,7 +8825,7 @@
         326
       ],
       "flags": {},
-      "order": 142,
+      "order": 140,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9077,7 +8868,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 143,
+      "order": 141,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -9118,7 +8909,7 @@
         370.59338490065875
       ],
       "flags": {},
-      "order": 144,
+      "order": 142,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9159,7 +8950,7 @@
         326
       ],
       "flags": {},
-      "order": 145,
+      "order": 143,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9202,7 +8993,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 146,
+      "order": 144,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -9243,7 +9034,7 @@
         358.70181559381854
       ],
       "flags": {},
-      "order": 147,
+      "order": 145,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9284,7 +9075,7 @@
         326
       ],
       "flags": {},
-      "order": 148,
+      "order": 146,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9327,7 +9118,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 149,
+      "order": 147,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -9368,7 +9159,7 @@
         370.59338490065875
       ],
       "flags": {},
-      "order": 150,
+      "order": 148,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9409,7 +9200,7 @@
         332.5403631187619
       ],
       "flags": {},
-      "order": 151,
+      "order": 149,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9452,7 +9243,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 152,
+      "order": 150,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -9493,7 +9284,7 @@
         202
       ],
       "flags": {},
-      "order": 153,
+      "order": 151,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9528,7 +9319,7 @@
         90
       ],
       "flags": {},
-      "order": 154,
+      "order": 152,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -10610,7 +10401,7 @@
         318.3096110530696
       ],
       "flags": {},
-      "order": 155,
+      "order": 153,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -10621,6 +10412,215 @@
       ],
       "widgets_values_named": {
         "text": "\n````markdown\n## Required Custom Nodes\n\nこのワークフローでは、以下のカスタムノードを使用します。\n\n\n### ComfyUI Managerからインストール可能\n\n* `rgthree-comfy`\n  - Repository: `rgthree/rgthree-comfy`\n  - 使用ノード:\n    - `Any Switch`\n    - `Fast Groups Bypasser`\n\n* `ComfyUI-KJNodes`\n  - Repository: `kijai/ComfyUI-KJNodes`\n  - 使用ノード:\n    - `GetNode / SetNode`\n    - `Patch SageAttention`\n    - `MiniMax H3 Memory Efficient SageAttention Patch`\n    - `MiniMax H3 Low VRAM Attention`\n    - `MiniMax H3 Chunk FeedForward`\n\n* `ComfyUI_NVIDIA_RTX_Nodes`\n  - Repository: `Comfy-Org/Nvidia_RTX_Nodes_ComfyUI`\n  - 使用ノード:\n    - `RTX Video Super Resolution`\n\n* `ComfyUI-VideoHelperSuite`\n  - Repository: `Kosinkadink/ComfyUI-VideoHelperSuite`\n  - 使用ノード:\n    - `VHS_LoadAudioUpload`\n\n\n### 手動インストール / Git clone\n\n* `ComfyUI-H3-Motion-Context-MultiRef`\n  - Repository: `seitanism/ComfyUI-H3-Motion-Context-MultiRef`\n  - Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/seitanism/ComfyUI-H3-Motion-Context-MultiRef.git\n```\n* 使用ノード:\n\n  * `MiniMaxH3SongMaskedAVContext`\n  * `MiniMaxH3MotionContextTrim`\n\n\n\n* `ComfyUI-MiniMax-H3-PDD-Acc`\n\n  * Repository: `Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc`\n  * Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc.git\n```\n* 使用ノード:\n\n  * `MiniMaxH3PDDAccApply`\n\n* 初回起動時に、以下のフォルダが作成されます。\n\n```text\nComfyUI/models/pdd_acc/\n```\n\n\n* `ComfyUI-H3-FaceRefine`\n\n  * Repository: `Carasibana/ComfyUI-H3-FaceRefine`\n  * Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/Carasibana/ComfyUI-H3-FaceRefine.git\n```\n* 使用ノード:\n\n  * `H3FaceTrackCrop`\n  * `H3InjectVideoLatent`\n  * `H3PerFrameDenoise`\n  * `H3FaceStitch`\n\n* `ComfyUI-H3-FaceAutoBypass`\n\n  * Repository: `<YOUR_GITHUB_NAME>/ComfyUI-H3-FaceAutoBypass`\n  * Face Refine補助用カスタムノード\n  * Install:\n\n```bash\ncd ComfyUI/custom_nodes\ngit clone https://github.com/fukkun2705-commits/ComfyUI-H3-FaceAutoBypass.git\n```\n* 使用ノード:\n\n  * `H3FacePresenceGate`\n  * `H3LazyImageSwitch`\n\n\n### ComfyUI標準ノード\n\n以下は現在のComfyUI本体に含まれるため、追加カスタムノードは不要です。\n\n* `MiniMaxH3ReferenceToVideo`\n* `MiniMaxH3SigmaShift`\n* `ResolutionSelector`\n* `BasicScheduler`\n* `BasicGuider`\n* `KSamplerSelect`\n* `SamplerCustomAdvanced`\n* `RandomNoise`\n* `ComfyMathExpression`\n* `UNETLoader`\n* `CLIPLoader`\n* `VAELoader`\n* `VAEDecode`\n* `LoadImage`\n* `LoraLoaderModelOnly`\n* `BatchImages`\n* `TrimAudioDuration`\n* `AudioConcatenate`\n* `EmptyAudio`\n* `GetImageSizeAndCount`\n* `PreviewImage`\n* `CreateVideo`\n* `SaveVideo`\n"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 515,
+      "type": "2ecfe0c0-653c-4ab4-a5aa-8f994420ad99",
+      "pos": [
+        1822.8458972948958,
+        4796.362456720552
+      ],
+      "size": [
+        223.634765625,
+        403.0457881907405
+      ],
+      "flags": {},
+      "order": 174,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 854
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 855
+        },
+        {
+          "name": "audio_vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": 856
+        },
+        {
+          "label": "ref_image_0",
+          "name": "ref_images.ref_image_0",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 857
+        },
+        {
+          "name": "ref_images.ref_image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 858
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 859
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 860
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 861
+        },
+        {
+          "name": "length",
+          "type": "INT",
+          "widget": {
+            "name": "length"
+          },
+          "link": 862
+        },
+        {
+          "name": "audio_vae_1",
+          "type": "VAE",
+          "link": 863
+        },
+        {
+          "name": "master_audio",
+          "type": "AUDIO",
+          "link": 864
+        },
+        {
+          "name": "vae_1",
+          "shape": 7,
+          "type": "VAE",
+          "link": 865
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 876
+        },
+        {
+          "name": "sigmas",
+          "type": "SIGMAS",
+          "link": 877
+        },
+        {
+          "label": "ref_image_2",
+          "name": "ref_images.ref_image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 875
+        },
+        {
+          "name": "face_model",
+          "type": "MODEL",
+          "link": 1204
+        }
+      ],
+      "outputs": [
+        {
+          "label": "Set_Source Latent",
+          "name": "output",
+          "type": "LATENT",
+          "links": [
+            868
+          ]
+        },
+        {
+          "name": "SAMPLER",
+          "type": "SAMPLER",
+          "links": [
+            870
+          ]
+        },
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            1131
+          ]
+        }
+      ],
+      "properties": {
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "",
+        864,
+        480,
+        124
+      ],
+      "widgets_values_named": {
+        "prompt": "",
+        "width": 864,
+        "height": 480,
+        "length": 124
+      }
+    },
+    {
+      "id": 732,
+      "type": "MarkdownNote",
+      "pos": [
+        -2272.1617703148663,
+        5562.594450444132
+      ],
+      "size": [
+        524.398967909987,
+        441.98578069680116
+      ],
+      "flags": {},
+      "order": 154,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Model Storage Location  Stability Matrix用",
+      "properties": {},
+      "widgets_values": [
+        "### Stability Matrix用\n\nStability Matrixでは共有Modelsを使用している場合と、\nPackage内の `models` フォルダを直接使用している場合があります\n\n```text\n📂 Data/     \n        │\n        └── 📂 models/\n            │\n            ├── 📂 diffusion_models/\n            │   ├── minimax_h3_fused_refdelta_r1024_turbo8_mystic07_int8_convrot.safetensors\n            │   └── minimax_h3_ref2va_pruned_int8_convrot.safetensors\n            │\n            ├── 📂 text_encoders/\n            │   └── qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors\n            │\n            ├── 📂 vae/\n            │   ├── minimax_h3_video_vae_int8_convrot.safetensors\n            │   └── minimax_h3_audio_vae_fp32.safetensors\n            │\n            └── 📂 ultralytics/\n                ├── 📂 bbox/\n                │   └── face_yolov8m.pt\n                │\n                └── 📂 segm/\n                    └── person_yolov8m-seg.pt\n   └── 📂 Packages/\n       └── 📂 <ComfyUI Package Name>/\n          └── 📂 models/\n             ├── 📂 pdd_acc/\n             │   └── MiniMax-H3-Ref2VA-Acc-8Step.safetensors\n            \n\n   "
+      ],
+      "widgets_values_named": {
+        "text": "### Stability Matrix用\n\nStability Matrixでは共有Modelsを使用している場合と、\nPackage内の `models` フォルダを直接使用している場合があります\n\n```text\n📂 Data/     \n        │\n        └── 📂 models/\n            │\n            ├── 📂 diffusion_models/\n            │   ├── minimax_h3_fused_refdelta_r1024_turbo8_mystic07_int8_convrot.safetensors\n            │   └── minimax_h3_ref2va_pruned_int8_convrot.safetensors\n            │\n            ├── 📂 text_encoders/\n            │   └── qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors\n            │\n            ├── 📂 vae/\n            │   ├── minimax_h3_video_vae_int8_convrot.safetensors\n            │   └── minimax_h3_audio_vae_fp32.safetensors\n            │\n            └── 📂 ultralytics/\n                ├── 📂 bbox/\n                │   └── face_yolov8m.pt\n                │\n                └── 📂 segm/\n                    └── person_yolov8m-seg.pt\n   └── 📂 Packages/\n       └── 📂 <ComfyUI Package Name>/\n          └── 📂 models/\n             ├── 📂 pdd_acc/\n             │   └── MiniMax-H3-Ref2VA-Acc-8Step.safetensors\n            \n\n   "
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 731,
+      "type": "MarkdownNote",
+      "pos": [
+        -2272.3792608843924,
+        6052.597541990919
+      ],
+      "size": [
+        523.2173576490579,
+        344.1277716417153
+      ],
+      "flags": {},
+      "order": 155,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Model Storage Location  公式版ComfyUI",
+      "properties": {},
+      "widgets_values": [
+        "### Standard ComfyUI\n\n```text\n📂 Data/     \n        │\n        └── 📂 models/\n          │\n          ├── 📂 diffusion_models/\n          │   ├── minimax_h3_fused_refdelta_r1024_turbo8_mystic07_int8_convrot.safetensors\n          │   └── minimax_h3_ref2va_pruned_int8_convrot.safetensors\n          │\n          ├── 📂 text_encoders/\n          │   └── qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors\n          │\n          ├── 📂 vae/\n          │   ├── minimax_h3_video_vae_int8_convrot.safetensors\n          │   └── minimax_h3_audio_vae_fp32.safetensors\n          │\n          ├── 📂 pdd_acc/\n          │   └── MiniMax-H3-Ref2VA-Acc-8Step.safetensors\n          │\n          └── 📂 ultralytics/\n              ├── 📂 bbox/\n              │   └── face_yolov8m.pt\n              │\n              └── 📂 segm/\n                   └── person_yolov8m-seg.pt"
+      ],
+      "widgets_values_named": {
+        "text": "### Standard ComfyUI\n\n```text\n📂 Data/     \n        │\n        └── 📂 models/\n          │\n          ├── 📂 diffusion_models/\n          │   ├── minimax_h3_fused_refdelta_r1024_turbo8_mystic07_int8_convrot.safetensors\n          │   └── minimax_h3_ref2va_pruned_int8_convrot.safetensors\n          │\n          ├── 📂 text_encoders/\n          │   └── qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors\n          │\n          ├── 📂 vae/\n          │   ├── minimax_h3_video_vae_int8_convrot.safetensors\n          │   └── minimax_h3_audio_vae_fp32.safetensors\n          │\n          ├── 📂 pdd_acc/\n          │   └── MiniMax-H3-Ref2VA-Acc-8Step.safetensors\n          │\n          └── 📂 ultralytics/\n              ├── 📂 bbox/\n              │   └── face_yolov8m.pt\n              │\n              └── 📂 segm/\n                   └── person_yolov8m-seg.pt"
       },
       "color": "#432",
       "bgcolor": "#653"
@@ -28329,64 +28329,6 @@
             "bgcolor": "#533"
           },
           {
-            "id": 706,
-            "type": "H3LazyImageSwitch",
-            "pos": [
-              3520,
-              5100
-            ],
-            "size": [
-              300,
-              130
-            ],
-            "flags": {},
-            "order": 16,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "original",
-                "name": "original",
-                "type": "IMAGE",
-                "link": 1158
-              },
-              {
-                "localized_name": "refined",
-                "name": "refined",
-                "type": "IMAGE",
-                "link": 1159
-              },
-              {
-                "localized_name": "use_refine",
-                "name": "use_refine",
-                "type": "BOOLEAN",
-                "widget": {
-                  "name": "use_refine"
-                },
-                "link": 1157
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "images",
-                "name": "images",
-                "type": "IMAGE",
-                "links": [
-                  946
-                ]
-              }
-            ],
-            "title": "FaceRefine Auto Bypass",
-            "properties": {
-              "Node name for S&R": "H3LazyImageSwitch"
-            },
-            "widgets_values": [
-              false
-            ],
-            "widgets_values_named": {
-              "use_refine": false
-            }
-          },
-          {
             "id": 663,
             "type": "H3FaceStitch",
             "pos": [
@@ -29096,6 +29038,64 @@
             "widgets_values_named": {
               "sampler_name": "euler"
             }
+          },
+          {
+            "id": 706,
+            "type": "H3LazyImageSwitch",
+            "pos": [
+              3590.7189290797883,
+              4988.1163211573485
+            ],
+            "size": [
+              300,
+              130
+            ],
+            "flags": {},
+            "order": 16,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "original",
+                "name": "original",
+                "type": "IMAGE",
+                "link": 1158
+              },
+              {
+                "localized_name": "refined",
+                "name": "refined",
+                "type": "IMAGE",
+                "link": 1159
+              },
+              {
+                "localized_name": "use_refine",
+                "name": "use_refine",
+                "type": "BOOLEAN",
+                "widget": {
+                  "name": "use_refine"
+                },
+                "link": 1157
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "images",
+                "name": "images",
+                "type": "IMAGE",
+                "links": [
+                  946
+                ]
+              }
+            ],
+            "title": "FaceRefine Auto Bypass",
+            "properties": {
+              "Node name for S&R": "H3LazyImageSwitch"
+            },
+            "widgets_values": [
+              false
+            ],
+            "widgets_values_named": {
+              "use_refine": false
+            }
           }
         ],
         "groups": [],
@@ -29588,10 +29588,10 @@
       "favorites": []
     },
     "ds": {
-      "scale": 0.4594942435207823,
+      "scale": 0.25937252147726453,
       "offset": [
-        2542.5561904527544,
-        -4458.1237647455455
+        2586.9753294704906,
+        -4258.864036751361
       ]
     }
   },
