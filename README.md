@@ -285,9 +285,17 @@ https://github.com/fukkun2705-commits/ComfyUI-H3-FaceAutoBypass
 
 Installation:
 
+1. Clone the repository:
+
 ```bash
 cd ComfyUI/custom_nodes
 git clone https://github.com/fukkun2705-commits/ComfyUI-H3-FaceAutoBypass.git
+```
+
+2. Install the required dependencies in the ComfyUI Python virtual environment:
+
+```bash
+python -m pip install -r custom_nodes/ComfyUI-H3-FaceAutoBypass/requirements.txt
 ```
 
 Used nodes:
