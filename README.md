@@ -2,7 +2,7 @@
 
 ComfyUI workflow for **MiniMax H3 Reference-to-Video music video generation**.
 
-This workflow is designed for creating longer music videos by generating up to **7 seamless clips per Part**, with Motion Context continuity, FaceRefine, automatic FaceRefine bypass, PDD Acc support, audio synchronization, and RTX Video Super Resolution 2x upscaling.
+This workflow is designed for creating longer music videos by generating up to **7 seamless clips per Part**, with Motion Context continuity, FaceRefine, automatic FaceRefine bypass, multiple MiniMax H3 acceleration configurations, audio synchronization, sparse-attention optimization, and RTX Video Super Resolution 2x upscaling.
 
 ![Workflow](workflow.png)
 
@@ -17,7 +17,11 @@ This workflow is designed for creating longer music videos by generating up to *
 - Audio synchronization
 - FaceRefine for face detail enhancement
 - Automatic FaceRefine bypass when no face/person is detected
-- PDD Acc support
+- PDD Acc 8-step support
+- Fused Turbo 4-step support
+- TaoMate 3-step LoRA support
+- Model Sparse Attention optimization
+- Model Attention Backend support (`comfy kitchen attention` / `pytorch attention`)
 - Part-based long video generation
 - RTX Video Super Resolution 2x upscaling
 - Designed for practical use on approximately 12GB–16GB VRAM GPUs
@@ -116,10 +120,51 @@ https://github.com/kijai/ComfyUI-KJNodes
 Used nodes include:
 
 - GetNode / SetNode
-- Patch SageAttention
-- MiniMax H3 Memory Efficient SageAttention Patch
-- MiniMax H3 Low VRAM Attention
 - MiniMax H3 Chunk FeedForward
+- Patch SageAttention *(alternative / comparison path)*
+- MiniMax H3 Memory Efficient SageAttention Patch *(alternative / comparison path)*
+- MiniMax H3 Low VRAM Attention *(alternative / comparison path)*
+
+---
+
+### ComfyUI Core Optimization Nodes
+
+The workflow also uses ComfyUI core model-optimization nodes:
+
+- Model Sparse Attention
+- Model Attention Backend
+
+Recommended current configuration:
+
+```text
+Model Attention Backend
+backend = comfy kitchen attention
+
+↓
+
+Model Sparse Attention
+method = sol-attn
+tau = 1.30
+start_percent = 0.20
+end_percent = 1.00
+min_tokens = 12288
+extra_tokens = 256
+sink_conditioning = exact_kv_and_rows
+
+↓
+
+MiniMax H3 Chunk FeedForward
+chunks = 2
+seq_threshold = 4096
+
+↓
+
+MiniMaxH3SigmaShift
+shift_video = 12
+shift_audio = 3
+```
+
+The older SageAttention / Low-VRAM patch path is retained in the workflow for comparison and fallback use.
 
 ---
 
@@ -360,6 +405,26 @@ https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs/blob/main/MiniMax-H3-Ref
 
 ---
 
+# TaoMate LoRA
+
+```text
+taomate_h3_3step_comfy.safetensors
+```
+
+Download:
+
+```text
+https://huggingface.co/Robert1212star/TaoMate-H3-3Step-ComfyUI/blob/main/taomate_h3_3step_comfy.safetensors
+```
+
+Recommended model folder:
+
+```text
+ComfyUI/models/loras/
+```
+
+---
+
 # FaceRefine Detector Models
 
 ## Face Detector
@@ -413,6 +478,9 @@ ComfyUI/
     │   ├── minimax_h3_fused_refdelta_r1024_turbo8_mystic07_int8_convrot.safetensors
     │   └── minimax_h3_ref2va_pruned_int8_convrot.safetensors
     │
+    ├── loras/
+    │   └── taomate_h3_3step_comfy.safetensors
+    │
     ├── text_encoders/
     │   └── qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors
     │
@@ -436,10 +504,28 @@ ComfyUI/
 
 # Stability Matrix
 
-When using a package-local ComfyUI installation in Stability Matrix, the structure is typically:
+For Stability Matrix, the shared model folders are typically stored under `Data/models/`, while package-specific folders such as `pdd_acc` and `ultralytics` may remain inside the selected ComfyUI package.
+
+Example:
 
 ```text
 Data/
+│
+├── models/
+│   ├── diffusion_models/
+│   │   ├── minimax_h3_fused_refdelta_r1024_turbo8_mystic07_int8_convrot.safetensors
+│   │   └── minimax_h3_ref2va_pruned_int8_convrot.safetensors
+│   │
+│   ├── loras/
+│   │   └── taomate_h3_3step_comfy.safetensors
+│   │
+│   ├── text_encoders/
+│   │   └── qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors
+│   │
+│   └── vae/
+│       ├── minimax_h3_video_vae_int8_convrot.safetensors
+│       └── minimax_h3_audio_vae_fp32.safetensors
+│
 └── Packages/
     └── <ComfyUI Package Name>/
         │
@@ -454,30 +540,17 @@ Data/
         │   └── ComfyUI-H3-FaceAutoBypass/
         │
         └── models/
-            │
-            ├── diffusion_models/
-            │   ├── minimax_h3_fused_refdelta_r1024_turbo8_mystic07_int8_convrot.safetensors
-            │   └── minimax_h3_ref2va_pruned_int8_convrot.safetensors
-            │
-            ├── text_encoders/
-            │   └── qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors
-            │
-            ├── vae/
-            │   ├── minimax_h3_video_vae_int8_convrot.safetensors
-            │   └── minimax_h3_audio_vae_fp32.safetensors
-            │
             ├── pdd_acc/
             │   └── MiniMax-H3-Ref2VA-Acc-8Step.safetensors
             │
             └── ultralytics/
                 ├── bbox/
                 │   └── face_yolov8m.pt
-                │
                 └── segm/
                     └── person_yolov8m-seg.pt
 ```
 
-Depending on your Stability Matrix configuration, models may also be managed through its shared Models directory.
+Folder behavior may differ depending on your Stability Matrix shared-model settings.
 
 ---
 
@@ -609,29 +682,106 @@ Example:
 
 ---
 
-# 6. Clip Processor / PDD Acc Controls
+# 6. Select Generation Configuration
+
+The workflow can be used with three main MiniMax H3 acceleration configurations.
+
+| Configuration | UNET | TaoMate | PDD | Scheduler |
+|---|---|---|---|---|
+| ① PDD Acc 8-step | Ref2VA | OFF | ON | PDD side |
+| ② Fused Turbo | Fused | OFF | OFF | 4-step |
+| ③ TaoMate | Ref2VA | ON | OFF | 3-step |
+
+### ① PDD Acc 8-step
+
+```text
+UNET:
+minimax_h3_ref2va_pruned_int8_convrot.safetensors
+
+TaoMate LoRA:
+OFF
+
+PDD Acc:
+ON
+
+PDD model:
+MiniMax-H3-Ref2VA-Acc-8Step.safetensors
+```
+
+### ② Fused Turbo 4-step
+
+```text
+UNET:
+minimax_h3_fused_refdelta_r1024_turbo8_mystic07_int8_convrot.safetensors
+
+TaoMate LoRA:
+OFF
+
+PDD Acc:
+OFF
+
+Scheduler:
+4-step
+```
+
+### ③ TaoMate 3-step
+
+```text
+UNET:
+minimax_h3_ref2va_pruned_int8_convrot.safetensors
+
+TaoMate LoRA:
+ON
+taomate_h3_3step_comfy.safetensors
+
+PDD Acc:
+OFF
+
+Scheduler:
+3-step
+```
+
+When PDD Acc is not used, set the PDD path to OFF.  
+When TaoMate is not used, manually bypass the TaoMate LoRA loader.
+
+### Recommended Attention / VRAM Optimization
+
+Current recommended test configuration:
+
+```text
+Model Attention Backend
+backend = comfy kitchen attention
+
+Model Sparse Attention
+method = sol-attn
+tau = 1.30
+start_percent = 0.20
+end_percent = 1.00
+min_tokens = 12288
+extra_tokens = 256
+sink_conditioning = exact_kv_and_rows
+
+MiniMax H3 Chunk FeedForward
+chunks = 2
+seq_threshold = 4096
+
+MiniMaxH3SigmaShift
+shift_video = 12
+shift_audio = 3
+```
+
+For this configuration, the older SageAttention / Low-VRAM patch nodes should remain bypassed.
+
+### Clip Processor Controls
 
 Use:
 
 ```text
-USE Clip Processor & PDD Acc LoRA
+Use Clip Total
 ```
 
-The group contains:
-
-```text
-Enable PDD Acc LoRA
-Processor02
-Processor03
-Processor04
-Processor05
-Processor06
-Processor07
-```
-
-Clip 1 is always active, so there is no Processor01 switch.
-
-Enable only the number of clips required for the current Part.
+Clip 1 is always active.  
+Enable only the number of Clip Processors required for the current Part.
 
 ---
 
@@ -834,6 +984,28 @@ FaceRefine processes only the final visible frames after the Motion Context lead
 
 This prevents unnecessary refinement of frames that will not appear in the final output.
 
+## FaceRefine Management Panel
+
+Recommended initial values:
+
+```text
+FR Steps = 5
+FR Denoise = 0.35
+FR Canvas = 768
+FR Confidence = 0.35
+FR Crop Factor = 2.50
+FR Identity Threshold = 0.28
+```
+
+### FR Canvas
+
+```text
+FR Canvas = 768
+```
+
+`768` is the recommended default.  
+When a smaller processing size is sufficient, the FaceRefine processing path can automatically use the smaller effective canvas as needed, so normally there is no need to manually change the control to `512`.
+
 ---
 
 # FaceRefine Auto Bypass
@@ -884,6 +1056,43 @@ The MiniMax H3 diffusion model itself can be changed manually depending on your 
 
 ---
 
+# Performance Notes
+
+Example local benchmark on the tested environment:
+
+```text
+Initial resolution:
+0.3 MP
+
+Clip durations:
+3, 4, 4, 4, 4 sec
+
+Total:
+5 clips / 19 sec
+
+FaceRefine:
+enabled
+
+RTX VSR:
+2x after clip merge
+```
+
+Measured total workflow time:
+
+| Configuration | Attention optimization | Time |
+|---|---|---:|
+| ② Fused Turbo 4-step | Model Sparse Attention + comfy kitchen attention | **812.13 sec** |
+| ③ TaoMate 3-step | Model Sparse Attention + comfy kitchen attention | **821.10 sec** |
+| ③ TaoMate 3-step | SageAttention path + comfy kitchen attention | **868.05 sec** |
+| ③ TaoMate 3-step | Model Sparse Attention + pytorch attention | **930.31 sec** |
+| ① PDD Acc 8-step | Model Sparse Attention + comfy kitchen attention | **1174.80 sec** |
+
+These values are environment-specific and should be treated as reference measurements rather than universal performance figures.
+
+In this test, `comfy kitchen attention` produced a particularly large speed improvement during FaceRefine, while `Model Sparse Attention` was faster overall than the SageAttention comparison path without an obvious visual-quality loss in the tested clips.
+
+---
+
 # RTX Video Super Resolution
 
 RTX Video Super Resolution is applied **after all selected clips in the current Part have been concatenated**.
@@ -919,13 +1128,14 @@ This helps keep the final Part processing simple and avoids introducing addition
 3. Set Duration-1 ～ Duration-7
 4. Set Use Clip Total
 5. Enable required Clip Processors
-6. Select PDD Acc ON/OFF
-7. Set audio start_time
-8. Generate
-9. Check Actual Video Duration
-10. Use cumulative duration for next Part
-11. Repeat
-12. Merge finished Parts
+6. Select generation configuration (PDD / Fused / TaoMate)
+7. Confirm Attention optimization settings
+8. Set audio start_time
+9. Generate
+10. Check Actual Video Duration
+11. Use cumulative duration for next Part
+12. Repeat
+13. Merge finished Parts
 ```
 
 ---
@@ -948,14 +1158,15 @@ Frontend:
 ComfyUI / Stability Matrix
 ```
 
-Low-VRAM patches, SageAttention, and dynamic VRAM management are used to make MiniMax H3 generation practical on this class of GPU.
+The current recommended test path uses Model Sparse Attention, `comfy kitchen attention`, MiniMax H3 Chunk FeedForward, MiniMaxH3SigmaShift, and dynamic VRAM management. The older SageAttention / Low-VRAM patch path is retained as an alternative comparison path.
 
 Performance and VRAM requirements may vary depending on:
 
 - Resolution
 - Clip duration
 - Diffusion model
-- PDD Acc configuration
+- PDD / Fused / TaoMate configuration
+- Attention backend and sparse-attention settings
 - FaceRefine
 - ComfyUI version
 - PyTorch / CUDA version
@@ -973,6 +1184,7 @@ It does **not** include:
 - Text encoder weights
 - VAE weights
 - PDD Acc model weights
+- TaoMate LoRA weights
 - Face detector models
 - Third-party custom nodes
 
