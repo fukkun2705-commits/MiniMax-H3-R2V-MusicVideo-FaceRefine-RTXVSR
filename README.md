@@ -1,8 +1,8 @@
-# MiniMax H3 R2V MusicVideo FaceRefine RTXVSR
+# MiniMax H3 R2V MusicVideo FaceRefine RTXVSR + Final Clip Auto Fit
 
 ComfyUI workflow for **MiniMax H3 Reference-to-Video music video generation**.
 
-This workflow is designed for creating longer music videos by generating up to **7 seamless clips per Part**, with Motion Context continuity, FaceRefine, automatic FaceRefine bypass, multiple MiniMax H3 acceleration configurations, audio synchronization, sparse-attention optimization, and RTX Video Super Resolution 2x upscaling.
+This workflow is designed for creating longer music videos by generating up to **7 seamless clips per Part**, with Motion Context continuity, FaceRefine, automatic FaceRefine bypass, Final Clip Auto Fit for the last Part, multiple MiniMax H3 acceleration configurations, audio synchronization, sparse-attention optimization, and RTX Video Super Resolution 2x upscaling.
 
 ![Workflow](workflow.png)
 
@@ -23,6 +23,8 @@ This workflow is designed for creating longer music videos by generating up to *
 - Model Sparse Attention optimization
 - Model Attention Backend support (`comfy kitchen attention` / `pytorch attention`)
 - Part-based long video generation
+- **Final Clip Auto Fit** for automatically extending only the last active clip when the final Part is shorter than the remaining song duration
+- **Song Duration Probe** for reading the full audio duration used by Final Clip Auto Fit
 - RTX Video Super Resolution 2x upscaling
 - Designed for practical use on approximately 12GB–16GB VRAM GPUs
 
@@ -31,7 +33,16 @@ This workflow is designed for creating longer music videos by generating up to *
 # Workflow Overview
 
 ```text
-Load Audio
+Load Audio (Upload)
+   +
+Song Duration Probe (Full Audio)
+   ↓
+Duration-1 ～ Duration-7
+   ↓
+Use Clip Total
+   ↓
+Final Clip Auto Fit
+(only when enabled for the final Part)
    ↓
 Clip 1 Pass1
    ↓
@@ -47,7 +58,7 @@ Clip 7 Pass1
    ↓
 VAE Decode
    ↓
-FaceRefine
+FaceRefine / Auto Bypass
    ↓
 Motion Context overlap trim
    ↓
@@ -60,6 +71,10 @@ Save Part
 
 Each generated group of clips is treated as one **Part**.
 
+For ordinary Parts, Final Clip Auto Fit remains disabled and the configured clip durations are used as-is.
+
+For the **final Part**, Final Clip Auto Fit can calculate the remaining song duration and, only when necessary, extend the **last active clip** before MiniMax H3 generation. It does not stretch an already generated video or duplicate output frames.
+
 For longer music videos:
 
 ```text
@@ -70,6 +85,8 @@ Part 2
 Part 3
 ↓
 ...
+↓
+Final Part
 ↓
 Merge Parts externally
 ↓
@@ -83,7 +100,7 @@ Final Music Video
 The workflow JSON included in this repository:
 
 ```text
-MiniMax_H3_R2V_7clip_SEAMLESS_RTXVSR.json
+last_complete_MiniMax_H3_R2V_FinalClipAutoFit.json
 ```
 
 Download the JSON and load it into ComfyUI.
@@ -320,6 +337,39 @@ No face/person
 ```
 
 This prevents unnecessary FaceRefine processing on clips that do not require it.
+
+---
+
+## ComfyUI-H3-FinalClipAutoFit
+
+This workflow also uses a custom node for fitting the final generated Part to the actual song duration.
+
+Used node:
+
+- `H3FinalClipAutoFit`
+
+Purpose:
+
+```text
+Actual full song duration
+-
+Final Part start time
+↓
+Remaining song duration
+↓
+Extend only the last active clip when required
+```
+
+The node changes the **generation duration of the final active clip before generation**. It does not stretch the finished video, repeat frames, or perform frame interpolation.
+
+Manual installation:
+
+```text
+ComfyUI/custom_nodes/
+└── ComfyUI-H3-FinalClipAutoFit/
+```
+
+If the custom node is published as a Git repository later, it can also be installed with `git clone` into `ComfyUI/custom_nodes/`.
 
 ---
 
@@ -569,58 +619,73 @@ Folder behavior may differ depending on your Stability Matrix shared-model setti
 Use:
 
 ```text
-Resolution Selector Size
+Resolution Selector (Size)
 ```
 
-Select the desired MiniMax H3 generation resolution.
+Select:
 
-RTX VSR performs the final 2x upscale after all selected clips in the Part have been concatenated.
+- `aspect_ratio`
+- `megapixels`
+- `multiple`
 
-Example:
+`multiple = 32` is the normal setting used by this workflow.
+
+The workflow includes a **Size Settings Reference** table. Example 16:9 presets:
+
+| Mode | MP | 1st Pass | Final 2x |
+|---|---:|---:|---:|
+| FAST | 0.2 | 608 × 352 | 1216 × 704 |
+| BALANCED | 0.3 | 736 × 416 | 1472 × 832 |
+| QUALITY | 0.4 | 864 × 480 | 1728 × 960 |
+
+RTX VSR performs the final 2x upscale **after the selected clips in the Part have been merged**.
+
+### Reference-image guidance
+
+For **character identity**, a multi-angle character style sheet is useful because it provides multiple views of the same subject.
+
+For **backgrounds**, a single large one-shot image is recommended when possible. A multi-panel background style sheet divides the available pixels among several views, so each individual background panel contains less detail. Because the background may fill the entire video frame, a small panel can result in softer, blurrier, or less stable background detail.
+
+Recommended practical rule:
 
 ```text
-608 × 352
-↓ RTX VSR 2x
-1216 × 704
-```
-
-Other examples:
-
-```text
-736 × 416
-↓
-1472 × 832
-```
-
-```text
-864 × 480
-↓
-1728 × 960
+Character / person reference → style sheet is useful
+Background reference          → large single-shot image recommended
+Product reference             → style sheet or single-shot image depending on shot size
 ```
 
 ---
 
 ## 2. Load Audio
 
-Use:
+Load the **same song/audio file into both audio nodes**:
 
 ```text
 Load Audio (Upload)
+Song Duration Probe (Full Audio)
 ```
 
-Load the music/audio file used for the music video.
+For `Song Duration Probe (Full Audio)` use:
+
+```text
+start_time = 0
+duration = 0
+```
+
+This node is used only to read the exact full audio duration for Final Clip Auto Fit.
 
 For **Part 1**:
 
 ```text
+Load Audio (Upload)
 start_time = 0
 ```
 
-The audio duration is controlled automatically using the calculated Part duration.
+The normal `Load Audio (Upload)` duration is controlled automatically from the current Part duration.
 
 ---
 
-# 3. Set Clip Durations
+## 3. Set Clip Durations
 
 The workflow provides:
 
@@ -640,15 +705,15 @@ Example:
 
 ```text
 Clip 1 = 3 sec
-Clip 2 = 3 sec
-Clip 3 = 3 sec
-Clip 4 = 2 sec
-Clip 5 = 2 sec
+Clip 2 = 4 sec
+Clip 3 = 4 sec
+Clip 4 = 4 sec
+Clip 5 = 4 sec
 ```
 
 ---
 
-# 4. Select Number of Clips
+## 4. Select Number of Clips
 
 Use:
 
@@ -656,43 +721,117 @@ Use:
 Use Clip Total
 ```
 
-Select how many clips will be used in the current Part.
-
 Available range:
 
 ```text
 1 – 7 clips
 ```
 
-Clip 1 is always active.
+Clip 1 is always active. For Clips 2–7, enable only the corresponding Clip Processors required for the current Part.
 
-For Clips 2–7, the corresponding Clip Processor settings control whether they are enabled.
+`Use Clip Total` and the number of enabled Clip Processors should match.
 
 ---
 
-# 5. Check Total Part Duration
+## 5. Configure Final Clip Auto Fit
 
-The workflow calculates:
+Use:
+
+```text
+H3 Final Clip Auto Fit
+```
+
+### Ordinary Parts
+
+For all Parts that do **not** contain the end of the song:
+
+```text
+enable_final_fit = false
+```
+
+The configured `Duration-1 ～ Duration-7` values are used without final-song fitting.
+
+### Final Part
+
+For the Part that contains the **end of the song**:
+
+```text
+enable_final_fit = true
+```
+
+Set:
+
+```text
+part_start_time
+```
+
+to exactly the same value as that Part's:
+
+```text
+Load Audio (Upload) start_time
+```
+
+Example:
+
+```text
+Load Audio start_time = 22.875
+
+H3 Final Clip Auto Fit
+part_start_time = 22.875
+enable_final_fit = true
+```
+
+The node calculates:
+
+```text
+actual song duration
+-
+part_start_time
+=
+remaining song duration
+```
+
+If the selected clip durations are too short to reach the end of the song, **only the last active clip is extended**.
+
+The generated clip itself becomes longer; the finished video is not stretched afterward.
+
+---
+
+## 6. Check Total Part Duration
+
+Check:
 
 ```text
 Total Part Duration Out
 ```
 
-This value represents the configured duration of the current Part.
+With Final Clip Auto Fit disabled, this is the total of the active clip duration settings.
 
 Example:
 
 ```text
-3 + 3 + 3 + 2 + 2
+3 + 4 + 4 + 4 + 4
 =
-13.0 sec
+19.0 sec
+```
+
+With Final Clip Auto Fit enabled for the final Part, the value reflects the adjusted final clip duration when an extension is required.
+
+Example:
+
+```text
+Original final clip = 6.00 sec
+↓
+Auto Fit adjusted final clip = 6.75 sec
+
+Total Part Duration Out is also updated accordingly.
 ```
 
 ---
 
-# 6. Select Generation Configuration
+## 7. Select Generation Configuration
 
-The workflow can be used with three main MiniMax H3 acceleration configurations.
+The workflow supports three main MiniMax H3 acceleration configurations.
 
 | Configuration | UNET | TaoMate | PDD | Scheduler |
 |---|---|---|---|---|
@@ -749,8 +888,7 @@ Scheduler:
 3-step
 ```
 
-When PDD Acc is not used, set the PDD path to OFF.  
-When TaoMate is not used, manually bypass the TaoMate LoRA loader.
+When PDD Acc is not used, keep the PDD path OFF. When TaoMate is not used, bypass the TaoMate LoRA loader.
 
 ### Recommended Attention / VRAM Optimization
 
@@ -780,26 +918,30 @@ shift_audio = 3
 
 For this configuration, the older SageAttention / Low-VRAM patch nodes should remain bypassed.
 
-### Clip Processor Controls
+---
 
-Use:
+## 8. FaceRefine Management Panel
+
+The workflow provides one common FaceRefine management panel shared by the Clip Processors.
+
+Recommended initial values:
 
 ```text
-Use Clip Total
+FR Steps = 5
+FR Denoise = 0.35
+FR Canvas = 768
+FR Confidence = 0.35
+FR Crop Factor = 2.50
+FR Identity Threshold = 0.28
 ```
 
-Clip 1 is always active.  
-Enable only the number of Clip Processors required for the current Part.
+`FR Canvas = 768` is the recommended control value. The FaceRefine path can automatically use a smaller effective canvas such as 512 when the detected crop does not require the full 768 processing size.
+
+Therefore, in normal use there is usually no need to manually change the control to 512.
 
 ---
 
-# 7. Generate Part 1
-
-For Part 1:
-
-```text
-Load Audio start_time = 0
-```
+## 9. Generate the Part
 
 Start generation.
 
@@ -825,7 +967,7 @@ Video output
 
 ---
 
-# 8. Check Actual Video Duration
+## 10. Check Actual Video Duration
 
 After generation, check:
 
@@ -833,9 +975,7 @@ After generation, check:
 Actual Video Duration
 ```
 
-This value represents the actual produced duration.
-
-It may be slightly different from the configured duration because video generation is frame-based.
+This is the **actual generated Part duration**, not merely the mathematical sum of the configured clip durations.
 
 Example:
 
@@ -847,59 +987,88 @@ Actual Video Duration
 12.958 sec
 ```
 
-For the next Part, always use:
-
-```text
-Actual Video Duration
-```
-
-rather than simply adding the configured clip durations manually.
+MiniMax H3 is frame-based and Motion Context overlap is trimmed, so the actual video duration can differ slightly from the configured total.
 
 ---
 
-# 9. Generate Part 2
+## 11. Set the Start Time for the Next Part
 
-Set the next audio start position using the previous Part's Actual Video Duration.
+For the next Part, use the cumulative **Actual Video Duration** from all preceding Parts.
 
 Example:
 
 ```text
-Part 1 Actual Video Duration
-12.958 sec
+Part 1 Actual Video Duration = 12.958 sec
+
+Part 2 Load Audio start_time = 12.958
 ```
 
-Then:
+If:
 
 ```text
-Part 2 Load Audio start_time
-=
-12.958
+Part 2 Actual Video Duration = 12.250 sec
 ```
 
-Generate Part 2.
+then:
+
+```text
+Part 3 start_time
+= 12.958 + 12.250
+= 25.208
+```
+
+Continue this process for subsequent Parts.
 
 ---
 
-# 10. Generate Additional Parts
+## 12. Final Part Auto Fit Report
 
-For Part 3 and later, use the cumulative Actual Video Duration.
-
-Example:
+When Final Clip Auto Fit is enabled, check:
 
 ```text
-Part 1 = 12.958 sec
-Part 2 = 13.000 sec
+Final Clip Auto Fit Report
 ```
 
-Part 3 start position:
+Main report values include:
 
 ```text
-12.958 + 13.000
+actual_song_duration
+remaining_song_seconds
+target_frames
+predicted_before_frames
+predicted_after_frames
+added_frames
+adjusted_final_duration
+end_margin_frames
+```
+
+If:
+
+```text
+added_frames > 0
+```
+
+then the last active clip was extended so that the final Part can reach the song ending.
+
+---
+
+## 13. Merge the Finished Parts
+
+After all Parts have been generated:
+
+```text
+Part 1
++
+Part 2
++
+Part 3
++
+...
 =
-25.958 sec
+Final Music Video
 ```
 
-Continue this process until the entire song has been generated.
+Merge the Parts using your preferred editor or video concatenation tool.
 
 ---
 
@@ -965,6 +1134,40 @@ The beginning of the next clip contains Motion Context frames inherited from the
 Those leading overlap frames are trimmed before the final clips are concatenated.
 
 This allows the visible clips to connect while maintaining motion continuity.
+
+---
+
+# Final Clip Auto Fit
+
+Final Clip Auto Fit is designed specifically for the **last Part of a song**.
+
+It uses the exact song duration reported by `Song Duration Probe (Full Audio)` and the final Part's `part_start_time` to determine how much song time remains.
+
+Processing concept:
+
+```text
+Full song duration
+-
+Final Part start time
+↓
+Remaining song duration
+↓
+Compare with selected active clip durations
+↓
+If necessary, extend only the last active clip
+↓
+Generate that clip at the adjusted duration
+```
+
+Important behavior:
+
+- Ordinary Parts should use `enable_final_fit = false`.
+- The final Part should use `enable_final_fit = true`.
+- `part_start_time` must match the final Part's `Load Audio (Upload) start_time`.
+- The node only extends when additional duration is required.
+- It does not stretch completed video frames.
+- It does not duplicate frames after generation.
+- It works with the selected `Use Clip Total`, so the adjusted clip is the **last active clip**, not necessarily Clip 7.
 
 ---
 
@@ -1132,18 +1335,22 @@ This helps keep the final Part processing simple and avoids introducing addition
 
 ```text
 1. Select resolution
-2. Load audio
+2. Load the same audio into Load Audio (Upload) and Song Duration Probe
 3. Set Duration-1 ～ Duration-7
 4. Set Use Clip Total
-5. Enable required Clip Processors
-6. Select generation configuration (PDD / Fused / TaoMate)
-7. Confirm Attention optimization settings
-8. Set audio start_time
-9. Generate
-10. Check Actual Video Duration
-11. Use cumulative duration for next Part
-12. Repeat
-13. Merge finished Parts
+5. For ordinary Parts: Final Clip Auto Fit = OFF
+6. For the final Part: Final Clip Auto Fit = ON and set part_start_time
+7. Enable the required Clip Processors
+8. Select generation configuration (PDD / Fused / TaoMate)
+9. Confirm Attention / VRAM optimization settings
+10. Confirm FaceRefine Management Panel settings
+11. Set Load Audio start_time
+12. Generate
+13. Check Actual Video Duration
+14. For the final Part, check Final Clip Auto Fit Report
+15. Use cumulative Actual Video Duration for the next Part
+16. Repeat as required
+17. Merge finished Parts
 ```
 
 ---
@@ -1198,6 +1405,8 @@ It does **not** include:
 
 Please download those files from their original repositories or model pages.
 
+For Final Clip Auto Fit, load the **same audio file** into both `Load Audio (Upload)` and `Song Duration Probe (Full Audio)`.
+
 ---
 
 # Credits
@@ -1213,6 +1422,8 @@ This workflow uses multiple community projects, including:
 - ComfyUI-H3-Motion-Context-MultiRef
 - ComfyUI-MiniMax-H3-PDD-Acc
 - ComfyUI-H3-FaceRefine
+- ComfyUI-H3-FaceAutoBypass
+- ComfyUI-H3-FinalClipAutoFit
 
 Thank you to all developers and contributors of these projects.
 
