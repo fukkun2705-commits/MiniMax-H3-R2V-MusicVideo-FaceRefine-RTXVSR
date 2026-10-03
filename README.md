@@ -2,7 +2,7 @@
 
 ComfyUI workflow for **MiniMax H3 Reference-to-Video music video generation**.
 
-This workflow is designed for creating longer music videos by generating up to **7 seamless clips per Part**, with Motion Context continuity, FaceRefine, automatic FaceRefine bypass, Final Clip Auto Fit for the last Part, multiple MiniMax H3 acceleration configurations, audio synchronization, sparse-attention optimization, and RTX Video Super Resolution 2x upscaling.
+This workflow is designed for creating longer music videos by generating up to **7 clips per Part**, with Motion Context continuity, crossfade smoothing between every clip boundary, Latent Upscale + Pass2 refinement, FaceRefine, automatic FaceRefine bypass, Final Clip Auto Fit for the last Part, audio synchronization, SageAttention / Low-VRAM optimization, and optional RTX Video Super Resolution.
 
 ![Workflow](workflow.png)
 
@@ -13,19 +13,22 @@ This workflow is designed for creating longer music videos by generating up to *
 - MiniMax H3 Reference-to-Video
 - Up to 7 clips per Part
 - Selectable number of clips
-- Seamless Motion Context between clips
+- Motion Context continuity between clips
+- **Crossfade smoothing across all clip boundaries (Clip1→2 through Clip6→7)**
 - Audio synchronization
+- **Latent Upscale + Pass2 refinement**
 - FaceRefine for face detail enhancement
 - Automatic FaceRefine bypass when no face/person is detected
-- PDD Acc 8-step support
+- PDD Acc 8-step LoRA support
 - Fused Turbo 4-step support
 - TaoMate 3-step LoRA support
-- Model Sparse Attention optimization
-- Model Attention Backend support (`comfy kitchen attention` / `pytorch attention`)
+- SageAttention / MiniMax H3 Memory Efficient SageAttention support
+- MiniMax H3 Low VRAM Attention support
+- Model Attention Backend support
 - Part-based long video generation
 - **Final Clip Auto Fit** for automatically extending only the last active clip when the final Part is shorter than the remaining song duration
 - **Song Duration Probe** for reading the full audio duration used by Final Clip Auto Fit
-- RTX Video Super Resolution 2x upscaling
+- Optional RTX Video Super Resolution after the Part is assembled
 - Designed for practical use on approximately 12GB–16GB VRAM GPUs
 
 ---
@@ -42,7 +45,7 @@ Duration-1 ～ Duration-7
 Use Clip Total
    ↓
 Final Clip Auto Fit
-(only when enabled for the final Part)
+(final Part only)
    ↓
 Clip 1 Pass1
    ↓
@@ -50,11 +53,19 @@ Motion Context
    ↓
 Clip 2 Pass1
    ↓
-Motion Context
-   ↓
 ...
    ↓
 Clip 7 Pass1
+   ↓
+Video / Audio latent separation
+   ↓
+Video Latent Upscale
+   ↓
+Audio latent passthrough
+   ↓
+AV latent recombination
+   ↓
+Pass2 Refine
    ↓
 VAE Decode
    ↓
@@ -62,9 +73,11 @@ FaceRefine / Auto Bypass
    ↓
 Motion Context overlap trim
    ↓
-Selected clips concatenated
+Crossfade at every active clip boundary
    ↓
-RTX Video Super Resolution 2x
+Complete Part
+   ↓
+Optional RTX Video Super Resolution
    ↓
 Save Part
 ```
@@ -100,7 +113,7 @@ Final Music Video
 The workflow JSON included in this repository:
 
 ```text
-last_complete_MiniMax_H3_R2V_FinalClipAutoFit.json
+MiniMax_H3_R2V_MV_Studio_FaceRefine_LatentUpscale.json
 ```
 
 Download the JSON and load it into ComfyUI.
@@ -137,42 +150,35 @@ https://github.com/kijai/ComfyUI-KJNodes
 Used nodes include:
 
 - GetNode / SetNode
+- CrossFadeImages
 - MiniMax H3 Chunk FeedForward
-- Patch SageAttention *(alternative / comparison path)*
-- MiniMax H3 Memory Efficient SageAttention Patch *(alternative / comparison path)*
-- MiniMax H3 Low VRAM Attention *(alternative / comparison path)*
+- Patch SageAttention
+- MiniMax H3 Memory Efficient SageAttention Patch
+- MiniMax H3 Low VRAM Attention
 
----
+`CrossFadeImages` is used to smooth the visible transition between every active clip boundary after Motion Context overlap handling.
 
-### ComfyUI Core Optimization Nodes
+### Current Attention / VRAM path
 
-The workflow also uses ComfyUI core model-optimization nodes:
-
-- Model Sparse Attention
-- Model Attention Backend
-
-Recommended current configuration:
+The current workflow uses the SageAttention-based path:
 
 ```text
+Patch SageAttention
+sage_attention = auto
+
+↓
+
+MiniMax H3 Memory Efficient SageAttention Patch
+
+↓
+
+MiniMax H3 Low VRAM Attention
+head_chunks = 1
+
+↓
+
 Model Attention Backend
-backend = comfy kitchen attention
-
-↓
-
-Model Sparse Attention
-method = sol-attn
-tau = 1.30
-start_percent = 0.20
-end_percent = 1.00
-min_tokens = 12288
-extra_tokens = 256
-sink_conditioning = exact_kv_and_rows
-
-↓
-
-MiniMax H3 Chunk FeedForward
-chunks = 2
-seq_threshold = 4096
+attention = pytorch attention
 
 ↓
 
@@ -181,7 +187,7 @@ shift_video = 12
 shift_audio = 3
 ```
 
-The older SageAttention / Low-VRAM patch path is retained in the workflow for comparison and fallback use.
+**Model Sparse Attention is not used in the current distributed workflow.**
 
 ---
 
@@ -237,32 +243,31 @@ Used nodes:
 
 This node set is used for seamless Motion Context continuity between clips.
 
+
 ---
 
-## ComfyUI-MiniMax-H3-PDD-Acc
+## Comfyui_Minimax_h3_latent_Upscaler
 
 Repository:
 
 ```text
-https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc
+https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler
 ```
 
 Installation:
 
 ```bash
 cd ComfyUI/custom_nodes
-git clone https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc.git
+git clone https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler.git
 ```
 
 Used node:
 
-- MiniMaxH3PDDAccApply
+- `MinimaxH3LatentUpscaler3D`
 
-The node creates the following model folder when required:
+This workflow separates the MiniMax H3 AV latent, sends only the **video latent** to the learned 3D latent upscaler, preserves the audio latent, then recombines video and audio before Pass2.
 
-```text
-ComfyUI/models/pdd_acc/
-```
+Do not substitute the similarly named `Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler`; it is not the latent-upscaler implementation used by this workflow.
 
 ---
 
@@ -362,14 +367,18 @@ Extend only the last active clip when required
 
 The node changes the **generation duration of the final active clip before generation**. It does not stretch the finished video, repeat frames, or perform frame interpolation.
 
-Manual installation:
+Repository:
 
 ```text
-ComfyUI/custom_nodes/
-└── ComfyUI-H3-FinalClipAutoFit/
+https://github.com/fukkun2705-commits/ComfyUI-H3-FinalClipAutoFit
 ```
 
-If the custom node is published as a Git repository later, it can also be installed with `git clone` into `ComfyUI/custom_nodes/`.
+Installation:
+
+```bash
+cd ComfyUI/custom_nodes
+git clone https://github.com/fukkun2705-commits/ComfyUI-H3-FinalClipAutoFit.git
+```
 
 ---
 
@@ -449,17 +458,25 @@ https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/vae/minimax_h3_audio_vae_f
 
 ---
 
-# PDD Acc Model
+# PDD Acc LoRA
+
+Recommended pair used by the workflow:
 
 ```text
-MiniMax-H3-Ref2VA-Acc-8Step.safetensors
+Diffusion:
+minimax_h3_ref2va_pruned_int8_convrot.safetensors
+
+LoRA:
+MiniMax-H3-Ref2VA-Acc-8Step_pruned_comfy.safetensors
 ```
 
 Download:
 
 ```text
-https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs/blob/main/MiniMax-H3-Ref2VA-Acc-8Step.safetensors
+https://huggingface.co/Kijai/MiniMax-H3-experimental/resolve/main/loras/MiniMax-H3-Ref2VA-Acc-8Step_pruned_comfy.safetensors
 ```
+
+The PDD Acc path now uses the normal ComfyUI LoRA loader. A dedicated PDD custom node is not required.
 
 ---
 
@@ -480,6 +497,28 @@ Recommended model folder:
 ```text
 ComfyUI/models/loras/
 ```
+
+---
+
+# Latent Upscaler Model
+
+```text
+minimax_h3_latent_upscaler_3d_conv_v1_fp16.safetensors
+```
+
+Download:
+
+```text
+https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/resolve/main/minimax_h3_latent_upscaler_3d_conv_v1/minimax_h3_latent_upscaler_3d_conv_v1_fp16.safetensors
+```
+
+Model folder:
+
+```text
+ComfyUI/models/latent_upscale_models/
+```
+
+For Stability Matrix, this model may need to be placed in the selected ComfyUI package's local `models/latent_upscale_models/` folder if that folder is not mapped to shared models.
 
 ---
 
@@ -526,9 +565,10 @@ ComfyUI/
 │   ├── Nvidia_RTX_Nodes_ComfyUI/
 │   ├── ComfyUI-VideoHelperSuite/
 │   ├── ComfyUI-H3-Motion-Context-MultiRef/
-│   ├── ComfyUI-MiniMax-H3-PDD-Acc/
 │   ├── ComfyUI-H3-FaceRefine/
-│   └── ComfyUI-H3-FaceAutoBypass/
+│   ├── ComfyUI-H3-FaceAutoBypass/
+│   ├── Comfyui_Minimax_h3_latent_Upscaler/
+│   └── ComfyUI-H3-FinalClipAutoFit/
 │
 └── models/
     │
@@ -537,6 +577,7 @@ ComfyUI/
     │   └── minimax_h3_ref2va_pruned_int8_convrot.safetensors
     │
     ├── loras/
+    │   ├── MiniMax-H3-Ref2VA-Acc-8Step_pruned_comfy.safetensors
     │   └── taomate_h3_3step_comfy.safetensors
     │
     ├── text_encoders/
@@ -546,8 +587,8 @@ ComfyUI/
     │   ├── minimax_h3_video_vae_int8_convrot.safetensors
     │   └── minimax_h3_audio_vae_fp32.safetensors
     │
-    ├── pdd_acc/
-    │   └── MiniMax-H3-Ref2VA-Acc-8Step.safetensors
+    ├── latent_upscale_models/
+    │   └── minimax_h3_latent_upscaler_3d_conv_v1_fp16.safetensors
     │
     └── ultralytics/
         │
@@ -575,6 +616,7 @@ Data/
 │   │   └── minimax_h3_ref2va_pruned_int8_convrot.safetensors
 │   │
 │   ├── loras/
+│   │   ├── MiniMax-H3-Ref2VA-Acc-8Step_pruned_comfy.safetensors
 │   │   └── taomate_h3_3step_comfy.safetensors
 │   │
 │   ├── text_encoders/
@@ -593,15 +635,19 @@ Data/
         │   ├── Nvidia_RTX_Nodes_ComfyUI/
         │   ├── ComfyUI-VideoHelperSuite/
         │   ├── ComfyUI-H3-Motion-Context-MultiRef/
-        │   ├── ComfyUI-MiniMax-H3-PDD-Acc/
-        │   ├── ComfyUI-H3-FaceRefine/
-        │   └── ComfyUI-H3-FaceAutoBypass/
+                │   ├── ComfyUI-H3-FaceRefine/
+        │   ├── ComfyUI-H3-FaceAutoBypass/
+│   ├── Comfyui_Minimax_h3_latent_Upscaler/
+│   └── ComfyUI-H3-FinalClipAutoFit/
         │
         └── models/
             ├── pdd_acc/
             │   └── MiniMax-H3-Ref2VA-Acc-8Step.safetensors
             │
-            └── ultralytics/
+            ├── latent_upscale_models/
+    │   └── minimax_h3_latent_upscaler_3d_conv_v1_fp16.safetensors
+    │
+    └── ultralytics/
                 ├── bbox/
                 │   └── face_yolov8m.pt
                 └── segm/
@@ -632,13 +678,21 @@ Select:
 
 The workflow includes a **Size Settings Reference** table. Example 16:9 presets:
 
-| Mode | MP | 1st Pass | Final 2x |
-|---|---:|---:|---:|
-| FAST | 0.2 | 608 × 352 | 1216 × 704 |
-| BALANCED | 0.3 | 736 × 416 | 1472 × 832 |
-| QUALITY | 0.4 | 864 × 480 | 1728 × 960 |
+| Mode | MP | 1st Pass | Latent Scale | After Latent Upscale |
+|---|---:|---:|---:|---:|
+| FAST | 0.2 | 608 × 352 | 1.6x | 960 × 576 |
+| BALANCED | 0.3 | 736 × 416 | 1.6x | 1184 × 672 |
+| QUALITY | 0.4 | 864 × 480 | 1.6x | 1376 × 768 |
 
-RTX VSR performs the final 2x upscale **after the selected clips in the Part have been merged**.
+### Recommended 768p output settings (16:9)
+
+| Mode | MP | 1st Pass | Latent Scale | After Latent | RTX VSR | Final Target |
+|---|---:|---:|---:|---:|---:|---:|
+| FAST | 0.2 | 608 × 352 | 1.6x | 960 × 576 | about 1.33x | about 1280 × 768 |
+| BALANCED | 0.3 | 736 × 416 | 1.6x | 1184 × 672 | about 1.14x | about 1353 × 768 |
+| QUALITY | 0.4 | 864 × 480 | 1.6x | 1376 × 768 | **BYPASS** | 1376 × 768 |
+
+For **QUALITY / 0.4 MP**, Latent Upscale 1.6x already reaches a 768-pixel output height, so RTX VSR is normally bypassed when the target is 768p.
 
 ### Reference-image guidance
 
@@ -734,6 +788,10 @@ Clip 1 is always active. For Clips 2–7, enable only the corresponding Clip Pro
 ---
 
 ## 5. Configure Final Clip Auto Fit
+
+> ⚠️ **FINAL PART ONLY**  
+> Ordinary Part: `enable_final_fit = false`  
+> Final Part only: `enable_final_fit = true`
 
 Use:
 
@@ -851,8 +909,11 @@ OFF
 PDD Acc:
 ON
 
-PDD model:
-MiniMax-H3-Ref2VA-Acc-8Step.safetensors
+PDD LoRA:
+MiniMax-H3-Ref2VA-Acc-8Step_pruned_comfy.safetensors
+
+LoRA strength:
+1.0
 ```
 
 ### ② Fused Turbo 4-step
@@ -888,39 +949,69 @@ Scheduler:
 3-step
 ```
 
-When PDD Acc is not used, keep the PDD path OFF. When TaoMate is not used, bypass the TaoMate LoRA loader.
+When PDD Acc is not used, bypass the PDD Acc LoRA loader. When TaoMate is not used, bypass the TaoMate LoRA loader.
 
 ### Recommended Attention / VRAM Optimization
 
-Current recommended test configuration:
+Current recommended configuration:
 
 ```text
+Patch SageAttention
+sage_attention = auto
+
+MiniMax H3 Memory Efficient SageAttention Patch
+
+MiniMax H3 Low VRAM Attention
+head_chunks = 1
+
 Model Attention Backend
-backend = comfy kitchen attention
-
-Model Sparse Attention
-method = sol-attn
-tau = 1.30
-start_percent = 0.20
-end_percent = 1.00
-min_tokens = 12288
-extra_tokens = 256
-sink_conditioning = exact_kv_and_rows
-
-MiniMax H3 Chunk FeedForward
-chunks = 2
-seq_threshold = 4096
+attention = pytorch attention
 
 MiniMaxH3SigmaShift
 shift_video = 12
 shift_audio = 3
 ```
 
-For this configuration, the older SageAttention / Low-VRAM patch nodes should remain bypassed.
+`Model Sparse Attention` is intentionally not used in the current workflow because temporal background instability was observed in testing, especially with the PDD Acc path.
 
 ---
 
-## 8. FaceRefine Management Panel
+## 8. Latent Upscale / Pass2
+
+The workflow provides one common Latent Upscale / Pass2 management panel shared by the Clip Processors.
+
+Recommended initial values:
+
+```text
+Use Latent Upscale / Pass2 = yes
+Upscale Scale = 1.6
+Pass2 Steps = 3
+Pass2 Denoise = 0.3
+Pass2 Sampler = euler
+```
+
+Processing:
+
+```text
+MiniMax H3 Pass1 AV latent
+↓
+Separate video / audio latent
+↓
+Video latent → 3D Latent Upscale
+Audio latent → passthrough
+↓
+Recombine AV latent
+↓
+Pass2 Refine
+↓
+VAE Decode
+```
+
+This avoids a VAE Decode → image upscale → VAE Encode round trip before Pass2.
+
+---
+
+## 9. FaceRefine Management Panel
 
 The workflow provides one common FaceRefine management panel shared by the Clip Processors.
 
@@ -941,16 +1032,18 @@ Therefore, in normal use there is usually no need to manually change the control
 
 ---
 
-## 9. Generate the Part
+## 10. Generate the Part
 
 Start generation.
 
 The workflow automatically performs:
 
 ```text
-MiniMax H3 generation
+MiniMax H3 Pass1
 ↓
 Motion Context continuity
+↓
+Latent Upscale + Pass2
 ↓
 VAE Decode
 ↓
@@ -958,16 +1051,18 @@ FaceRefine / Auto Bypass
 ↓
 Motion Context overlap trim
 ↓
-Clip concatenation
+Crossfade between active clip boundaries
 ↓
-RTX VSR 2x
+Complete Part
+↓
+Optional RTX VSR
 ↓
 Video output
 ```
 
 ---
 
-## 10. Check Actual Video Duration
+## 11. Check Actual Video Duration
 
 After generation, check:
 
@@ -991,7 +1086,7 @@ MiniMax H3 is frame-based and Motion Context overlap is trimmed, so the actual v
 
 ---
 
-## 11. Set the Start Time for the Next Part
+## 12. Set the Start Time for the Next Part
 
 For the next Part, use the cumulative **Actual Video Duration** from all preceding Parts.
 
@@ -1021,7 +1116,7 @@ Continue this process for subsequent Parts.
 
 ---
 
-## 12. Final Part Auto Fit Report
+## 13. Final Part Auto Fit Report
 
 When Final Clip Auto Fit is enabled, check:
 
@@ -1052,7 +1147,7 @@ then the last active clip was extended so that the final Part can reach the song
 
 ---
 
-## 13. Merge the Finished Parts
+## 14. Merge the Finished Parts
 
 After all Parts have been generated:
 
@@ -1131,9 +1226,20 @@ Clip 3
 
 The beginning of the next clip contains Motion Context frames inherited from the previous clip.
 
-Those leading overlap frames are trimmed before the final clips are concatenated.
+Those leading overlap frames are handled by `MiniMaxH3MotionContextTrim`.
 
-This allows the visible clips to connect while maintaining motion continuity.
+The current workflow also uses the retained `crossfade_images` / `crossfade_frames` outputs to apply a short crossfade at **every active clip boundary**:
+
+```text
+Clip1 → Clip2
+Clip2 → Clip3
+Clip3 → Clip4
+Clip4 → Clip5
+Clip5 → Clip6
+Clip6 → Clip7
+```
+
+This reduces visible discontinuities that can otherwise appear after Latent Upscale / Pass2 and FaceRefine modify each clip independently.
 
 ---
 
@@ -1173,12 +1279,14 @@ Important behavior:
 
 # FaceRefine
 
-FaceRefine is applied after the initial MiniMax H3 video generation.
+FaceRefine is applied after Pass2 / VAE Decode.
 
 Basic processing:
 
 ```text
-MiniMax H3 video
+MiniMax H3 Pass1
+↓
+Latent Upscale + Pass2
 ↓
 VAE Decode
 ↓
@@ -1188,12 +1296,12 @@ FaceRefine
 ↓
 Face stitch
 ↓
-Final clip
+Motion Context trim / crossfade
+↓
+Final visible clip sequence
 ```
 
-FaceRefine processes only the final visible frames after the Motion Context leading overlap is handled by the workflow.
-
-This prevents unnecessary refinement of frames that will not appear in the final output.
+Motion Context overlap handling and final crossfade smoothing are performed after the clip's visual refinement path.
 
 ## FaceRefine Management Panel
 
@@ -1253,82 +1361,81 @@ This allows clips without a suitable visible face/person to skip unnecessary Fac
 
 # PDD Acc
 
-The workflow supports:
+The current workflow uses the pruned PDD Acc LoRA pair:
 
 ```text
-MiniMax-H3-Ref2VA-Acc-8Step.safetensors
+Diffusion:
+minimax_h3_ref2va_pruned_int8_convrot.safetensors
+
+LoRA:
+MiniMax-H3-Ref2VA-Acc-8Step_pruned_comfy.safetensors
 ```
 
-PDD Acc can be enabled or disabled from the workflow controls.
+The LoRA is loaded through the standard ComfyUI `LoraLoaderModelOnly` path.
 
-The workflow automatically routes the sampler path according to the selected PDD configuration.
+A dedicated `ComfyUI-MiniMax-H3-PDD-Acc` custom node is not required by the current workflow.
 
-The MiniMax H3 diffusion model itself can be changed manually depending on your preferred generation setup.
+For the PDD Acc path, the current workflow uses SageAttention rather than Model Sparse Attention.
 
 ---
 
 # Performance Notes
 
-Example local benchmark on the tested environment:
+Generation time depends strongly on:
 
-```text
-Initial resolution:
-0.3 MP
+- First-pass resolution
+- Clip duration
+- Number of active clips
+- MiniMax H3 acceleration configuration
+- Latent Upscale / Pass2
+- FaceRefine
+- RTX VSR usage
+- VRAM offloading behavior
 
-Clip durations:
-3, 4, 4, 4, 4 sec
+For quick tests, use `FAST / 0.2 MP`.
 
-Total:
-5 clips / 19 sec
+For normal production, `BALANCED / 0.3 MP` is a practical starting point.
 
-FaceRefine:
-enabled
-
-RTX VSR:
-2x after clip merge
-```
-
-Measured total workflow time:
-
-| Configuration | Attention optimization | Time |
-|---|---|---:|
-| ② Fused Turbo 4-step | Model Sparse Attention + comfy kitchen attention | **812.13 sec** |
-| ③ TaoMate 3-step | Model Sparse Attention + comfy kitchen attention | **821.10 sec** |
-| ③ TaoMate 3-step | SageAttention path + comfy kitchen attention | **868.05 sec** |
-| ③ TaoMate 3-step | Model Sparse Attention + pytorch attention | **930.31 sec** |
-| ① PDD Acc 8-step | Model Sparse Attention + comfy kitchen attention | **1174.80 sec** |
-
-These values are environment-specific and should be treated as reference measurements rather than universal performance figures.
-
-In this test, `comfy kitchen attention` produced a particularly large speed improvement during FaceRefine, while `Model Sparse Attention` was faster overall than the SageAttention comparison path without an obvious visual-quality loss in the tested clips.
-
+For 768p quality-focused output, `QUALITY / 0.4 MP + Latent Scale 1.6x` reaches approximately `1376 × 768`, allowing RTX VSR to be bypassed.
 ---
 
 # RTX Video Super Resolution
 
-RTX Video Super Resolution is applied **after all selected clips in the current Part have been concatenated**.
+RTX Video Super Resolution is optional and is applied **after the active clips have been assembled into the current Part**.
 
-Processing:
+Current workflow control:
 
 ```text
-Clip 1
-Clip 2
-Clip 3
-...
-↓
-Concatenate
-↓
-Complete Part
-↓
-RTX VSR 2x
-↓
-Save Video
+RTX Upscale
 ```
 
-RTX VSR is therefore not applied independently to each clip.
+The RTX VSR node uses a configurable multiplier. The current workflow node is set to:
 
-This helps keep the final Part processing simple and avoids introducing additional processing between seamless clip boundaries.
+```text
+scale = 1.35
+quality = ULTRA
+```
 
+It is **not fixed to 2x**.
+
+Recommended 768p behavior:
+
+```text
+FAST / 0.2 MP
+→ Latent 1.6x
+→ RTX VSR as needed
+
+BALANCED / 0.3 MP
+→ Latent 1.6x
+→ small RTX VSR upscale as needed
+
+QUALITY / 0.4 MP
+→ Latent 1.6x
+→ 1376 × 768
+→ RTX VSR BYPASS for 768p target
+```
+
+RTX VSR is not applied independently to each clip, so it does not introduce extra processing between clip boundaries.
 ---
 
 # Recommended Workflow Sequence
@@ -1339,18 +1446,20 @@ This helps keep the final Part processing simple and avoids introducing addition
 3. Set Duration-1 ～ Duration-7
 4. Set Use Clip Total
 5. For ordinary Parts: Final Clip Auto Fit = OFF
-6. For the final Part: Final Clip Auto Fit = ON and set part_start_time
+6. For the final Part only: Final Clip Auto Fit = ON and set part_start_time
 7. Enable the required Clip Processors
-8. Select generation configuration (PDD / Fused / TaoMate)
-9. Confirm Attention / VRAM optimization settings
-10. Confirm FaceRefine Management Panel settings
-11. Set Load Audio start_time
-12. Generate
-13. Check Actual Video Duration
-14. For the final Part, check Final Clip Auto Fit Report
-15. Use cumulative Actual Video Duration for the next Part
-16. Repeat as required
-17. Merge finished Parts
+8. Select generation configuration
+9. Confirm SageAttention / Low-VRAM settings
+10. Confirm Latent Upscale / Pass2 settings
+11. Confirm FaceRefine settings
+12. Set Load Audio start_time
+13. Set RTX Upscale or BYPASS according to target resolution
+14. Generate
+15. Check Actual Video Duration
+16. For the final Part, check Final Clip Auto Fit Report
+17. Use cumulative Actual Video Duration for the next Part
+18. Repeat as required
+19. Merge finished Parts
 ```
 
 ---
@@ -1373,7 +1482,7 @@ Frontend:
 ComfyUI / Stability Matrix
 ```
 
-The current recommended test path uses Model Sparse Attention, `comfy kitchen attention`, MiniMax H3 Chunk FeedForward, MiniMaxH3SigmaShift, and dynamic VRAM management. The older SageAttention / Low-VRAM patch path is retained as an alternative comparison path.
+The current workflow uses SageAttention, MiniMax H3 Memory Efficient SageAttention, MiniMax H3 Low VRAM Attention, MiniMaxH3SigmaShift, and dynamic VRAM management. Model Sparse Attention is not used in the current distributed workflow.
 
 Performance and VRAM requirements may vary depending on:
 
@@ -1381,7 +1490,7 @@ Performance and VRAM requirements may vary depending on:
 - Clip duration
 - Diffusion model
 - PDD / Fused / TaoMate configuration
-- Attention backend and sparse-attention settings
+- SageAttention / attention-backend settings
 - FaceRefine
 - ComfyUI version
 - PyTorch / CUDA version
@@ -1398,8 +1507,9 @@ It does **not** include:
 - MiniMax H3 model weights
 - Text encoder weights
 - VAE weights
-- PDD Acc model weights
+- PDD Acc LoRA weights
 - TaoMate LoRA weights
+- Latent Upscaler model weights
 - Face detector models
 - Third-party custom nodes
 
@@ -1420,9 +1530,9 @@ This workflow uses multiple community projects, including:
 - ComfyUI-VideoHelperSuite
 - NVIDIA RTX Nodes for ComfyUI
 - ComfyUI-H3-Motion-Context-MultiRef
-- ComfyUI-MiniMax-H3-PDD-Acc
 - ComfyUI-H3-FaceRefine
 - ComfyUI-H3-FaceAutoBypass
+- Comfyui_Minimax_h3_latent_Upscaler
 - ComfyUI-H3-FinalClipAutoFit
 
 Thank you to all developers and contributors of these projects.
