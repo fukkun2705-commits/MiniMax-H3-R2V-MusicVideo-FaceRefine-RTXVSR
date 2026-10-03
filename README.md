@@ -1,4 +1,4 @@
-# MiniMax H3 R2V MusicVideo FaceRefine RTXVSR + Final Clip Auto Fit
+# MiniMax_H3_R2V_MV_Studio_FaceRefine_LatentUpscale
 
 ComfyUI workflow for **MiniMax H3 Reference-to-Video music video generation**.
 
