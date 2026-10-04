@@ -2,7 +2,7 @@
   "id": "e3f2b845-8f2c-4b5a-9caf-eac1029d3e7e",
   "revision": 11,
   "last_node_id": 1140,
-  "last_link_id": 2218,
+  "last_link_id": 2225,
   "nodes": [
     {
       "id": 372,
@@ -19,7 +19,7 @@
         "collapsed": true
       },
       "order": 0,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -99,7 +99,7 @@
         "collapsed": true
       },
       "order": 297,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "LATENT",
@@ -1887,7 +1887,7 @@
         "collapsed": true
       },
       "order": 316,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "LATENT",
@@ -2140,7 +2140,7 @@
         "collapsed": true
       },
       "order": 298,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "FLOAT",
@@ -2185,7 +2185,7 @@
         "collapsed": true
       },
       "order": 38,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2225,7 +2225,7 @@
         "collapsed": true
       },
       "order": 39,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2265,7 +2265,7 @@
         "collapsed": true
       },
       "order": 40,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2305,7 +2305,7 @@
         "collapsed": true
       },
       "order": 41,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2345,7 +2345,7 @@
         "collapsed": true
       },
       "order": 42,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2383,7 +2383,7 @@
         "collapsed": true
       },
       "order": 43,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2423,7 +2423,7 @@
         "collapsed": true
       },
       "order": 44,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2463,7 +2463,7 @@
         "collapsed": true
       },
       "order": 45,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2503,7 +2503,7 @@
         "collapsed": true
       },
       "order": 46,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2543,7 +2543,7 @@
         "collapsed": true
       },
       "order": 47,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2583,7 +2583,7 @@
         "collapsed": true
       },
       "order": 48,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2623,7 +2623,7 @@
         "collapsed": true
       },
       "order": 49,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2663,7 +2663,7 @@
         "collapsed": true
       },
       "order": 320,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "LATENT",
@@ -2708,7 +2708,7 @@
         "collapsed": true
       },
       "order": 321,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "FLOAT",
@@ -2753,7 +2753,7 @@
         "collapsed": true
       },
       "order": 50,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2793,7 +2793,7 @@
         "collapsed": true
       },
       "order": 51,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2833,7 +2833,7 @@
         "collapsed": true
       },
       "order": 52,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2873,7 +2873,7 @@
         "collapsed": true
       },
       "order": 53,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2913,7 +2913,7 @@
         "collapsed": true
       },
       "order": 54,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2951,7 +2951,7 @@
         "collapsed": true
       },
       "order": 55,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -2991,7 +2991,7 @@
         "collapsed": true
       },
       "order": 56,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3031,7 +3031,7 @@
         "collapsed": true
       },
       "order": 57,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3071,7 +3071,7 @@
         "collapsed": true
       },
       "order": 58,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3111,7 +3111,7 @@
         "collapsed": true
       },
       "order": 59,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3151,7 +3151,7 @@
         "collapsed": true
       },
       "order": 60,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3191,7 +3191,7 @@
         "collapsed": true
       },
       "order": 61,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3231,7 +3231,7 @@
         "collapsed": true
       },
       "order": 317,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "FLOAT",
@@ -3276,7 +3276,7 @@
         "collapsed": true
       },
       "order": 62,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3316,7 +3316,7 @@
         "collapsed": true
       },
       "order": 63,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3356,7 +3356,7 @@
         "collapsed": true
       },
       "order": 64,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3396,7 +3396,7 @@
         "collapsed": true
       },
       "order": 65,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3436,7 +3436,7 @@
         "collapsed": true
       },
       "order": 66,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3474,7 +3474,7 @@
         "collapsed": true
       },
       "order": 67,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3514,7 +3514,7 @@
         "collapsed": true
       },
       "order": 68,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3554,7 +3554,7 @@
         "collapsed": true
       },
       "order": 69,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3594,7 +3594,7 @@
         "collapsed": true
       },
       "order": 70,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3634,7 +3634,7 @@
         "collapsed": true
       },
       "order": 71,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3674,7 +3674,7 @@
         "collapsed": true
       },
       "order": 72,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3714,7 +3714,7 @@
         "collapsed": true
       },
       "order": 73,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3794,7 +3794,7 @@
         "collapsed": true
       },
       "order": 75,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3834,7 +3834,7 @@
         "collapsed": true
       },
       "order": 76,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -3874,7 +3874,7 @@
         "collapsed": true
       },
       "order": 77,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -4108,7 +4108,7 @@
         "collapsed": true
       },
       "order": 83,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -4148,7 +4148,7 @@
         "collapsed": true
       },
       "order": 84,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -4188,7 +4188,7 @@
         "collapsed": true
       },
       "order": 85,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -4228,7 +4228,7 @@
         "collapsed": true
       },
       "order": 86,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -4268,7 +4268,7 @@
         "collapsed": true
       },
       "order": 87,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -4788,7 +4788,7 @@
         "collapsed": true
       },
       "order": 100,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -4828,7 +4828,7 @@
         "collapsed": true
       },
       "order": 101,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -4868,7 +4868,7 @@
         "collapsed": true
       },
       "order": 102,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -4908,7 +4908,7 @@
         "collapsed": true
       },
       "order": 103,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -4948,7 +4948,7 @@
         "collapsed": true
       },
       "order": 104,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -4988,7 +4988,7 @@
         "collapsed": true
       },
       "order": 105,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5028,7 +5028,7 @@
         "collapsed": true
       },
       "order": 106,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5068,7 +5068,7 @@
         "collapsed": true
       },
       "order": 107,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5108,7 +5108,7 @@
         "collapsed": true
       },
       "order": 108,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5148,7 +5148,7 @@
         "collapsed": true
       },
       "order": 109,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5188,7 +5188,7 @@
         "collapsed": true
       },
       "order": 110,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5228,7 +5228,7 @@
         "collapsed": true
       },
       "order": 111,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5268,7 +5268,7 @@
         "collapsed": true
       },
       "order": 112,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5308,7 +5308,7 @@
         "collapsed": true
       },
       "order": 309,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "LATENT",
@@ -5353,7 +5353,7 @@
         "collapsed": true
       },
       "order": 113,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5393,7 +5393,7 @@
         "collapsed": true
       },
       "order": 114,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5433,7 +5433,7 @@
         "collapsed": true
       },
       "order": 115,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5471,7 +5471,7 @@
         "collapsed": true
       },
       "order": 310,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "FLOAT",
@@ -5516,7 +5516,7 @@
         "collapsed": true
       },
       "order": 116,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5556,7 +5556,7 @@
         "collapsed": true
       },
       "order": 117,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5596,7 +5596,7 @@
         "collapsed": true
       },
       "order": 118,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5636,7 +5636,7 @@
         "collapsed": true
       },
       "order": 119,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5676,7 +5676,7 @@
         "collapsed": true
       },
       "order": 120,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5716,7 +5716,7 @@
         "collapsed": true
       },
       "order": 121,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5756,7 +5756,7 @@
         "collapsed": true
       },
       "order": 122,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5796,7 +5796,7 @@
         "collapsed": true
       },
       "order": 123,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5836,7 +5836,7 @@
         "collapsed": true
       },
       "order": 124,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5876,7 +5876,7 @@
         "collapsed": true
       },
       "order": 125,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5916,7 +5916,7 @@
         "collapsed": true
       },
       "order": 126,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5956,7 +5956,7 @@
         "collapsed": true
       },
       "order": 127,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -5996,7 +5996,7 @@
         "collapsed": true
       },
       "order": 128,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -6036,7 +6036,7 @@
         "collapsed": true
       },
       "order": 129,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -7275,7 +7275,7 @@
       ],
       "flags": {},
       "order": 141,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -7316,7 +7316,7 @@
       ],
       "flags": {},
       "order": 142,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -7357,7 +7357,7 @@
       ],
       "flags": {},
       "order": 143,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -7394,7 +7394,7 @@
       ],
       "flags": {},
       "order": 144,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -7431,7 +7431,7 @@
       ],
       "flags": {},
       "order": 145,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -7474,7 +7474,7 @@
         "collapsed": true
       },
       "order": 146,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -7590,7 +7590,7 @@
         "collapsed": true
       },
       "order": 149,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -7628,7 +7628,7 @@
         "collapsed": true
       },
       "order": 150,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -7666,7 +7666,7 @@
         "collapsed": true
       },
       "order": 151,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -7704,7 +7704,7 @@
         "collapsed": true
       },
       "order": 152,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -7742,7 +7742,7 @@
         "collapsed": true
       },
       "order": 153,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -7780,7 +7780,7 @@
         "collapsed": true
       },
       "order": 154,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -7818,7 +7818,7 @@
         "collapsed": true
       },
       "order": 155,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -7856,7 +7856,7 @@
         "collapsed": true
       },
       "order": 156,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -8127,7 +8127,7 @@
         "collapsed": true
       },
       "order": 163,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -8167,7 +8167,7 @@
         "collapsed": true
       },
       "order": 164,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -8207,7 +8207,7 @@
         "collapsed": true
       },
       "order": 165,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -8247,7 +8247,7 @@
         "collapsed": true
       },
       "order": 166,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -8407,7 +8407,7 @@
         "collapsed": true
       },
       "order": 170,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -8447,7 +8447,7 @@
         "collapsed": true
       },
       "order": 171,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -8487,7 +8487,7 @@
         "collapsed": true
       },
       "order": 172,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -8527,7 +8527,7 @@
         "collapsed": true
       },
       "order": 173,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -8687,7 +8687,7 @@
         "collapsed": true
       },
       "order": 177,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -8727,7 +8727,7 @@
         "collapsed": true
       },
       "order": 178,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -8767,7 +8767,7 @@
         "collapsed": true
       },
       "order": 179,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -8807,7 +8807,7 @@
         "collapsed": true
       },
       "order": 180,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -8967,7 +8967,7 @@
         "collapsed": true
       },
       "order": 184,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -9007,7 +9007,7 @@
         "collapsed": true
       },
       "order": 185,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -9047,7 +9047,7 @@
         "collapsed": true
       },
       "order": 186,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -9085,7 +9085,7 @@
       ],
       "flags": {},
       "order": 279,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "label": "duration",
@@ -9259,6 +9259,9 @@
           "label": "Upscale Scale",
           "name": "pass2_scale",
           "type": "FLOAT",
+          "widget": {
+            "name": "pass2_scale"
+          },
           "link": 1625
         },
         {
@@ -9346,6 +9349,7 @@
         2.5,
         0.28,
         true,
+        1.6,
         1.5,
         4,
         0.3
@@ -9362,6 +9366,7 @@
         "face_refine_crop_factor": 2.5,
         "face_refine_identity_threshold": 0.28,
         "use_latent_upscale": true,
+        "pass2_scale": 1.6,
         "pass2_steps": 1.5,
         "pass2_denoise": 4,
         "use_face_refine": 0.3
@@ -9382,7 +9387,7 @@
         "collapsed": true
       },
       "order": 187,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -9420,7 +9425,7 @@
       ],
       "flags": {},
       "order": 282,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "label": "duration",
@@ -9594,6 +9599,9 @@
           "label": "Upscale Scale",
           "name": "pass2_scale",
           "type": "FLOAT",
+          "widget": {
+            "name": "pass2_scale"
+          },
           "link": 1626
         },
         {
@@ -9681,6 +9689,7 @@
         2.5,
         0.28,
         true,
+        1.6,
         1.5,
         4,
         0.3
@@ -9697,6 +9706,7 @@
         "face_refine_crop_factor": 2.5,
         "face_refine_identity_threshold": 0.28,
         "use_latent_upscale": true,
+        "pass2_scale": 1.6,
         "pass2_steps": 1.5,
         "pass2_denoise": 4,
         "use_face_refine": 0.3
@@ -9969,6 +9979,9 @@
           "label": "Upscale Scale",
           "name": "pass2_scale",
           "type": "FLOAT",
+          "widget": {
+            "name": "pass2_scale"
+          },
           "link": 1628
         },
         {
@@ -10056,6 +10069,7 @@
         2.5,
         0.28,
         true,
+        1.6,
         1.5,
         4,
         0.3
@@ -10072,6 +10086,7 @@
         "face_refine_crop_factor": 2.5,
         "face_refine_identity_threshold": 0.28,
         "use_latent_upscale": true,
+        "pass2_scale": 1.6,
         "pass2_steps": 1.5,
         "pass2_denoise": 4,
         "use_face_refine": 0.3
@@ -10264,6 +10279,9 @@
           "label": "Upscale Scale",
           "name": "pass2_scale",
           "type": "FLOAT",
+          "widget": {
+            "name": "pass2_scale"
+          },
           "link": 1627
         },
         {
@@ -10351,6 +10369,7 @@
         2.5,
         0.28,
         true,
+        1.6,
         1.5,
         4,
         0.3
@@ -10367,6 +10386,7 @@
         "face_refine_crop_factor": 2.5,
         "face_refine_identity_threshold": 0.28,
         "use_latent_upscale": true,
+        "pass2_scale": 1.6,
         "pass2_steps": 1.5,
         "pass2_denoise": 4,
         "use_face_refine": 0.3
@@ -12059,10 +12079,10 @@
         "Node name for S&R": "FloatConstant"
       },
       "widgets_values": [
-        1.6
+        1.18
       ],
       "widgets_values_named": {
-        "value": 1.6
+        "value": 1.18
       },
       "color": "#232",
       "bgcolor": "#353"
@@ -12097,19 +12117,19 @@
           "links": []
         },
         {
-          "label": "1296 width",
+          "label": "1856 width",
           "name": "width",
           "type": "INT",
           "links": null
         },
         {
-          "label": "776 height",
+          "label": "1040 height",
           "name": "height",
           "type": "INT",
           "links": null
         },
         {
-          "label": "56 count",
+          "label": "294 count",
           "name": "count",
           "type": "INT",
           "links": [
@@ -12631,6 +12651,9 @@
           "label": "Upscale Scale",
           "name": "pass2_scale",
           "type": "FLOAT",
+          "widget": {
+            "name": "pass2_scale"
+          },
           "link": 1622
         },
         {
@@ -12705,6 +12728,7 @@
         2.5,
         0.28,
         true,
+        1.6,
         1.5,
         4,
         0.3
@@ -12721,6 +12745,7 @@
         "face_refine_crop_factor": 2.5,
         "face_refine_identity_threshold": 0.28,
         "use_latent_upscale": true,
+        "pass2_scale": 1.6,
         "pass2_steps": 1.5,
         "pass2_denoise": 4,
         "use_face_refine": 0.3
@@ -12913,6 +12938,9 @@
           "label": "Upscale Scale",
           "name": "pass2_scale",
           "type": "FLOAT",
+          "widget": {
+            "name": "pass2_scale"
+          },
           "link": 1623
         },
         {
@@ -13000,6 +13028,7 @@
         2.5,
         0.28,
         true,
+        1.6,
         1.5,
         4,
         0.3
@@ -13016,6 +13045,7 @@
         "face_refine_crop_factor": 2.5,
         "face_refine_identity_threshold": 0.28,
         "use_latent_upscale": true,
+        "pass2_scale": 1.6,
         "pass2_steps": 1.5,
         "pass2_denoise": 4,
         "use_face_refine": 0.3
@@ -13034,7 +13064,7 @@
       ],
       "flags": {},
       "order": 289,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "label": "duration",
@@ -13208,6 +13238,9 @@
           "label": "Upscale Scale",
           "name": "pass2_scale",
           "type": "FLOAT",
+          "widget": {
+            "name": "pass2_scale"
+          },
           "link": 1624
         },
         {
@@ -13295,6 +13328,7 @@
         2.5,
         0.28,
         true,
+        1.6,
         1.5,
         4,
         0.3
@@ -13311,6 +13345,7 @@
         "face_refine_crop_factor": 2.5,
         "face_refine_identity_threshold": 0.28,
         "use_latent_upscale": true,
+        "pass2_scale": 1.6,
         "pass2_steps": 1.5,
         "pass2_denoise": 4,
         "use_face_refine": 0.3
@@ -13458,7 +13493,7 @@
       ],
       "flags": {},
       "order": 210,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -13490,8 +13525,8 @@
       "id": 508,
       "type": "LoadImage",
       "pos": [
-        -77.29527170276607,
-        7797.486583153791
+        -81.94564112473509,
+        7750.982888934101
       ],
       "size": [
         229.36520215589724,
@@ -13501,7 +13536,7 @@
         "collapsed": false
       },
       "order": 211,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -13614,12 +13649,12 @@
       },
       "widgets_values": [
         "16:9 (Widescreen)",
-        0.2,
+        0.4,
         32
       ],
       "widgets_values_named": {
         "aspect_ratio": "16:9 (Widescreen)",
-        "megapixels": 0.2,
+        "megapixels": 0.4,
         "multiple": 32
       },
       "color": "#322",
@@ -14109,10 +14144,10 @@
         "Node name for S&R": "PrimitiveFloat"
       },
       "widgets_values": [
-        1
+        5
       ],
       "widgets_values_named": {
-        "value": 1
+        "value": 5
       },
       "color": "#232",
       "bgcolor": "#353"
@@ -14165,7 +14200,7 @@
       ],
       "flags": {},
       "order": 223,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -14343,7 +14378,7 @@
         "collapsed": false
       },
       "order": 229,
-      "mode": 0,
+      "mode": 4,
       "inputs": [],
       "outputs": [
         {
@@ -14359,10 +14394,10 @@
         "Node name for S&R": "FloatConstant"
       },
       "widgets_values": [
-        1.35
+        1.6
       ],
       "widgets_values_named": {
-        "value": 1.35
+        "value": 1.6
       },
       "color": "#232",
       "bgcolor": "#353"
@@ -14396,10 +14431,10 @@
         "Node name for S&R": "PrimitiveStringMultiline"
       },
       "widgets_values": [
-        "subject_definitions:\n<Subject 1> is the female protagonist defined by <Picture 1>, preserving her identity, facial features, hairstyle, clothing, body proportions, and overall appearance from the protagonist style sheet.\n<Subject 2> is the bright morning home interior defined by <Picture 3>, featuring a large window, white curtains, a clean white-and-beige interior palette, and a fresh, uncluttered residential atmosphere.\n<Audio 1> is the Master Song used as the musical reference for this MV, with this clip corresponding to its bright introductory section.\n\nsummary:\n[reference generation + audio reference] The target video is a 2-second opening shot for a refreshing soft-drink commercial-style music video. <Subject 1> stands beside the window in <Subject 2> and naturally opens the curtain, allowing the morning light to spread into the room. The shot visually matches the bright beginning of <Audio 1> and establishes the start of a fresh new day.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - preserve the protagonist's established identity, facial features, hairstyle, clothing, proportions, and overall appearance from <Picture 1>.\n<Subject 2> (appears in [Shot 1]): fully_preserved - preserve the large window, white curtains, white-and-beige interior design, clean spatial appearance, and bright morning-home atmosphere from <Picture 3>.\n<Audio 1>: reference - use the bright introductory character and timing of the Master Song to guide the visual rhythm of the opening shot without introducing dialogue or narration.\n\ndetailed_description:\nThe target video uses a bright, clean, refreshing commercial-style visual treatment appropriate for a soft-drink MV. The image should feel natural, polished, airy, and optimistic, with soft morning daylight and a clear sense that a new day is beginning.\n\n[Shot 1] The scene opens inside <Subject 2>, the bright morning home from <Picture 3>. A large window and its white curtains occupy a clearly visible part of the frame, while the surrounding interior retains its clean white-and-beige color palette and uncluttered residential appearance. <Subject 1>, the female protagonist from <Picture 1>, stands near the window, positioned around the center to slightly left of frame. Keep her large enough in the composition for her facial features to remain clearly recognizable and stable while still showing the window and the morning light around her.\n\nThe camera begins from inside the room in a medium shot facing toward the window. <Subject 1> has a calm, natural morning expression with only a slight sense of anticipation for the day ahead rather than a broad or exaggerated smile. She naturally raises one or both hands to the curtain and performs one simple action: opening the curtain. Do not add additional large gestures, walking, turning, posing, or unnecessary secondary actions.\n\nAs the curtain opens, soft natural morning light becomes more prominent and spreads gently into the room, revealing both the bright interior and a glimpse of clear blue sky outside. The lighting transition should feel physically motivated by the curtain movement, with no abrupt exposure jump. The camera makes only a very slow, subtle push forward synchronized with the curtain opening, keeping the framing stable and commercial-like rather than dramatic.\n\nThe composition continues to balance <Subject 1> with the large window and incoming daylight. Preserve the clean white curtains, the bright interior surfaces, and the fresh domestic environment from <Subject 2>. The subject's face, hairstyle, clothing, and body proportions remain consistent with <Subject 1> throughout the brief shot.\n\nThe action completes within the 2-second duration with the curtain opened and the room filled with morning light. End on a bright, fresh visual state that naturally prepares the transition into the following going-out scene. The visual rhythm should align with the introductory portion of <Audio 1>, using the opening of the curtain and the arrival of daylight as the visual expression of the Master Song's bright beginning. There is no spoken dialogue and no narration.\n\noverall_soundscape:\nNo dialogue or narration. Keep natural indoor environmental sound extremely restrained and secondary so that it does not compete with the Master Song. Any subtle curtain movement sound should remain realistic and unobtrusive.\n\nnon_diegetic_music:\n<Audio 1> provides the Master Song's bright introductory section. Keep the music clearly present and synchronized with the fresh opening of the MV, with the curtain-opening action and the spread of morning light visually matching the beginning of the song.\n"
+        "subject_definitions:\n<Subject 1> is the female protagonist defined by <Picture 1>, preserving her identity, facial features, hairstyle, clothing, body proportions, and overall appearance from the protagonist style sheet.\n<Subject 2> is the bright morning home interior defined by <Picture 3>, featuring a large window, white curtains, a clean white-and-beige interior palette, and a fresh, uncluttered residential atmosphere.\n<Audio 1> is the Master Song used as the musical reference for this MV, with this clip corresponding to its bright introductory section.\n\nsummary:\n[reference generation + audio reference] The target video is a 2-second opening shot for a refreshing soft-drink commercial-style music video. <Subject 1> stands beside the window in <Subject 2> and naturally opens the curtain, allowing the morning light to spread into the room. The shot visually matches the bright beginning of <Audio 1> and establishes the start of a fresh new day.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - preserve the protagonist's established identity, facial features, hairstyle, clothing, proportions, and overall appearance from <Picture 1>.\n<Subject 2> (appears in [Shot 1]): fully_preserved - preserve the large window, white curtains, white-and-beige interior design, clean spatial appearance, and bright morning-home atmosphere from <Picture 3>.\n<Audio 1>: reference - use the bright introductory character and timing of the Master Song to guide the visual rhythm of the opening shot without introducing dialogue or narration.\n\ndetailed_description:\nThe target video uses a bright, clean, refreshing commercial-style visual treatment appropriate for a soft-drink MV. The image should feel natural, polished, airy, and optimistic, with soft morning daylight and a clear sense that a new day is beginning.\n\n[Shot 1] The scene opens inside <Subject 2>, the bright morning home from <Picture 3>. A large window and its white curtains occupy a clearly visible part of the frame, while the surrounding interior retains its clean white-and-beige color palette and uncluttered residential appearance. <Subject 1>, the female protagonist from <Picture 1>, stands near the window, positioned around the center to slightly left of frame. Keep her large enough in the composition for her facial features to remain clearly recognizable and stable while still showing the window and the morning light around her.\n\nThe camera begins from inside the room in a medium shot facing toward the window. <Subject 1> has a calm, natural morning expression with only a slight sense of anticipation for the day ahead rather than a broad or exaggerated smile. She naturally raises one or both hands to the curtain and performs one simple action: opening the curtain. Do not add additional large gestures, walking, turning, posing, or unnecessary secondary actions.\n\nAs the curtain opens, soft natural morning light becomes more prominent and spreads gently into the room, revealing both the bright interior and a glimpse of clear blue sky outside. The lighting transition should feel physically motivated by the curtain movement, with no abrupt exposure jump. The camera makes only a very slow, subtle push forward synchronized with the curtain opening, keeping the framing stable and commercial-like rather than dramatic.\n\nThe composition continues to balance <Subject 1> with the large window and incoming daylight. Preserve the clean white curtains, the bright interior surfaces, and the fresh domestic environment from <Subject 2>. The subject's face, hairstyle, clothing, and body proportions remain consistent with <Subject 1> throughout the brief shot.\n\nThe action completes within the 2-second duration with the curtain opened and the room filled with morning light. End on a bright, fresh visual state that naturally prepares the transition into the following going-out scene. The visual rhythm should align with the introductory portion of <Audio 1>, using the opening of the curtain and the arrival of daylight as the visual expression of the Master Song's bright beginning. There is no spoken dialogue and no narration.\n\noverall_soundscape:\nNo dialogue or narration. Keep natural indoor environmental sound extremely restrained and secondary so that it does not compete with the Master Song. Any subtle curtain movement sound should remain realistic and unobtrusive.\n\nnon_diegetic_music:\n<Audio 1> provides the Master Song's bright introductory section. Keep the music clearly present and synchronized with the fresh opening of the MV, with the curtain-opening action and the spread of morning light visually matching the beginning of the song.\n\n"
       ],
       "widgets_values_named": {
-        "value": "subject_definitions:\n<Subject 1> is the female protagonist defined by <Picture 1>, preserving her identity, facial features, hairstyle, clothing, body proportions, and overall appearance from the protagonist style sheet.\n<Subject 2> is the bright morning home interior defined by <Picture 3>, featuring a large window, white curtains, a clean white-and-beige interior palette, and a fresh, uncluttered residential atmosphere.\n<Audio 1> is the Master Song used as the musical reference for this MV, with this clip corresponding to its bright introductory section.\n\nsummary:\n[reference generation + audio reference] The target video is a 2-second opening shot for a refreshing soft-drink commercial-style music video. <Subject 1> stands beside the window in <Subject 2> and naturally opens the curtain, allowing the morning light to spread into the room. The shot visually matches the bright beginning of <Audio 1> and establishes the start of a fresh new day.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - preserve the protagonist's established identity, facial features, hairstyle, clothing, proportions, and overall appearance from <Picture 1>.\n<Subject 2> (appears in [Shot 1]): fully_preserved - preserve the large window, white curtains, white-and-beige interior design, clean spatial appearance, and bright morning-home atmosphere from <Picture 3>.\n<Audio 1>: reference - use the bright introductory character and timing of the Master Song to guide the visual rhythm of the opening shot without introducing dialogue or narration.\n\ndetailed_description:\nThe target video uses a bright, clean, refreshing commercial-style visual treatment appropriate for a soft-drink MV. The image should feel natural, polished, airy, and optimistic, with soft morning daylight and a clear sense that a new day is beginning.\n\n[Shot 1] The scene opens inside <Subject 2>, the bright morning home from <Picture 3>. A large window and its white curtains occupy a clearly visible part of the frame, while the surrounding interior retains its clean white-and-beige color palette and uncluttered residential appearance. <Subject 1>, the female protagonist from <Picture 1>, stands near the window, positioned around the center to slightly left of frame. Keep her large enough in the composition for her facial features to remain clearly recognizable and stable while still showing the window and the morning light around her.\n\nThe camera begins from inside the room in a medium shot facing toward the window. <Subject 1> has a calm, natural morning expression with only a slight sense of anticipation for the day ahead rather than a broad or exaggerated smile. She naturally raises one or both hands to the curtain and performs one simple action: opening the curtain. Do not add additional large gestures, walking, turning, posing, or unnecessary secondary actions.\n\nAs the curtain opens, soft natural morning light becomes more prominent and spreads gently into the room, revealing both the bright interior and a glimpse of clear blue sky outside. The lighting transition should feel physically motivated by the curtain movement, with no abrupt exposure jump. The camera makes only a very slow, subtle push forward synchronized with the curtain opening, keeping the framing stable and commercial-like rather than dramatic.\n\nThe composition continues to balance <Subject 1> with the large window and incoming daylight. Preserve the clean white curtains, the bright interior surfaces, and the fresh domestic environment from <Subject 2>. The subject's face, hairstyle, clothing, and body proportions remain consistent with <Subject 1> throughout the brief shot.\n\nThe action completes within the 2-second duration with the curtain opened and the room filled with morning light. End on a bright, fresh visual state that naturally prepares the transition into the following going-out scene. The visual rhythm should align with the introductory portion of <Audio 1>, using the opening of the curtain and the arrival of daylight as the visual expression of the Master Song's bright beginning. There is no spoken dialogue and no narration.\n\noverall_soundscape:\nNo dialogue or narration. Keep natural indoor environmental sound extremely restrained and secondary so that it does not compete with the Master Song. Any subtle curtain movement sound should remain realistic and unobtrusive.\n\nnon_diegetic_music:\n<Audio 1> provides the Master Song's bright introductory section. Keep the music clearly present and synchronized with the fresh opening of the MV, with the curtain-opening action and the spread of morning light visually matching the beginning of the song.\n"
+        "value": "subject_definitions:\n<Subject 1> is the female protagonist defined by <Picture 1>, preserving her identity, facial features, hairstyle, clothing, body proportions, and overall appearance from the protagonist style sheet.\n<Subject 2> is the bright morning home interior defined by <Picture 3>, featuring a large window, white curtains, a clean white-and-beige interior palette, and a fresh, uncluttered residential atmosphere.\n<Audio 1> is the Master Song used as the musical reference for this MV, with this clip corresponding to its bright introductory section.\n\nsummary:\n[reference generation + audio reference] The target video is a 2-second opening shot for a refreshing soft-drink commercial-style music video. <Subject 1> stands beside the window in <Subject 2> and naturally opens the curtain, allowing the morning light to spread into the room. The shot visually matches the bright beginning of <Audio 1> and establishes the start of a fresh new day.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - preserve the protagonist's established identity, facial features, hairstyle, clothing, proportions, and overall appearance from <Picture 1>.\n<Subject 2> (appears in [Shot 1]): fully_preserved - preserve the large window, white curtains, white-and-beige interior design, clean spatial appearance, and bright morning-home atmosphere from <Picture 3>.\n<Audio 1>: reference - use the bright introductory character and timing of the Master Song to guide the visual rhythm of the opening shot without introducing dialogue or narration.\n\ndetailed_description:\nThe target video uses a bright, clean, refreshing commercial-style visual treatment appropriate for a soft-drink MV. The image should feel natural, polished, airy, and optimistic, with soft morning daylight and a clear sense that a new day is beginning.\n\n[Shot 1] The scene opens inside <Subject 2>, the bright morning home from <Picture 3>. A large window and its white curtains occupy a clearly visible part of the frame, while the surrounding interior retains its clean white-and-beige color palette and uncluttered residential appearance. <Subject 1>, the female protagonist from <Picture 1>, stands near the window, positioned around the center to slightly left of frame. Keep her large enough in the composition for her facial features to remain clearly recognizable and stable while still showing the window and the morning light around her.\n\nThe camera begins from inside the room in a medium shot facing toward the window. <Subject 1> has a calm, natural morning expression with only a slight sense of anticipation for the day ahead rather than a broad or exaggerated smile. She naturally raises one or both hands to the curtain and performs one simple action: opening the curtain. Do not add additional large gestures, walking, turning, posing, or unnecessary secondary actions.\n\nAs the curtain opens, soft natural morning light becomes more prominent and spreads gently into the room, revealing both the bright interior and a glimpse of clear blue sky outside. The lighting transition should feel physically motivated by the curtain movement, with no abrupt exposure jump. The camera makes only a very slow, subtle push forward synchronized with the curtain opening, keeping the framing stable and commercial-like rather than dramatic.\n\nThe composition continues to balance <Subject 1> with the large window and incoming daylight. Preserve the clean white curtains, the bright interior surfaces, and the fresh domestic environment from <Subject 2>. The subject's face, hairstyle, clothing, and body proportions remain consistent with <Subject 1> throughout the brief shot.\n\nThe action completes within the 2-second duration with the curtain opened and the room filled with morning light. End on a bright, fresh visual state that naturally prepares the transition into the following going-out scene. The visual rhythm should align with the introductory portion of <Audio 1>, using the opening of the curtain and the arrival of daylight as the visual expression of the Master Song's bright beginning. There is no spoken dialogue and no narration.\n\noverall_soundscape:\nNo dialogue or narration. Keep natural indoor environmental sound extremely restrained and secondary so that it does not compete with the Master Song. Any subtle curtain movement sound should remain realistic and unobtrusive.\n\nnon_diegetic_music:\n<Audio 1> provides the Master Song's bright introductory section. Keep the music clearly present and synchronized with the fresh opening of the MV, with the curtain-opening action and the spread of morning light visually matching the beginning of the song.\n\n"
       },
       "color": "#232",
       "bgcolor": "#353"
@@ -14417,7 +14452,7 @@
       ],
       "flags": {},
       "order": 231,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -14433,10 +14468,10 @@
         "Node name for S&R": "PrimitiveStringMultiline"
       },
       "widgets_values": [
-        "subject_definitions:\n<Subject 1> is the female protagonist defined by <Picture 1>, preserving her identity, facial features, hairstyle, outfit, age impression, and overall appearance.\n<Subject 2> is the bright morning home interior defined by <Picture 3>, preserving the same clean residential environment, window-side area, exit direction, bright white-toned morning light, and overall spatial appearance.\n<Audio 1> is the Master Song audio reference used to synchronize the scene with the musical transition from the intro toward the moment immediately before the lyric phrase 「風を」 begins.\n\nsummary:\n[reference generation + audio reference] The target video is a 2-second music-video shot in which <Subject 1> leaves the bright morning home environment of <Subject 2>. She carries a bag and begins walking toward the exit with a natural, lightly positive expression. The camera briefly follows from a diagonal rear angle, creating a direct visual transition from the morning opening into the following city-walking scene. The timing follows <Audio 1> as the intro begins to gain forward momentum immediately before 「風を」.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the protagonist's identity, facial characteristics, hairstyle, clothing, and overall appearance from <Picture 1> are maintained without redesign.\n<Subject 2> (appears in [Shot 1]): fully_preserved - the bright home interior, morning atmosphere, white-toned natural light, and recognizable environmental appearance from <Picture 3> are maintained while the protagonist moves toward the exit.\n<Audio 1>: reference - the Master Song provides the musical timing and forward momentum for the shot, specifically covering the intro immediately before the lyric phrase 「風を」 begins.\n\ndetailed_description:\nThe target video uses a bright, clean Japanese commercial-style music-video aesthetic with fresh morning light, natural movement, and a light, positive tone.\n[Shot 1] <Subject 1>, the same female protagonist defined by <Picture 1>, is already inside <Subject 2>, the bright morning home environment defined by <Picture 3>. She carries a bag naturally at her side and begins walking toward the exit. Her action remains simple and focused: she only starts walking out, without stopping, turning dramatically, waving, or adding any other large gesture. Her expression is natural and lightly cheerful, with only a small, relaxed smile suggesting a positive mood about going out. The camera follows her briefly from a diagonal rear angle at a stable walking pace, keeping approximately her upper body through full body visible while preserving enough subject scale for clear and consistent facial and body features. Leave open visual space in front of her walking direction so the composition clearly communicates that she is heading outside. Preserve the recognizable spatial appearance of <Subject 2>; the bright interior remains behind and around her while the exit direction stays visually clear. Morning daylight remains bright, soft, and slightly white-toned, maintaining continuity with the fresh beginning of the day. The shot should feel like a direct continuation of the previous scene in which the morning begins, while her first steps establish the movement that will continue into the following city-walking scene. The visual action is synchronized to <Audio 1>: the shot occurs during the intro as the music begins to move forward, ending immediately before the lyric phrase <d>[Japanese] 風を</d> begins. No spoken dialogue or narration is produced by the protagonist.\n\noverall_soundscape:\nNatural indoor environmental sound remains restrained and secondary to <Audio 1>, with only subtle synchronized movement sounds from the protagonist walking and carrying her bag. No dialogue or narration.\n\nnon_diegetic_music:\n<Audio 1> provides the continuing Master Song for the scene. This 2-second segment follows the intro as the musical energy begins moving forward and leads directly into the moment immediately before the lyric phrase 「風を」 begins.\n"
+        "subject_definitions:\n<Subject 1> is the single female protagonist defined by <Picture 1>, preserving her identity, facial features, hairstyle, outfit, age impression, body proportions, and overall appearance. <Subject 1> is the only human person visible in the entire video.\n<Subject 2> is the bright morning home interior environment defined by <Picture 3>, preserving the same clean residential environment, window-side area, exit direction, bright white-toned morning light, and overall spatial appearance. <Subject 2> is an environment only and must not introduce any additional person or human figure.\n<Audio 1> is the Master Song audio reference used to synchronize the scene with the musical transition from the intro toward the moment immediately before the lyric phrase 「風を」 begins.\n\nsummary:\n[reference generation + audio reference] The target video is a 2-second music-video shot featuring exactly one human person: <Subject 1>. She leaves the bright morning home environment of <Subject 2>. She carries a bag and begins walking naturally toward the exit with a lightly positive expression. The camera briefly follows the same single protagonist from a diagonal rear angle, creating a direct visual transition from the morning opening into the following city-walking scene.\n\nOnly one instance of <Subject 1> exists throughout the entire shot. Do not create, duplicate, introduce, reveal, or generate any second person at any time.\n\nThe timing follows <Audio 1> as the intro begins to gain forward momentum immediately before 「風を」.\n\nretention_analysis:\n<Subject 1> (appears continuously in [Shot 1]): fully_preserved - exactly one instance of the protagonist remains visible throughout the shot. Her identity, facial characteristics, hairstyle, clothing, body proportions, and overall appearance from <Picture 1> remain consistent without duplication, replacement, transformation, or redesign.\n\n<Subject 2> (environment in [Shot 1]): fully_preserved - the bright home interior, morning atmosphere, white-toned natural light, and recognizable environmental appearance from <Picture 3> are maintained while <Subject 1> moves toward the exit. The environment contains no other people.\n\n<Audio 1>: reference - the Master Song provides the musical timing and forward momentum for the shot, specifically covering the intro immediately before the lyric phrase 「風を」 begins.\n\ndetailed_description:\nThe target video uses a bright, clean Japanese commercial-style music-video aesthetic with fresh morning light, natural movement, and a light, positive tone.\n\n[Shot 1]\n\nExactly one human person is present in the entire shot: <Subject 1>.\n\nAt the beginning of the shot, <Subject 1>, the same female protagonist defined by <Picture 1>, is already standing inside the bright morning home environment defined by <Picture 3>.\n\nShe carries one bag naturally at her side and immediately begins walking toward the exit.\n\nThe same single protagonist continues this one continuous walking action from the first frame to the final frame. Her body remains one continuous physical subject throughout the motion.\n\nDo not duplicate <Subject 1>.\nDo not generate a second woman.\nDo not create another version of the protagonist near the exit.\nDo not introduce another person from the background.\nDo not create additional human figures when the camera moves.\nDo not split the protagonist into multiple bodies.\nDo not replace the protagonist with another person during movement.\n\nNo other people are present anywhere in the room, doorway, hallway, background, foreground, or outside the exit.\n\nThere must also be no human reflections, mirror duplicates, glass reflections resembling another person, silhouettes, shadows shaped like another person, photographs containing visible people, or background pedestrians.\n\n<Subject 1>'s action remains extremely simple and continuous: she walks naturally forward toward the exit while carrying her bag.\n\nShe does not stop.\nShe does not turn around.\nShe does not cross paths with anyone.\nShe does not interact with another person.\nShe does not make any large gesture.\n\nHer expression is natural and lightly cheerful, with only a small relaxed smile suggesting a positive mood about going out.\n\nThe camera follows the same single protagonist briefly from a diagonal rear three-quarter angle at a stable walking pace.\n\nMaintain continuous camera tracking of the same physical person. Keep <Subject 1> clearly identifiable as one continuous subject throughout the camera movement.\n\nKeep approximately her upper body through full body visible, avoiding extreme cropping or temporary disappearance of the protagonist from the frame.\n\nDo not allow <Subject 1> to completely leave the frame before the shot ends.\n\nLeave open visual space in front of her walking direction so the composition clearly communicates that she is heading toward the exit.\n\nPreserve the recognizable spatial appearance of <Subject 2>. The bright interior remains behind and around her while the exit direction stays visually clear.\n\nThe doorway and exit area remain empty except for <Subject 1> approaching them. No person is waiting at, entering through, or appearing beyond the doorway.\n\nMorning daylight remains bright, soft, and slightly white-toned, maintaining continuity with the fresh beginning of the day.\n\nThe shot should feel like one continuous take with no cuts, no scene transition inside the shot, no subject replacement, and no temporal jump.\n\nThe shot is a direct continuation of the previous scene in which the morning begins, while <"
       ],
       "widgets_values_named": {
-        "value": "subject_definitions:\n<Subject 1> is the female protagonist defined by <Picture 1>, preserving her identity, facial features, hairstyle, outfit, age impression, and overall appearance.\n<Subject 2> is the bright morning home interior defined by <Picture 3>, preserving the same clean residential environment, window-side area, exit direction, bright white-toned morning light, and overall spatial appearance.\n<Audio 1> is the Master Song audio reference used to synchronize the scene with the musical transition from the intro toward the moment immediately before the lyric phrase 「風を」 begins.\n\nsummary:\n[reference generation + audio reference] The target video is a 2-second music-video shot in which <Subject 1> leaves the bright morning home environment of <Subject 2>. She carries a bag and begins walking toward the exit with a natural, lightly positive expression. The camera briefly follows from a diagonal rear angle, creating a direct visual transition from the morning opening into the following city-walking scene. The timing follows <Audio 1> as the intro begins to gain forward momentum immediately before 「風を」.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the protagonist's identity, facial characteristics, hairstyle, clothing, and overall appearance from <Picture 1> are maintained without redesign.\n<Subject 2> (appears in [Shot 1]): fully_preserved - the bright home interior, morning atmosphere, white-toned natural light, and recognizable environmental appearance from <Picture 3> are maintained while the protagonist moves toward the exit.\n<Audio 1>: reference - the Master Song provides the musical timing and forward momentum for the shot, specifically covering the intro immediately before the lyric phrase 「風を」 begins.\n\ndetailed_description:\nThe target video uses a bright, clean Japanese commercial-style music-video aesthetic with fresh morning light, natural movement, and a light, positive tone.\n[Shot 1] <Subject 1>, the same female protagonist defined by <Picture 1>, is already inside <Subject 2>, the bright morning home environment defined by <Picture 3>. She carries a bag naturally at her side and begins walking toward the exit. Her action remains simple and focused: she only starts walking out, without stopping, turning dramatically, waving, or adding any other large gesture. Her expression is natural and lightly cheerful, with only a small, relaxed smile suggesting a positive mood about going out. The camera follows her briefly from a diagonal rear angle at a stable walking pace, keeping approximately her upper body through full body visible while preserving enough subject scale for clear and consistent facial and body features. Leave open visual space in front of her walking direction so the composition clearly communicates that she is heading outside. Preserve the recognizable spatial appearance of <Subject 2>; the bright interior remains behind and around her while the exit direction stays visually clear. Morning daylight remains bright, soft, and slightly white-toned, maintaining continuity with the fresh beginning of the day. The shot should feel like a direct continuation of the previous scene in which the morning begins, while her first steps establish the movement that will continue into the following city-walking scene. The visual action is synchronized to <Audio 1>: the shot occurs during the intro as the music begins to move forward, ending immediately before the lyric phrase <d>[Japanese] 風を</d> begins. No spoken dialogue or narration is produced by the protagonist.\n\noverall_soundscape:\nNatural indoor environmental sound remains restrained and secondary to <Audio 1>, with only subtle synchronized movement sounds from the protagonist walking and carrying her bag. No dialogue or narration.\n\nnon_diegetic_music:\n<Audio 1> provides the continuing Master Song for the scene. This 2-second segment follows the intro as the musical energy begins moving forward and leads directly into the moment immediately before the lyric phrase 「風を」 begins.\n"
+        "value": "subject_definitions:\n<Subject 1> is the single female protagonist defined by <Picture 1>, preserving her identity, facial features, hairstyle, outfit, age impression, body proportions, and overall appearance. <Subject 1> is the only human person visible in the entire video.\n<Subject 2> is the bright morning home interior environment defined by <Picture 3>, preserving the same clean residential environment, window-side area, exit direction, bright white-toned morning light, and overall spatial appearance. <Subject 2> is an environment only and must not introduce any additional person or human figure.\n<Audio 1> is the Master Song audio reference used to synchronize the scene with the musical transition from the intro toward the moment immediately before the lyric phrase 「風を」 begins.\n\nsummary:\n[reference generation + audio reference] The target video is a 2-second music-video shot featuring exactly one human person: <Subject 1>. She leaves the bright morning home environment of <Subject 2>. She carries a bag and begins walking naturally toward the exit with a lightly positive expression. The camera briefly follows the same single protagonist from a diagonal rear angle, creating a direct visual transition from the morning opening into the following city-walking scene.\n\nOnly one instance of <Subject 1> exists throughout the entire shot. Do not create, duplicate, introduce, reveal, or generate any second person at any time.\n\nThe timing follows <Audio 1> as the intro begins to gain forward momentum immediately before 「風を」.\n\nretention_analysis:\n<Subject 1> (appears continuously in [Shot 1]): fully_preserved - exactly one instance of the protagonist remains visible throughout the shot. Her identity, facial characteristics, hairstyle, clothing, body proportions, and overall appearance from <Picture 1> remain consistent without duplication, replacement, transformation, or redesign.\n\n<Subject 2> (environment in [Shot 1]): fully_preserved - the bright home interior, morning atmosphere, white-toned natural light, and recognizable environmental appearance from <Picture 3> are maintained while <Subject 1> moves toward the exit. The environment contains no other people.\n\n<Audio 1>: reference - the Master Song provides the musical timing and forward momentum for the shot, specifically covering the intro immediately before the lyric phrase 「風を」 begins.\n\ndetailed_description:\nThe target video uses a bright, clean Japanese commercial-style music-video aesthetic with fresh morning light, natural movement, and a light, positive tone.\n\n[Shot 1]\n\nExactly one human person is present in the entire shot: <Subject 1>.\n\nAt the beginning of the shot, <Subject 1>, the same female protagonist defined by <Picture 1>, is already standing inside the bright morning home environment defined by <Picture 3>.\n\nShe carries one bag naturally at her side and immediately begins walking toward the exit.\n\nThe same single protagonist continues this one continuous walking action from the first frame to the final frame. Her body remains one continuous physical subject throughout the motion.\n\nDo not duplicate <Subject 1>.\nDo not generate a second woman.\nDo not create another version of the protagonist near the exit.\nDo not introduce another person from the background.\nDo not create additional human figures when the camera moves.\nDo not split the protagonist into multiple bodies.\nDo not replace the protagonist with another person during movement.\n\nNo other people are present anywhere in the room, doorway, hallway, background, foreground, or outside the exit.\n\nThere must also be no human reflections, mirror duplicates, glass reflections resembling another person, silhouettes, shadows shaped like another person, photographs containing visible people, or background pedestrians.\n\n<Subject 1>'s action remains extremely simple and continuous: she walks naturally forward toward the exit while carrying her bag.\n\nShe does not stop.\nShe does not turn around.\nShe does not cross paths with anyone.\nShe does not interact with another person.\nShe does not make any large gesture.\n\nHer expression is natural and lightly cheerful, with only a small relaxed smile suggesting a positive mood about going out.\n\nThe camera follows the same single protagonist briefly from a diagonal rear three-quarter angle at a stable walking pace.\n\nMaintain continuous camera tracking of the same physical person. Keep <Subject 1> clearly identifiable as one continuous subject throughout the camera movement.\n\nKeep approximately her upper body through full body visible, avoiding extreme cropping or temporary disappearance of the protagonist from the frame.\n\nDo not allow <Subject 1> to completely leave the frame before the shot ends.\n\nLeave open visual space in front of her walking direction so the composition clearly communicates that she is heading toward the exit.\n\nPreserve the recognizable spatial appearance of <Subject 2>. The bright interior remains behind and around her while the exit direction stays visually clear.\n\nThe doorway and exit area remain empty except for <Subject 1> approaching them. No person is waiting at, entering through, or appearing beyond the doorway.\n\nMorning daylight remains bright, soft, and slightly white-toned, maintaining continuity with the fresh beginning of the day.\n\nThe shot should feel like one continuous take with no cuts, no scene transition inside the shot, no subject replacement, and no temporal jump.\n\nThe shot is a direct continuation of the previous scene in which the morning begins, while <"
       },
       "color": "#232",
       "bgcolor": "#353"
@@ -14454,7 +14489,7 @@
       ],
       "flags": {},
       "order": 232,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -14470,10 +14505,10 @@
         "Node name for S&R": "PrimitiveStringMultiline"
       },
       "widgets_values": [
-        "subject_definitions:\n<Subject 1> is the female protagonist defined by <Picture 1>, preserving her identity, facial features, hairstyle, clothing, body proportions, and overall appearance.\n<Subject 2> is the early-autumn urban streetscape defined by <Picture 4>, featuring a pedestrian walkway with urban plaza elements and roadside trees that remain predominantly green with only small areas of pale yellow foliage.\n<Audio 1> is the Master Song used as the synchronized music track for the target video, including the lyric phrase <d>[Japanese] 風を追い越して</d>.\n\nsummary:\n[reference generation + audio reuse] The target video is a three-second music-video shot showing <Subject 1> walking naturally through <Subject 2> while a light early-autumn breeze moves her hair and thin jacket. The camera tracks laterally beside her at a constant speed, visually expressing the lyric <d>[Japanese] 風を追い越して</d> from <Audio 1>.  \n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the protagonist's referenced identity, facial appearance, hairstyle, clothing, and body proportions remain consistent throughout the walking shot.\n<Subject 2> (appears in [Shot 1]): fully_preserved - the referenced early-autumn urban plaza and tree-lined walkway are retained, with predominantly green foliage and only limited pale-yellow seasonal color.\n<Audio 1>: fully_copy - the relevant synchronized section of the Master Song is directly reused, including the lyric <d>[Japanese] 風を追い越して</d>.\n\ndetailed_description:\nThe target video has a bright, refreshing commercial-style music-video look with clean natural color, clear daylight, and a light early-autumn atmosphere.\n\n[Shot 1] <Subject 1> walks forward at a natural, steady pace along the pedestrian path in <Subject 2>. She is framed in a medium-to-full-body lateral view, positioned around the center to slightly right of the frame, with visible open space maintained in her direction of travel. Keep her large enough in the frame for clear and stable facial features while still showing the surrounding trees and urban plaza. Her posture is relaxed and upright, with an easy walking rhythm and no exaggerated gestures.\n\nThe camera moves parallel to her from the side, matching her walking speed with smooth, constant lateral tracking. Maintain a stable camera height, viewing angle, subject distance, and subject scale throughout the three-second shot, avoiding sudden pans, zooms, reframing, or speed changes.\n\nA mild early-autumn breeze passes through the scene as she walks. Her hair moves lightly and naturally with the wind, and the fabric of her thin jacket shifts gently without excessive fluttering. These wind-driven movements visually reinforce the phrase from <Audio 1>, <d>[Japanese] 風を追い越して</d>. Her expression remains fresh and relaxed, with a small natural smile suggesting that she is enjoying the cooler air.\n\nThe background preserves the character of <Subject 2>: roadside trees and plaza greenery remain mostly green, with only a few subtle pale-yellow leaves indicating the beginning of autumn rather than full seasonal color change. Bright clear daylight illuminates the scene, but the sunlight is slightly softer than midsummer light, producing a clean, comfortable early-autumn appearance.\n\nThis shot continues naturally from Scene 02's outward walking movement, now clearly establishing that the protagonist has reached the outdoor urban environment. By the end of the shot, she is still walking forward at the same steady pace toward a more open part of the city, creating a clean movement state that can continue naturally into Scene 04.\n\noverall_soundscape:\nThe synchronized Master Song remains the primary audible element. Natural outdoor environmental sounds and restrained movement sounds remain secondary and unobtrusive, with only subtle wind and realistic clothing movement. No narration or spoken dialogue is present.\n\nnon_diegetic_music:\n<Audio 1> continues as the synchronized Master Song for the full shot at a clear and consistent level. The lyric <d>[Japanese] 風を追い越して</d> aligns with the visible breeze moving the protagonist's hair and jacket.\n"
+        "subject_definitions:\n<Subject 1> is the female protagonist defined by <Picture 1>, preserving her identity, facial features, hairstyle, clothing, body proportions, and overall appearance.\n<Subject 2> is the early-autumn urban streetscape defined by <Picture 4>, featuring a pedestrian walkway with urban plaza elements and roadside trees that remain predominantly green with only small areas of pale yellow foliage.\n<Audio 1> is the Master Song used as the synchronized music track for the target video, including the lyric phrase <d>[Japanese] 風を追い越して</d>.\n\nsummary:\n[reference generation + audio reuse] The target video is a three-second music-video shot showing <Subject 1> walking naturally through <Subject 2> while a light early-autumn breeze moves her hair and thin jacket. The camera tracks laterally beside her at a constant speed, visually expressing the lyric <d>[Japanese] 風を追い越して</d> from <Audio 1>.  \n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the protagonist's referenced identity, facial appearance, hairstyle, clothing, and body proportions remain consistent throughout the walking shot.\n<Subject 2> (appears in [Shot 1]): fully_preserved - the referenced early-autumn urban plaza and tree-lined walkway are retained, with predominantly green foliage and only limited pale-yellow seasonal color.\n<Audio 1>: fully_copy - the relevant synchronized section of the Master Song is directly reused, including the lyric <d>[Japanese] 風を追い越して</d>.\n\ndetailed_description:\nThe target video has a bright, refreshing commercial-style music-video look with clean natural color, clear daylight, and a light early-autumn atmosphere.\n\n[Shot 1] <Subject 1> walks forward at a natural, steady pace along the pedestrian path in <Subject 2>. She is framed in a medium-to-full-body lateral view, positioned around the center to slightly right of the frame, with visible open space maintained in her direction of travel. Keep her large enough in the frame for clear and stable facial features while still showing the surrounding trees and urban plaza. Her posture is relaxed and upright, with an easy walking rhythm and no exaggerated gestures.\n\nThe camera moves parallel to her from the side, matching her walking speed with smooth, constant lateral tracking. Maintain a stable camera height, viewing angle, subject distance, and subject scale throughout the three-second shot, avoiding sudden pans, zooms, reframing, or speed changes.\n\nA mild early-autumn breeze passes through the scene as she walks. Her hair moves lightly and naturally with the wind, and the fabric of her thin jacket shifts gently without excessive fluttering. These wind-driven movements visually reinforce the phrase from <Audio 1>, <d>[Japanese] 風を追い越して</d>. Her expression remains fresh and relaxed, with a small natural smile suggesting that she is enjoying the cooler air.\n\nThe background preserves the character of <Subject 2>: roadside trees and plaza greenery remain mostly green, with only a few subtle pale-yellow leaves indicating the beginning of autumn rather than full seasonal color change. Bright clear daylight illuminates the scene, but the sunlight is slightly softer than midsummer light, producing a clean, comfortable early-autumn appearance.\n\nThis shot continues naturally from Scene 02's outward walking movement, now clearly establishing that the protagonist has reached the outdoor urban environment. By the end of the shot, she is still walking forward at the same steady pace toward a more open part of the city, creating a clean movement state that can continue naturally into Scene 04.\n\noverall_soundscape:\nThe synchronized Master Song remains the primary audible element. Natural outdoor environmental sounds and restrained movement sounds remain secondary and unobtrusive, with only subtle wind and realistic clothing movement. No narration or spoken dialogue is present.\n\nnon_diegetic_music:\n<Audio 1> continues as the synchronized Master Song for the full shot at a clear and consistent level. The lyric <d>[Japanese] 風を追い越して</d> aligns with the visible breeze moving the protagonist's hair and jacket.\n\n"
       ],
       "widgets_values_named": {
-        "value": "subject_definitions:\n<Subject 1> is the female protagonist defined by <Picture 1>, preserving her identity, facial features, hairstyle, clothing, body proportions, and overall appearance.\n<Subject 2> is the early-autumn urban streetscape defined by <Picture 4>, featuring a pedestrian walkway with urban plaza elements and roadside trees that remain predominantly green with only small areas of pale yellow foliage.\n<Audio 1> is the Master Song used as the synchronized music track for the target video, including the lyric phrase <d>[Japanese] 風を追い越して</d>.\n\nsummary:\n[reference generation + audio reuse] The target video is a three-second music-video shot showing <Subject 1> walking naturally through <Subject 2> while a light early-autumn breeze moves her hair and thin jacket. The camera tracks laterally beside her at a constant speed, visually expressing the lyric <d>[Japanese] 風を追い越して</d> from <Audio 1>.  \n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the protagonist's referenced identity, facial appearance, hairstyle, clothing, and body proportions remain consistent throughout the walking shot.\n<Subject 2> (appears in [Shot 1]): fully_preserved - the referenced early-autumn urban plaza and tree-lined walkway are retained, with predominantly green foliage and only limited pale-yellow seasonal color.\n<Audio 1>: fully_copy - the relevant synchronized section of the Master Song is directly reused, including the lyric <d>[Japanese] 風を追い越して</d>.\n\ndetailed_description:\nThe target video has a bright, refreshing commercial-style music-video look with clean natural color, clear daylight, and a light early-autumn atmosphere.\n\n[Shot 1] <Subject 1> walks forward at a natural, steady pace along the pedestrian path in <Subject 2>. She is framed in a medium-to-full-body lateral view, positioned around the center to slightly right of the frame, with visible open space maintained in her direction of travel. Keep her large enough in the frame for clear and stable facial features while still showing the surrounding trees and urban plaza. Her posture is relaxed and upright, with an easy walking rhythm and no exaggerated gestures.\n\nThe camera moves parallel to her from the side, matching her walking speed with smooth, constant lateral tracking. Maintain a stable camera height, viewing angle, subject distance, and subject scale throughout the three-second shot, avoiding sudden pans, zooms, reframing, or speed changes.\n\nA mild early-autumn breeze passes through the scene as she walks. Her hair moves lightly and naturally with the wind, and the fabric of her thin jacket shifts gently without excessive fluttering. These wind-driven movements visually reinforce the phrase from <Audio 1>, <d>[Japanese] 風を追い越して</d>. Her expression remains fresh and relaxed, with a small natural smile suggesting that she is enjoying the cooler air.\n\nThe background preserves the character of <Subject 2>: roadside trees and plaza greenery remain mostly green, with only a few subtle pale-yellow leaves indicating the beginning of autumn rather than full seasonal color change. Bright clear daylight illuminates the scene, but the sunlight is slightly softer than midsummer light, producing a clean, comfortable early-autumn appearance.\n\nThis shot continues naturally from Scene 02's outward walking movement, now clearly establishing that the protagonist has reached the outdoor urban environment. By the end of the shot, she is still walking forward at the same steady pace toward a more open part of the city, creating a clean movement state that can continue naturally into Scene 04.\n\noverall_soundscape:\nThe synchronized Master Song remains the primary audible element. Natural outdoor environmental sounds and restrained movement sounds remain secondary and unobtrusive, with only subtle wind and realistic clothing movement. No narration or spoken dialogue is present.\n\nnon_diegetic_music:\n<Audio 1> continues as the synchronized Master Song for the full shot at a clear and consistent level. The lyric <d>[Japanese] 風を追い越して</d> aligns with the visible breeze moving the protagonist's hair and jacket.\n"
+        "value": "subject_definitions:\n<Subject 1> is the female protagonist defined by <Picture 1>, preserving her identity, facial features, hairstyle, clothing, body proportions, and overall appearance.\n<Subject 2> is the early-autumn urban streetscape defined by <Picture 4>, featuring a pedestrian walkway with urban plaza elements and roadside trees that remain predominantly green with only small areas of pale yellow foliage.\n<Audio 1> is the Master Song used as the synchronized music track for the target video, including the lyric phrase <d>[Japanese] 風を追い越して</d>.\n\nsummary:\n[reference generation + audio reuse] The target video is a three-second music-video shot showing <Subject 1> walking naturally through <Subject 2> while a light early-autumn breeze moves her hair and thin jacket. The camera tracks laterally beside her at a constant speed, visually expressing the lyric <d>[Japanese] 風を追い越して</d> from <Audio 1>.  \n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - the protagonist's referenced identity, facial appearance, hairstyle, clothing, and body proportions remain consistent throughout the walking shot.\n<Subject 2> (appears in [Shot 1]): fully_preserved - the referenced early-autumn urban plaza and tree-lined walkway are retained, with predominantly green foliage and only limited pale-yellow seasonal color.\n<Audio 1>: fully_copy - the relevant synchronized section of the Master Song is directly reused, including the lyric <d>[Japanese] 風を追い越して</d>.\n\ndetailed_description:\nThe target video has a bright, refreshing commercial-style music-video look with clean natural color, clear daylight, and a light early-autumn atmosphere.\n\n[Shot 1] <Subject 1> walks forward at a natural, steady pace along the pedestrian path in <Subject 2>. She is framed in a medium-to-full-body lateral view, positioned around the center to slightly right of the frame, with visible open space maintained in her direction of travel. Keep her large enough in the frame for clear and stable facial features while still showing the surrounding trees and urban plaza. Her posture is relaxed and upright, with an easy walking rhythm and no exaggerated gestures.\n\nThe camera moves parallel to her from the side, matching her walking speed with smooth, constant lateral tracking. Maintain a stable camera height, viewing angle, subject distance, and subject scale throughout the three-second shot, avoiding sudden pans, zooms, reframing, or speed changes.\n\nA mild early-autumn breeze passes through the scene as she walks. Her hair moves lightly and naturally with the wind, and the fabric of her thin jacket shifts gently without excessive fluttering. These wind-driven movements visually reinforce the phrase from <Audio 1>, <d>[Japanese] 風を追い越して</d>. Her expression remains fresh and relaxed, with a small natural smile suggesting that she is enjoying the cooler air.\n\nThe background preserves the character of <Subject 2>: roadside trees and plaza greenery remain mostly green, with only a few subtle pale-yellow leaves indicating the beginning of autumn rather than full seasonal color change. Bright clear daylight illuminates the scene, but the sunlight is slightly softer than midsummer light, producing a clean, comfortable early-autumn appearance.\n\nThis shot continues naturally from Scene 02's outward walking movement, now clearly establishing that the protagonist has reached the outdoor urban environment. By the end of the shot, she is still walking forward at the same steady pace toward a more open part of the city, creating a clean movement state that can continue naturally into Scene 04.\n\noverall_soundscape:\nThe synchronized Master Song remains the primary audible element. Natural outdoor environmental sounds and restrained movement sounds remain secondary and unobtrusive, with only subtle wind and realistic clothing movement. No narration or spoken dialogue is present.\n\nnon_diegetic_music:\n<Audio 1> continues as the synchronized Master Song for the full shot at a clear and consistent level. The lyric <d>[Japanese] 風を追い越して</d> aligns with the visible breeze moving the protagonist's hair and jacket.\n\n"
       },
       "color": "#232",
       "bgcolor": "#353"
@@ -14532,7 +14567,7 @@
       ],
       "flags": {},
       "order": 234,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -14573,7 +14608,7 @@
       ],
       "flags": {},
       "order": 235,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -14698,7 +14733,7 @@
       ],
       "flags": {},
       "order": 238,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -15344,7 +15379,7 @@
         "collapsed": true
       },
       "order": 291,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "images_1",
@@ -15492,7 +15527,7 @@
         "collapsed": true
       },
       "order": 332,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "images_1",
@@ -15557,7 +15592,7 @@
         "collapsed": true
       },
       "order": 336,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "images_1",
@@ -15622,7 +15657,7 @@
         "collapsed": true
       },
       "order": 339,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "images_1",
@@ -15817,7 +15852,7 @@
         "collapsed": true
       },
       "order": 318,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "IMAGE",
@@ -15862,7 +15897,7 @@
         "collapsed": true
       },
       "order": 248,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -15902,7 +15937,7 @@
         "collapsed": true
       },
       "order": 319,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "INT",
@@ -15947,7 +15982,7 @@
         "collapsed": true
       },
       "order": 249,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -15987,7 +16022,7 @@
         "collapsed": true
       },
       "order": 322,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "IMAGE",
@@ -16032,7 +16067,7 @@
         "collapsed": true
       },
       "order": 323,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "INT",
@@ -16077,7 +16112,7 @@
         "collapsed": true
       },
       "order": 250,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -16117,7 +16152,7 @@
         "collapsed": true
       },
       "order": 251,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -16157,7 +16192,7 @@
         "collapsed": true
       },
       "order": 299,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "IMAGE",
@@ -16202,7 +16237,7 @@
         "collapsed": true
       },
       "order": 300,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "INT",
@@ -16247,7 +16282,7 @@
         "collapsed": true
       },
       "order": 252,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -16287,7 +16322,7 @@
         "collapsed": true
       },
       "order": 253,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -16327,7 +16362,7 @@
         "collapsed": true
       },
       "order": 311,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "IMAGE",
@@ -16372,7 +16407,7 @@
         "collapsed": true
       },
       "order": 312,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "INT",
@@ -16417,7 +16452,7 @@
         "collapsed": true
       },
       "order": 254,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -16457,7 +16492,7 @@
         "collapsed": true
       },
       "order": 255,
-      "mode": 4,
+      "mode": 0,
       "inputs": [],
       "outputs": [
         {
@@ -19090,22 +19125,6 @@
       "IMAGE"
     ],
     [
-      892,
-      456,
-      0,
-      478,
-      1,
-      "FLOAT"
-    ],
-    [
-      1162,
-      532,
-      0,
-      668,
-      0,
-      "FLOAT"
-    ],
-    [
       2144,
       244,
       3,
@@ -19127,14 +19146,6 @@
       4,
       1107,
       0,
-      "INT"
-    ],
-    [
-      2150,
-      1108,
-      0,
-      1064,
-      2,
       "INT"
     ],
     [
@@ -19162,14 +19173,6 @@
       "IMAGE"
     ],
     [
-      2160,
-      1114,
-      0,
-      1096,
-      2,
-      "INT"
-    ],
-    [
       2164,
       346,
       3,
@@ -19192,14 +19195,6 @@
       1097,
       1,
       "IMAGE"
-    ],
-    [
-      2170,
-      1120,
-      0,
-      1097,
-      2,
-      "INT"
     ],
     [
       2174,
@@ -19226,14 +19221,6 @@
       "IMAGE"
     ],
     [
-      2180,
-      1126,
-      0,
-      1098,
-      2,
-      "INT"
-    ],
-    [
       2184,
       404,
       3,
@@ -19258,14 +19245,6 @@
       "IMAGE"
     ],
     [
-      2190,
-      1132,
-      0,
-      1099,
-      2,
-      "INT"
-    ],
-    [
       2194,
       432,
       3,
@@ -19288,14 +19267,6 @@
       1100,
       1,
       "IMAGE"
-    ],
-    [
-      2200,
-      1138,
-      0,
-      1100,
-      2,
-      "INT"
     ],
     [
       2203,
@@ -19338,6 +19309,14 @@
       "IMAGE"
     ],
     [
+      2217,
+      1140,
+      0,
+      298,
+      0,
+      "IMAGE"
+    ],
+    [
       498,
       131,
       1,
@@ -19370,12 +19349,36 @@
       "FLOAT,INT,BOOLEAN"
     ],
     [
+      2218,
+      1140,
+      0,
+      685,
+      0,
+      "IMAGE"
+    ],
+    [
+      1669,
+      1062,
+      0,
+      685,
+      1,
+      "FLOAT"
+    ],
+    [
       260,
       130,
       0,
       92,
       0,
       "VIDEO"
+    ],
+    [
+      2216,
+      1100,
+      0,
+      1140,
+      0,
+      "IMAGE"
     ],
     [
       792,
@@ -19442,36 +19445,68 @@
       "FLOAT"
     ],
     [
-      1669,
-      1062,
+      892,
+      456,
       0,
-      685,
+      478,
       1,
       "FLOAT"
     ],
     [
-      2216,
+      1162,
+      532,
+      0,
+      668,
+      0,
+      "FLOAT"
+    ],
+    [
+      2150,
+      1108,
+      0,
+      1064,
+      2,
+      "INT"
+    ],
+    [
+      2160,
+      1114,
+      0,
+      1096,
+      2,
+      "INT"
+    ],
+    [
+      2170,
+      1120,
+      0,
+      1097,
+      2,
+      "INT"
+    ],
+    [
+      2180,
+      1126,
+      0,
+      1098,
+      2,
+      "INT"
+    ],
+    [
+      2190,
+      1132,
+      0,
+      1099,
+      2,
+      "INT"
+    ],
+    [
+      2200,
+      1138,
+      0,
       1100,
-      0,
-      1140,
-      0,
-      "IMAGE"
-    ],
-    [
-      2217,
-      1140,
-      0,
-      298,
-      0,
-      "IMAGE"
-    ],
-    [
-      2218,
-      1140,
-      0,
-      685,
-      0,
-      "IMAGE"
+      2,
+      "INT"
     ]
   ],
   "groups": [
@@ -19652,7 +19687,7 @@
         "state": {
           "lastGroupId": 128,
           "lastNodeId": 1140,
-          "lastLinkId": 2218,
+          "lastLinkId": 2225,
           "lastRerouteId": 0
         },
         "revision": 3,
@@ -19661,8 +19696,8 @@
         "inputNode": {
           "id": -10,
           "bounding": [
-            317.48548073250606,
-            5393.587490546094,
+            60.42051814398239,
+            5220.320665271967,
             210.984375,
             628
           ]
@@ -19672,8 +19707,8 @@
           "bounding": [
             5367.262673841039,
             6218.104039404001,
-            157.3125,
-            108
+            241.6875,
+            148
           ]
         },
         "inputs": [
@@ -19687,8 +19722,8 @@
             "localized_name": "a",
             "label": "duration",
             "pos": [
-              504.46985573250606,
-              5417.587490546094
+              247.4048931439824,
+              5244.320665271967
             ]
           },
           {
@@ -19701,8 +19736,8 @@
             ],
             "localized_name": "clip",
             "pos": [
-              504.46985573250606,
-              5437.587490546094
+              247.4048931439824,
+              5264.320665271967
             ]
           },
           {
@@ -19721,8 +19756,8 @@
             "localized_name": "vae",
             "shape": 7,
             "pos": [
-              504.46985573250606,
-              5457.587490546094
+              247.4048931439824,
+              5284.320665271967
             ]
           },
           {
@@ -19737,8 +19772,8 @@
             "localized_name": "audio_vae",
             "shape": 7,
             "pos": [
-              504.46985573250606,
-              5477.587490546094
+              247.4048931439824,
+              5304.320665271967
             ]
           },
           {
@@ -19754,8 +19789,8 @@
             "label": "ref_image_0",
             "shape": 7,
             "pos": [
-              504.46985573250606,
-              5497.587490546094
+              247.4048931439824,
+              5324.320665271967
             ]
           },
           {
@@ -19768,8 +19803,8 @@
             "localized_name": "ref_image_1",
             "shape": 7,
             "pos": [
-              504.46985573250606,
-              5517.587490546094
+              247.4048931439824,
+              5344.320665271967
             ]
           },
           {
@@ -19782,8 +19817,8 @@
             ],
             "localized_name": "prompt",
             "pos": [
-              504.46985573250606,
-              5537.587490546094
+              247.4048931439824,
+              5364.320665271967
             ]
           },
           {
@@ -19795,8 +19830,8 @@
             ],
             "localized_name": "width",
             "pos": [
-              504.46985573250606,
-              5557.587490546094
+              247.4048931439824,
+              5384.320665271967
             ]
           },
           {
@@ -19808,8 +19843,8 @@
             ],
             "localized_name": "height",
             "pos": [
-              504.46985573250606,
-              5577.587490546094
+              247.4048931439824,
+              5404.320665271967
             ]
           },
           {
@@ -19821,8 +19856,8 @@
             ],
             "localized_name": "master_audio",
             "pos": [
-              504.46985573250606,
-              5597.587490546094
+              247.4048931439824,
+              5424.320665271967
             ]
           },
           {
@@ -19835,8 +19870,8 @@
             "localized_name": "source_latent",
             "shape": 7,
             "pos": [
-              504.46985573250606,
-              5617.587490546094
+              247.4048931439824,
+              5444.320665271967
             ]
           },
           {
@@ -19849,8 +19884,8 @@
             ],
             "localized_name": "clip_start_seconds",
             "pos": [
-              504.46985573250606,
-              5637.587490546094
+              247.4048931439824,
+              5464.320665271967
             ]
           },
           {
@@ -19864,8 +19899,8 @@
             ],
             "localized_name": "model",
             "pos": [
-              504.46985573250606,
-              5657.587490546094
+              247.4048931439824,
+              5484.320665271967
             ]
           },
           {
@@ -19877,8 +19912,8 @@
             ],
             "localized_name": "sampler",
             "pos": [
-              504.46985573250606,
-              5677.587490546094
+              247.4048931439824,
+              5504.320665271967
             ]
           },
           {
@@ -19890,8 +19925,8 @@
             ],
             "localized_name": "sigmas",
             "pos": [
-              504.46985573250606,
-              5697.587490546094
+              247.4048931439824,
+              5524.320665271967
             ]
           },
           {
@@ -19903,8 +19938,8 @@
             ],
             "label": "ref_image_2",
             "pos": [
-              504.46985573250606,
-              5717.587490546094
+              247.4048931439824,
+              5544.320665271967
             ]
           },
           {
@@ -19917,8 +19952,8 @@
             "localized_name": "face_model",
             "label": "FaceRefine model (pre-PDD)",
             "pos": [
-              504.46985573250606,
-              5737.587490546094
+              247.4048931439824,
+              5564.320665271967
             ]
           },
           {
@@ -19931,8 +19966,8 @@
             "localized_name": "face_refine_steps",
             "label": "FR Steps",
             "pos": [
-              504.46985573250606,
-              5757.587490546094
+              247.4048931439824,
+              5584.320665271967
             ]
           },
           {
@@ -19945,8 +19980,8 @@
             "localized_name": "face_refine_denoise",
             "label": "FR Denoise",
             "pos": [
-              504.46985573250606,
-              5777.587490546094
+              247.4048931439824,
+              5604.320665271967
             ]
           },
           {
@@ -19960,8 +19995,8 @@
             "localized_name": "face_refine_canvas",
             "label": "FR Canvas",
             "pos": [
-              504.46985573250606,
-              5797.587490546094
+              247.4048931439824,
+              5624.320665271967
             ]
           },
           {
@@ -19974,8 +20009,8 @@
             "localized_name": "face_refine_confidence",
             "label": "FR Confidence",
             "pos": [
-              504.46985573250606,
-              5817.587490546094
+              247.4048931439824,
+              5644.320665271967
             ]
           },
           {
@@ -19988,8 +20023,8 @@
             "localized_name": "face_refine_crop_factor",
             "label": "FR Crop Factor",
             "pos": [
-              504.46985573250606,
-              5837.587490546094
+              247.4048931439824,
+              5664.320665271967
             ]
           },
           {
@@ -20002,8 +20037,8 @@
             "localized_name": "face_refine_identity_threshold",
             "label": "FR Identity Threshold",
             "pos": [
-              504.46985573250606,
-              5857.587490546094
+              247.4048931439824,
+              5684.320665271967
             ]
           },
           {
@@ -20016,20 +20051,22 @@
             "localized_name": "use_latent_upscale",
             "label": "Use Latent Upscale",
             "pos": [
-              504.46985573250606,
-              5877.587490546094
+              247.4048931439824,
+              5704.320665271967
             ]
           },
           {
             "id": "59ba94cb-cb5c-4264-874e-c5549f403d47",
             "name": "pass2_scale",
             "type": "FLOAT",
-            "linkIds": [],
+            "linkIds": [
+              2220
+            ],
             "localized_name": "pass2_scale",
             "label": "Upscale Scale",
             "pos": [
-              504.46985573250606,
-              5917.587490546094
+              247.4048931439824,
+              5724.320665271967
             ]
           },
           {
@@ -20042,8 +20079,8 @@
             "localized_name": "pass2_steps",
             "label": "Pass2 Steps",
             "pos": [
-              504.46985573250606,
-              5937.587490546094
+              247.4048931439824,
+              5744.320665271967
             ]
           },
           {
@@ -20056,8 +20093,8 @@
             "localized_name": "pass2_denoise",
             "label": "Pass2 Denoise",
             "pos": [
-              504.46985573250606,
-              5957.587490546094
+              247.4048931439824,
+              5764.320665271967
             ]
           },
           {
@@ -20070,8 +20107,8 @@
             "localized_name": "pass2_sampler",
             "label": "Pass2 Sampler",
             "pos": [
-              504.46985573250606,
-              5977.587490546094
+              247.4048931439824,
+              5784.320665271967
             ]
           },
           {
@@ -20084,8 +20121,8 @@
             "localized_name": "use_face_refine",
             "label": "Use Face Refine",
             "pos": [
-              504.46985573250606,
-              5997.587490546094
+              247.4048931439824,
+              5804.320665271967
             ]
           }
         ],
@@ -20174,7 +20211,7 @@
             ],
             "flags": {},
             "order": 6,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -20216,7 +20253,7 @@
             ],
             "flags": {},
             "order": 7,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "noise",
@@ -20270,7 +20307,9 @@
             ],
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced"
-            }
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
           },
           {
             "id": 203,
@@ -20287,7 +20326,7 @@
               "collapsed": false
             },
             "order": 8,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "samples",
@@ -20332,7 +20371,7 @@
             ],
             "flags": {},
             "order": 5,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "latent",
@@ -20436,7 +20475,7 @@
             ],
             "flags": {},
             "order": 13,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -20619,7 +20658,7 @@
             ],
             "flags": {},
             "order": 0,
-            "mode": 4,
+            "mode": 0,
             "inputs": [],
             "outputs": [
               {
@@ -20656,7 +20695,7 @@
             ],
             "flags": {},
             "order": 17,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -20700,7 +20739,7 @@
             ],
             "flags": {},
             "order": 18,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "noise",
@@ -20753,7 +20792,9 @@
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced",
               "cnr_id": "comfy-core"
-            }
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
           },
           {
             "id": 542,
@@ -20768,7 +20809,7 @@
             ],
             "flags": {},
             "order": 15,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -20853,7 +20894,7 @@
             ],
             "flags": {},
             "order": 1,
-            "mode": 4,
+            "mode": 0,
             "inputs": [],
             "outputs": [
               {
@@ -20871,11 +20912,11 @@
               "cnr_id": "comfy-core"
             },
             "widgets_values": [
-              956613516103792,
+              309918369016163,
               "randomize"
             ],
             "widgets_values_named": {
-              "noise_seed": 956613516103792,
+              "noise_seed": 309918369016163,
               "control_after_generate": "randomize"
             }
           },
@@ -20892,7 +20933,7 @@
             ],
             "flags": {},
             "order": 16,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -20958,7 +20999,7 @@
             ],
             "flags": {},
             "order": 12,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "images",
@@ -21160,7 +21201,7 @@
             ],
             "flags": {},
             "order": 9,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "images",
@@ -21247,7 +21288,7 @@
             ],
             "flags": {},
             "order": 21,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "images",
@@ -21315,7 +21356,7 @@
             ],
             "flags": {},
             "order": 14,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "av_latent",
@@ -21375,7 +21416,7 @@
               "collapsed": true
             },
             "order": 11,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "label": "a",
@@ -21444,7 +21485,7 @@
             ],
             "flags": {},
             "order": 22,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "original",
@@ -21504,7 +21545,7 @@
               "collapsed": false
             },
             "order": 19,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "samples",
@@ -21549,7 +21590,7 @@
             ],
             "flags": {},
             "order": 20,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "base_images",
@@ -21631,7 +21672,7 @@
             ],
             "flags": {},
             "order": 2,
-            "mode": 4,
+            "mode": 0,
             "inputs": [],
             "outputs": [
               {
@@ -21668,7 +21709,7 @@
             ],
             "flags": {},
             "order": 3,
-            "mode": 4,
+            "mode": 0,
             "inputs": [],
             "outputs": [
               {
@@ -21707,7 +21748,7 @@
             ],
             "flags": {},
             "order": 23,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -21775,7 +21816,7 @@
             ],
             "flags": {},
             "order": 25,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "samples",
@@ -21818,7 +21859,7 @@
             ],
             "flags": {},
             "order": 26,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "original",
@@ -21879,7 +21920,7 @@
             ],
             "flags": {},
             "order": 4,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -22064,7 +22105,7 @@
               "collapsed": true
             },
             "order": 10,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "label": "a",
@@ -22127,7 +22168,7 @@
             ],
             "flags": {},
             "order": 24,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "latent",
@@ -22154,6 +22195,15 @@
                   "name": "mode"
                 },
                 "link": null
+              },
+              {
+                "localized_name": "scale",
+                "name": "mode.scale",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "mode.scale"
+                },
+                "link": 2220
               },
               {
                 "label": "Align",
@@ -22256,7 +22306,7 @@
             ],
             "flags": {},
             "order": 30,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -22296,11 +22346,11 @@
             ],
             "size": [
               250,
-              250
+              326
             ],
             "flags": {},
             "order": 27,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "noise",
@@ -22353,7 +22403,9 @@
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced",
               "cnr_id": "comfy-core"
-            }
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
           },
           {
             "id": 1078,
@@ -22368,7 +22420,7 @@
             ],
             "flags": {},
             "order": 28,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "label": "av_latent",
@@ -22416,7 +22468,7 @@
             ],
             "flags": {},
             "order": 29,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "label": "video_latent",
@@ -23014,78 +23066,6 @@
             "type": "INT"
           },
           {
-            "id": 1213,
-            "origin_id": -10,
-            "origin_slot": 17,
-            "target_id": 544,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 1214,
-            "origin_id": -10,
-            "origin_slot": 18,
-            "target_id": 544,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1217,
-            "origin_id": -10,
-            "origin_slot": 20,
-            "target_id": 538,
-            "target_slot": 4,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1218,
-            "origin_id": -10,
-            "origin_slot": 21,
-            "target_id": 538,
-            "target_slot": 5,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1215,
-            "origin_id": -10,
-            "origin_slot": 19,
-            "target_id": 538,
-            "target_slot": 6,
-            "type": "INT"
-          },
-          {
-            "id": 1216,
-            "origin_id": -10,
-            "origin_slot": 19,
-            "target_id": 538,
-            "target_slot": 7,
-            "type": "INT"
-          },
-          {
-            "id": 1219,
-            "origin_id": -10,
-            "origin_slot": 22,
-            "target_id": 538,
-            "target_slot": 8,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1515,
-            "origin_id": -10,
-            "origin_slot": 25,
-            "target_id": 942,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 1516,
-            "origin_id": -10,
-            "origin_slot": 26,
-            "target_id": 942,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
             "id": 904,
             "origin_id": -10,
             "origin_slot": 1,
@@ -23182,6 +23162,78 @@
             "type": "INT"
           },
           {
+            "id": 1213,
+            "origin_id": -10,
+            "origin_slot": 17,
+            "target_id": 544,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 1214,
+            "origin_id": -10,
+            "origin_slot": 18,
+            "target_id": 544,
+            "target_slot": 2,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1217,
+            "origin_id": -10,
+            "origin_slot": 20,
+            "target_id": 538,
+            "target_slot": 4,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1218,
+            "origin_id": -10,
+            "origin_slot": 21,
+            "target_id": 538,
+            "target_slot": 5,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1215,
+            "origin_id": -10,
+            "origin_slot": 19,
+            "target_id": 538,
+            "target_slot": 6,
+            "type": "INT"
+          },
+          {
+            "id": 1216,
+            "origin_id": -10,
+            "origin_slot": 19,
+            "target_id": 538,
+            "target_slot": 7,
+            "type": "INT"
+          },
+          {
+            "id": 1219,
+            "origin_id": -10,
+            "origin_slot": 22,
+            "target_id": 538,
+            "target_slot": 8,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1515,
+            "origin_id": -10,
+            "origin_slot": 25,
+            "target_id": 942,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 1516,
+            "origin_id": -10,
+            "origin_slot": 26,
+            "target_id": 942,
+            "target_slot": 2,
+            "type": "FLOAT"
+          },
+          {
             "id": 426,
             "origin_id": -10,
             "origin_slot": 1,
@@ -23260,6 +23312,14 @@
             "target_id": 198,
             "target_slot": 14,
             "type": "INT"
+          },
+          {
+            "id": 2220,
+            "origin_id": -10,
+            "origin_slot": 24,
+            "target_id": 943,
+            "target_slot": 3,
+            "type": "FLOAT"
           }
         ],
         "extra": {}
@@ -23270,7 +23330,7 @@
         "state": {
           "lastGroupId": 128,
           "lastNodeId": 1140,
-          "lastLinkId": 2218,
+          "lastLinkId": 2225,
           "lastRerouteId": 0
         },
         "revision": 2,
@@ -23290,8 +23350,8 @@
           "bounding": [
             6143.624343438854,
             6179.410730771583,
-            157.3125,
-            108
+            241.6875,
+            148
           ]
         },
         "inputs": [
@@ -23642,7 +23702,9 @@
             "id": "bd2c6c8e-f91e-4c98-81de-a53c45396cfd",
             "name": "pass2_scale",
             "type": "FLOAT",
-            "linkIds": [],
+            "linkIds": [
+              2221
+            ],
             "localized_name": "pass2_scale",
             "label": "Upscale Scale",
             "pos": [
@@ -23758,8 +23820,8 @@
             "localized_name": "crossfade_images",
             "label": "Motion Context Crossfade Images",
             "pos": [
-              5391.262673841039,
-              6302.104039404001
+              6167.624343438854,
+              6263.410730771583
             ]
           },
           {
@@ -23772,8 +23834,8 @@
             "localized_name": "crossfade_frames",
             "label": "Motion Context Crossfade Frames",
             "pos": [
-              5391.262673841039,
-              6322.104039404001
+              6167.624343438854,
+              6283.410730771583
             ]
           }
         ],
@@ -23792,7 +23854,7 @@
             ],
             "flags": {},
             "order": 4,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -23834,7 +23896,7 @@
             ],
             "flags": {},
             "order": 5,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "noise",
@@ -23888,7 +23950,9 @@
             ],
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced"
-            }
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
           },
           {
             "id": 325,
@@ -23905,7 +23969,7 @@
               "collapsed": false
             },
             "order": 6,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "samples",
@@ -23950,7 +24014,7 @@
             ],
             "flags": {},
             "order": 7,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "images",
@@ -24037,7 +24101,7 @@
             ],
             "flags": {},
             "order": 11,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "latent",
@@ -24141,7 +24205,7 @@
             ],
             "flags": {},
             "order": 8,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -24326,7 +24390,7 @@
               "collapsed": true
             },
             "order": 9,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "label": "a",
@@ -24391,7 +24455,7 @@
               "collapsed": true
             },
             "order": 10,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "label": "a",
@@ -24460,7 +24524,7 @@
             ],
             "flags": {},
             "order": 0,
-            "mode": 4,
+            "mode": 0,
             "inputs": [],
             "outputs": [
               {
@@ -24497,7 +24561,7 @@
             ],
             "flags": {},
             "order": 17,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -24541,7 +24605,7 @@
             ],
             "flags": {},
             "order": 18,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "noise",
@@ -24594,7 +24658,9 @@
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced",
               "cnr_id": "comfy-core"
-            }
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
           },
           {
             "id": 575,
@@ -24609,7 +24675,7 @@
             ],
             "flags": {},
             "order": 20,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "base_images",
@@ -24691,7 +24757,7 @@
             ],
             "flags": {},
             "order": 22,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "original",
@@ -24749,7 +24815,7 @@
             ],
             "flags": {},
             "order": 15,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -24834,7 +24900,7 @@
             ],
             "flags": {},
             "order": 1,
-            "mode": 4,
+            "mode": 0,
             "inputs": [],
             "outputs": [
               {
@@ -24852,11 +24918,11 @@
               "cnr_id": "comfy-core"
             },
             "widgets_values": [
-              597124100262885,
+              123982862242961,
               "randomize"
             ],
             "widgets_values_named": {
-              "noise_seed": 597124100262885,
+              "noise_seed": 123982862242961,
               "control_after_generate": "randomize"
             }
           },
@@ -24873,7 +24939,7 @@
             ],
             "flags": {},
             "order": 16,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -24941,7 +25007,7 @@
               "collapsed": false
             },
             "order": 19,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "samples",
@@ -24986,7 +25052,7 @@
             ],
             "flags": {},
             "order": 13,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -25169,7 +25235,7 @@
             ],
             "flags": {},
             "order": 14,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "av_latent",
@@ -25227,7 +25293,7 @@
             ],
             "flags": {},
             "order": 12,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "images",
@@ -25429,7 +25495,7 @@
             ],
             "flags": {},
             "order": 21,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "images",
@@ -25497,7 +25563,7 @@
             ],
             "flags": {},
             "order": 2,
-            "mode": 4,
+            "mode": 0,
             "inputs": [],
             "outputs": [
               {
@@ -25534,7 +25600,7 @@
             ],
             "flags": {},
             "order": 3,
-            "mode": 4,
+            "mode": 0,
             "inputs": [],
             "outputs": [
               {
@@ -25573,7 +25639,7 @@
             ],
             "flags": {},
             "order": 24,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -25641,7 +25707,7 @@
             ],
             "flags": {},
             "order": 25,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "latent",
@@ -25668,6 +25734,15 @@
                   "name": "mode"
                 },
                 "link": null
+              },
+              {
+                "localized_name": "scale",
+                "name": "mode.scale",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "mode.scale"
+                },
+                "link": 2221
               },
               {
                 "label": "Align",
@@ -25770,7 +25845,7 @@
             ],
             "flags": {},
             "order": 26,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "samples",
@@ -25813,7 +25888,7 @@
             ],
             "flags": {},
             "order": 23,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "original",
@@ -25874,7 +25949,7 @@
             ],
             "flags": {},
             "order": 27,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -25918,7 +25993,7 @@
             ],
             "flags": {},
             "order": 28,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "noise",
@@ -25971,7 +26046,9 @@
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced",
               "cnr_id": "comfy-core"
-            }
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
           },
           {
             "id": 1080,
@@ -25986,7 +26063,7 @@
             ],
             "flags": {},
             "order": 29,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "label": "av_latent",
@@ -26034,7 +26111,7 @@
             ],
             "flags": {},
             "order": 30,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "label": "video_latent",
@@ -26632,78 +26709,6 @@
             "type": "INT"
           },
           {
-            "id": 1700,
-            "origin_id": -10,
-            "origin_slot": 17,
-            "target_id": 570,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 1701,
-            "origin_id": -10,
-            "origin_slot": 18,
-            "target_id": 570,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1704,
-            "origin_id": -10,
-            "origin_slot": 20,
-            "target_id": 564,
-            "target_slot": 4,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1705,
-            "origin_id": -10,
-            "origin_slot": 21,
-            "target_id": 564,
-            "target_slot": 5,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1702,
-            "origin_id": -10,
-            "origin_slot": 19,
-            "target_id": 564,
-            "target_slot": 6,
-            "type": "INT"
-          },
-          {
-            "id": 1703,
-            "origin_id": -10,
-            "origin_slot": 19,
-            "target_id": 564,
-            "target_slot": 7,
-            "type": "INT"
-          },
-          {
-            "id": 1706,
-            "origin_id": -10,
-            "origin_slot": 22,
-            "target_id": 564,
-            "target_slot": 8,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1235,
-            "origin_id": -10,
-            "origin_slot": 25,
-            "target_id": 968,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 1236,
-            "origin_id": -10,
-            "origin_slot": 26,
-            "target_id": 968,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
             "id": 2119,
             "origin_id": -10,
             "origin_slot": 0,
@@ -26848,6 +26853,22 @@
             "type": "INT"
           },
           {
+            "id": 1700,
+            "origin_id": -10,
+            "origin_slot": 17,
+            "target_id": 570,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 1701,
+            "origin_id": -10,
+            "origin_slot": 18,
+            "target_id": 570,
+            "target_slot": 2,
+            "type": "FLOAT"
+          },
+          {
             "id": 985,
             "origin_id": -10,
             "origin_slot": 6,
@@ -26878,6 +26899,70 @@
             "target_id": 565,
             "target_slot": 13,
             "type": "INT"
+          },
+          {
+            "id": 1704,
+            "origin_id": -10,
+            "origin_slot": 20,
+            "target_id": 564,
+            "target_slot": 4,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1705,
+            "origin_id": -10,
+            "origin_slot": 21,
+            "target_id": 564,
+            "target_slot": 5,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1702,
+            "origin_id": -10,
+            "origin_slot": 19,
+            "target_id": 564,
+            "target_slot": 6,
+            "type": "INT"
+          },
+          {
+            "id": 1703,
+            "origin_id": -10,
+            "origin_slot": 19,
+            "target_id": 564,
+            "target_slot": 7,
+            "type": "INT"
+          },
+          {
+            "id": 1706,
+            "origin_id": -10,
+            "origin_slot": 22,
+            "target_id": 564,
+            "target_slot": 8,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1235,
+            "origin_id": -10,
+            "origin_slot": 25,
+            "target_id": 968,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 1236,
+            "origin_id": -10,
+            "origin_slot": 26,
+            "target_id": 968,
+            "target_slot": 2,
+            "type": "FLOAT"
+          },
+          {
+            "id": 2221,
+            "origin_id": -10,
+            "origin_slot": 24,
+            "target_id": 969,
+            "target_slot": 3,
+            "type": "FLOAT"
           }
         ],
         "extra": {}
@@ -26888,7 +26973,7 @@
         "state": {
           "lastGroupId": 128,
           "lastNodeId": 1140,
-          "lastLinkId": 2218,
+          "lastLinkId": 2225,
           "lastRerouteId": 0
         },
         "revision": 2,
@@ -26900,7 +26985,7 @@
             317.48548073250606,
             5393.587490546094,
             210.984375,
-            488
+            628
           ]
         },
         "outputNode": {
@@ -26908,8 +26993,8 @@
           "bounding": [
             2509.102040669519,
             5513.587490546094,
-            157.3125,
-            108
+            241.6875,
+            148
           ]
         },
         "inputs": [
@@ -27260,12 +27345,14 @@
             "id": "1a3ecc2e-33a0-4af6-9d39-2884a5677b61",
             "name": "pass2_scale",
             "type": "FLOAT",
-            "linkIds": [],
+            "linkIds": [
+              2222
+            ],
             "localized_name": "pass2_scale",
             "label": "Upscale Scale",
             "pos": [
               504.46985573250606,
-              5917.587490546094
+              5897.587490546094
             ]
           },
           {
@@ -27279,7 +27366,7 @@
             "label": "Pass2 Steps",
             "pos": [
               504.46985573250606,
-              5937.587490546094
+              5917.587490546094
             ]
           },
           {
@@ -27293,7 +27380,7 @@
             "label": "Pass2 Denoise",
             "pos": [
               504.46985573250606,
-              5957.587490546094
+              5937.587490546094
             ]
           },
           {
@@ -27307,7 +27394,7 @@
             "label": "Pass2 Sampler",
             "pos": [
               504.46985573250606,
-              5977.587490546094
+              5957.587490546094
             ]
           },
           {
@@ -27321,7 +27408,7 @@
             "label": "Use Face Refine",
             "pos": [
               504.46985573250606,
-              6137.587490546094
+              5977.587490546094
             ]
           }
         ],
@@ -27376,8 +27463,8 @@
             "localized_name": "crossfade_images",
             "label": "Motion Context Crossfade Images",
             "pos": [
-              5391.262673841039,
-              6302.104039404001
+              2533.102040669519,
+              5597.587490546094
             ]
           },
           {
@@ -27390,8 +27477,8 @@
             "localized_name": "crossfade_frames",
             "label": "Motion Context Crossfade Frames",
             "pos": [
-              5391.262673841039,
-              6322.104039404001
+              2533.102040669519,
+              5617.587490546094
             ]
           }
         ],
@@ -27410,7 +27497,7 @@
             ],
             "flags": {},
             "order": 6,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -27452,7 +27539,7 @@
             ],
             "flags": {},
             "order": 7,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "noise",
@@ -27506,7 +27593,9 @@
             ],
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced"
-            }
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
           },
           {
             "id": 634,
@@ -27523,7 +27612,7 @@
               "collapsed": false
             },
             "order": 8,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "samples",
@@ -27568,7 +27657,7 @@
             ],
             "flags": {},
             "order": 9,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "images",
@@ -27655,7 +27744,7 @@
             ],
             "flags": {},
             "order": 10,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "latent",
@@ -27759,7 +27848,7 @@
             ],
             "flags": {},
             "order": 11,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -27944,7 +28033,7 @@
               "collapsed": true
             },
             "order": 12,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "label": "a",
@@ -28009,7 +28098,7 @@
               "collapsed": true
             },
             "order": 13,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "label": "a",
@@ -28078,7 +28167,7 @@
             ],
             "flags": {},
             "order": 15,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -28261,7 +28350,7 @@
             ],
             "flags": {},
             "order": 16,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "av_latent",
@@ -28319,7 +28408,7 @@
             ],
             "flags": {},
             "order": 0,
-            "mode": 4,
+            "mode": 0,
             "inputs": [],
             "outputs": [
               {
@@ -28356,7 +28445,7 @@
             ],
             "flags": {},
             "order": 19,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -28400,7 +28489,7 @@
             ],
             "flags": {},
             "order": 20,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "noise",
@@ -28453,7 +28542,9 @@
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced",
               "cnr_id": "comfy-core"
-            }
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
           },
           {
             "id": 649,
@@ -28470,7 +28561,7 @@
               "collapsed": false
             },
             "order": 21,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "samples",
@@ -28515,7 +28606,7 @@
             ],
             "flags": {},
             "order": 22,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "base_images",
@@ -28597,7 +28688,7 @@
             ],
             "flags": {},
             "order": 4,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "images",
@@ -28665,7 +28756,7 @@
             ],
             "flags": {},
             "order": 5,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "original",
@@ -28723,7 +28814,7 @@
             ],
             "flags": {},
             "order": 17,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -28808,7 +28899,7 @@
             ],
             "flags": {},
             "order": 1,
-            "mode": 4,
+            "mode": 0,
             "inputs": [],
             "outputs": [
               {
@@ -28826,11 +28917,11 @@
               "cnr_id": "comfy-core"
             },
             "widgets_values": [
-              931021939972904,
+              432766834605668,
               "randomize"
             ],
             "widgets_values_named": {
-              "noise_seed": 931021939972904,
+              "noise_seed": 432766834605668,
               "control_after_generate": "randomize"
             }
           },
@@ -28847,7 +28938,7 @@
             ],
             "flags": {},
             "order": 18,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -28913,7 +29004,7 @@
             ],
             "flags": {},
             "order": 14,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "images",
@@ -29115,7 +29206,7 @@
             ],
             "flags": {},
             "order": 2,
-            "mode": 4,
+            "mode": 0,
             "inputs": [],
             "outputs": [
               {
@@ -29152,7 +29243,7 @@
             ],
             "flags": {},
             "order": 3,
-            "mode": 4,
+            "mode": 0,
             "inputs": [],
             "outputs": [
               {
@@ -29191,7 +29282,7 @@
             ],
             "flags": {},
             "order": 24,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -29259,7 +29350,7 @@
             ],
             "flags": {},
             "order": 25,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "latent",
@@ -29286,6 +29377,15 @@
                   "name": "mode"
                 },
                 "link": null
+              },
+              {
+                "localized_name": "scale",
+                "name": "mode.scale",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "mode.scale"
+                },
+                "link": 2222
               },
               {
                 "label": "Align",
@@ -29388,7 +29488,7 @@
             ],
             "flags": {},
             "order": 26,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "samples",
@@ -29431,7 +29531,7 @@
             ],
             "flags": {},
             "order": 23,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "original",
@@ -29492,7 +29592,7 @@
             ],
             "flags": {},
             "order": 27,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -29532,11 +29632,11 @@
             ],
             "size": [
               250,
-              250
+              326
             ],
             "flags": {},
             "order": 28,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "noise",
@@ -29589,7 +29689,9 @@
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced",
               "cnr_id": "comfy-core"
-            }
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
           },
           {
             "id": 1082,
@@ -29604,7 +29706,7 @@
             ],
             "flags": {},
             "order": 29,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "label": "av_latent",
@@ -29652,7 +29754,7 @@
             ],
             "flags": {},
             "order": 30,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "label": "video_latent",
@@ -30250,78 +30352,6 @@
             "type": "INT"
           },
           {
-            "id": 1770,
-            "origin_id": -10,
-            "origin_slot": 17,
-            "target_id": 645,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 1771,
-            "origin_id": -10,
-            "origin_slot": 18,
-            "target_id": 645,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1774,
-            "origin_id": -10,
-            "origin_slot": 20,
-            "target_id": 640,
-            "target_slot": 4,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1775,
-            "origin_id": -10,
-            "origin_slot": 21,
-            "target_id": 640,
-            "target_slot": 5,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1772,
-            "origin_id": -10,
-            "origin_slot": 19,
-            "target_id": 640,
-            "target_slot": 6,
-            "type": "INT"
-          },
-          {
-            "id": 1773,
-            "origin_id": -10,
-            "origin_slot": 19,
-            "target_id": 640,
-            "target_slot": 7,
-            "type": "INT"
-          },
-          {
-            "id": 1776,
-            "origin_id": -10,
-            "origin_slot": 22,
-            "target_id": 640,
-            "target_slot": 8,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1790,
-            "origin_id": -10,
-            "origin_slot": 25,
-            "target_id": 973,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 1791,
-            "origin_id": -10,
-            "origin_slot": 26,
-            "target_id": 973,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
             "id": 1716,
             "origin_id": -10,
             "origin_slot": 0,
@@ -30496,6 +30526,86 @@
             "target_id": 641,
             "target_slot": 13,
             "type": "INT"
+          },
+          {
+            "id": 1770,
+            "origin_id": -10,
+            "origin_slot": 17,
+            "target_id": 645,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 1771,
+            "origin_id": -10,
+            "origin_slot": 18,
+            "target_id": 645,
+            "target_slot": 2,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1774,
+            "origin_id": -10,
+            "origin_slot": 20,
+            "target_id": 640,
+            "target_slot": 4,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1775,
+            "origin_id": -10,
+            "origin_slot": 21,
+            "target_id": 640,
+            "target_slot": 5,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1772,
+            "origin_id": -10,
+            "origin_slot": 19,
+            "target_id": 640,
+            "target_slot": 6,
+            "type": "INT"
+          },
+          {
+            "id": 1773,
+            "origin_id": -10,
+            "origin_slot": 19,
+            "target_id": 640,
+            "target_slot": 7,
+            "type": "INT"
+          },
+          {
+            "id": 1776,
+            "origin_id": -10,
+            "origin_slot": 22,
+            "target_id": 640,
+            "target_slot": 8,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1790,
+            "origin_id": -10,
+            "origin_slot": 25,
+            "target_id": 973,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 1791,
+            "origin_id": -10,
+            "origin_slot": 26,
+            "target_id": 973,
+            "target_slot": 2,
+            "type": "FLOAT"
+          },
+          {
+            "id": 2222,
+            "origin_id": -10,
+            "origin_slot": 24,
+            "target_id": 974,
+            "target_slot": 3,
+            "type": "FLOAT"
           }
         ],
         "extra": {}
@@ -30506,7 +30616,7 @@
         "state": {
           "lastGroupId": 128,
           "lastNodeId": 1140,
-          "lastLinkId": 2218,
+          "lastLinkId": 2225,
           "lastRerouteId": 0
         },
         "revision": 2,
@@ -30518,7 +30628,7 @@
             317.48548073250606,
             5393.587490546094,
             210.984375,
-            488
+            628
           ]
         },
         "outputNode": {
@@ -30526,8 +30636,8 @@
           "bounding": [
             2509.102040669519,
             5513.587490546094,
-            157.3125,
-            108
+            241.6875,
+            148
           ]
         },
         "inputs": [
@@ -30878,12 +30988,14 @@
             "id": "6c6d1231-e550-4165-84de-0f3d81d3f368",
             "name": "pass2_scale",
             "type": "FLOAT",
-            "linkIds": [],
+            "linkIds": [
+              2223
+            ],
             "localized_name": "pass2_scale",
             "label": "Upscale Scale",
             "pos": [
               504.46985573250606,
-              5917.587490546094
+              5897.587490546094
             ]
           },
           {
@@ -30897,7 +31009,7 @@
             "label": "Pass2 Steps",
             "pos": [
               504.46985573250606,
-              5937.587490546094
+              5917.587490546094
             ]
           },
           {
@@ -30911,7 +31023,7 @@
             "label": "Pass2 Denoise",
             "pos": [
               504.46985573250606,
-              5957.587490546094
+              5937.587490546094
             ]
           },
           {
@@ -30925,7 +31037,7 @@
             "label": "Pass2 Sampler",
             "pos": [
               504.46985573250606,
-              5977.587490546094
+              5957.587490546094
             ]
           },
           {
@@ -30939,7 +31051,7 @@
             "label": "Use Face Refine",
             "pos": [
               504.46985573250606,
-              6137.587490546094
+              5977.587490546094
             ]
           }
         ],
@@ -30994,8 +31106,8 @@
             "localized_name": "crossfade_images",
             "label": "Motion Context Crossfade Images",
             "pos": [
-              5391.262673841039,
-              6302.104039404001
+              2533.102040669519,
+              5597.587490546094
             ]
           },
           {
@@ -31008,8 +31120,8 @@
             "localized_name": "crossfade_frames",
             "label": "Motion Context Crossfade Frames",
             "pos": [
-              5391.262673841039,
-              6322.104039404001
+              2533.102040669519,
+              5617.587490546094
             ]
           }
         ],
@@ -31028,7 +31140,7 @@
             ],
             "flags": {},
             "order": 4,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -31070,7 +31182,7 @@
             ],
             "flags": {},
             "order": 5,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "noise",
@@ -31124,7 +31236,9 @@
             ],
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced"
-            }
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
           },
           {
             "id": 355,
@@ -31141,7 +31255,7 @@
               "collapsed": false
             },
             "order": 6,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "samples",
@@ -31186,7 +31300,7 @@
             ],
             "flags": {},
             "order": 7,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "images",
@@ -31273,7 +31387,7 @@
             ],
             "flags": {},
             "order": 11,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "latent",
@@ -31377,7 +31491,7 @@
             ],
             "flags": {},
             "order": 8,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -31562,7 +31676,7 @@
               "collapsed": true
             },
             "order": 9,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "label": "a",
@@ -31627,7 +31741,7 @@
               "collapsed": true
             },
             "order": 10,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "label": "a",
@@ -31696,7 +31810,7 @@
             ],
             "flags": {},
             "order": 13,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -31879,7 +31993,7 @@
             ],
             "flags": {},
             "order": 14,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "av_latent",
@@ -31937,7 +32051,7 @@
             ],
             "flags": {},
             "order": 0,
-            "mode": 4,
+            "mode": 0,
             "inputs": [],
             "outputs": [
               {
@@ -31974,7 +32088,7 @@
             ],
             "flags": {},
             "order": 17,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -32018,7 +32132,7 @@
             ],
             "flags": {},
             "order": 18,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "noise",
@@ -32071,7 +32185,9 @@
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced",
               "cnr_id": "comfy-core"
-            }
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
           },
           {
             "id": 587,
@@ -32088,7 +32204,7 @@
               "collapsed": false
             },
             "order": 19,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "samples",
@@ -32133,7 +32249,7 @@
             ],
             "flags": {},
             "order": 20,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "base_images",
@@ -32215,7 +32331,7 @@
             ],
             "flags": {},
             "order": 21,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "images",
@@ -32283,7 +32399,7 @@
             ],
             "flags": {},
             "order": 22,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "original",
@@ -32341,7 +32457,7 @@
             ],
             "flags": {},
             "order": 15,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -32426,7 +32542,7 @@
             ],
             "flags": {},
             "order": 1,
-            "mode": 4,
+            "mode": 0,
             "inputs": [],
             "outputs": [
               {
@@ -32444,11 +32560,11 @@
               "cnr_id": "comfy-core"
             },
             "widgets_values": [
-              879884125050188,
+              771466930207125,
               "randomize"
             ],
             "widgets_values_named": {
-              "noise_seed": 879884125050188,
+              "noise_seed": 771466930207125,
               "control_after_generate": "randomize"
             }
           },
@@ -32465,7 +32581,7 @@
             ],
             "flags": {},
             "order": 12,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "images",
@@ -32667,7 +32783,7 @@
             ],
             "flags": {},
             "order": 16,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -32733,7 +32849,7 @@
             ],
             "flags": {},
             "order": 2,
-            "mode": 4,
+            "mode": 0,
             "inputs": [],
             "outputs": [
               {
@@ -32770,7 +32886,7 @@
             ],
             "flags": {},
             "order": 3,
-            "mode": 4,
+            "mode": 0,
             "inputs": [],
             "outputs": [
               {
@@ -32809,7 +32925,7 @@
             ],
             "flags": {},
             "order": 24,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -32877,7 +32993,7 @@
             ],
             "flags": {},
             "order": 25,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "latent",
@@ -32904,6 +33020,15 @@
                   "name": "mode"
                 },
                 "link": null
+              },
+              {
+                "localized_name": "scale",
+                "name": "mode.scale",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "mode.scale"
+                },
+                "link": 2223
               },
               {
                 "label": "Align",
@@ -33006,7 +33131,7 @@
             ],
             "flags": {},
             "order": 26,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "samples",
@@ -33049,7 +33174,7 @@
             ],
             "flags": {},
             "order": 23,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "original",
@@ -33110,7 +33235,7 @@
             ],
             "flags": {},
             "order": 27,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "model",
@@ -33150,11 +33275,11 @@
             ],
             "size": [
               250,
-              250
+              326
             ],
             "flags": {},
             "order": 28,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "localized_name": "noise",
@@ -33207,7 +33332,9 @@
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced",
               "cnr_id": "comfy-core"
-            }
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
           },
           {
             "id": 1084,
@@ -33222,7 +33349,7 @@
             ],
             "flags": {},
             "order": 29,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "label": "av_latent",
@@ -33270,7 +33397,7 @@
             ],
             "flags": {},
             "order": 30,
-            "mode": 4,
+            "mode": 0,
             "inputs": [
               {
                 "label": "video_latent",
@@ -33868,78 +33995,6 @@
             "type": "INT"
           },
           {
-            "id": 1839,
-            "origin_id": -10,
-            "origin_slot": 20,
-            "target_id": 577,
-            "target_slot": 4,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1840,
-            "origin_id": -10,
-            "origin_slot": 21,
-            "target_id": 577,
-            "target_slot": 5,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1837,
-            "origin_id": -10,
-            "origin_slot": 19,
-            "target_id": 577,
-            "target_slot": 6,
-            "type": "INT"
-          },
-          {
-            "id": 1838,
-            "origin_id": -10,
-            "origin_slot": 19,
-            "target_id": 577,
-            "target_slot": 7,
-            "type": "INT"
-          },
-          {
-            "id": 1841,
-            "origin_id": -10,
-            "origin_slot": 22,
-            "target_id": 577,
-            "target_slot": 8,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1835,
-            "origin_id": -10,
-            "origin_slot": 17,
-            "target_id": 583,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 1836,
-            "origin_id": -10,
-            "origin_slot": 18,
-            "target_id": 583,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1855,
-            "origin_id": -10,
-            "origin_slot": 25,
-            "target_id": 978,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 1856,
-            "origin_id": -10,
-            "origin_slot": 26,
-            "target_id": 978,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
             "id": 1810,
             "origin_id": -10,
             "origin_slot": 0,
@@ -34114,6 +34169,86 @@
             "target_id": 578,
             "target_slot": 13,
             "type": "INT"
+          },
+          {
+            "id": 1839,
+            "origin_id": -10,
+            "origin_slot": 20,
+            "target_id": 577,
+            "target_slot": 4,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1840,
+            "origin_id": -10,
+            "origin_slot": 21,
+            "target_id": 577,
+            "target_slot": 5,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1837,
+            "origin_id": -10,
+            "origin_slot": 19,
+            "target_id": 577,
+            "target_slot": 6,
+            "type": "INT"
+          },
+          {
+            "id": 1838,
+            "origin_id": -10,
+            "origin_slot": 19,
+            "target_id": 577,
+            "target_slot": 7,
+            "type": "INT"
+          },
+          {
+            "id": 1841,
+            "origin_id": -10,
+            "origin_slot": 22,
+            "target_id": 577,
+            "target_slot": 8,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1835,
+            "origin_id": -10,
+            "origin_slot": 17,
+            "target_id": 583,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 1836,
+            "origin_id": -10,
+            "origin_slot": 18,
+            "target_id": 583,
+            "target_slot": 2,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1855,
+            "origin_id": -10,
+            "origin_slot": 25,
+            "target_id": 978,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 1856,
+            "origin_id": -10,
+            "origin_slot": 26,
+            "target_id": 978,
+            "target_slot": 2,
+            "type": "FLOAT"
+          },
+          {
+            "id": 2223,
+            "origin_id": -10,
+            "origin_slot": 24,
+            "target_id": 979,
+            "target_slot": 3,
+            "type": "FLOAT"
           }
         ],
         "extra": {}
@@ -34124,7 +34259,7 @@
         "state": {
           "lastGroupId": 128,
           "lastNodeId": 1140,
-          "lastLinkId": 2218,
+          "lastLinkId": 2225,
           "lastRerouteId": 0
         },
         "revision": 2,
@@ -34136,7 +34271,7 @@
             317.48548073250606,
             5393.587490546094,
             210.984375,
-            488
+            628
           ]
         },
         "outputNode": {
@@ -34144,8 +34279,8 @@
           "bounding": [
             2509.102040669519,
             5513.587490546094,
-            157.3125,
-            108
+            241.6875,
+            148
           ]
         },
         "inputs": [
@@ -34496,12 +34631,14 @@
             "id": "7078aa0b-a832-4e20-af53-fc18ddc71fb3",
             "name": "pass2_scale",
             "type": "FLOAT",
-            "linkIds": [],
+            "linkIds": [
+              2224
+            ],
             "localized_name": "pass2_scale",
             "label": "Upscale Scale",
             "pos": [
               504.46985573250606,
-              5917.587490546094
+              5897.587490546094
             ]
           },
           {
@@ -34515,7 +34652,7 @@
             "label": "Pass2 Steps",
             "pos": [
               504.46985573250606,
-              5937.587490546094
+              5917.587490546094
             ]
           },
           {
@@ -34529,7 +34666,7 @@
             "label": "Pass2 Denoise",
             "pos": [
               504.46985573250606,
-              5957.587490546094
+              5937.587490546094
             ]
           },
           {
@@ -34543,7 +34680,7 @@
             "label": "Pass2 Sampler",
             "pos": [
               504.46985573250606,
-              5977.587490546094
+              5957.587490546094
             ]
           },
           {
@@ -34557,7 +34694,7 @@
             "label": "Use Face Refine",
             "pos": [
               504.46985573250606,
-              6137.587490546094
+              5977.587490546094
             ]
           }
         ],
@@ -34612,8 +34749,8 @@
             "localized_name": "crossfade_images",
             "label": "Motion Context Crossfade Images",
             "pos": [
-              5391.262673841039,
-              6302.104039404001
+              2533.102040669519,
+              5597.587490546094
             ]
           },
           {
@@ -34626,8 +34763,8 @@
             "localized_name": "crossfade_frames",
             "label": "Motion Context Crossfade Frames",
             "pos": [
-              5391.262673841039,
-              6322.104039404001
+              2533.102040669519,
+              5617.587490546094
             ]
           }
         ],
@@ -36062,11 +36199,11 @@
               "cnr_id": "comfy-core"
             },
             "widgets_values": [
-              866566963105197,
+              295524414327063,
               "randomize"
             ],
             "widgets_values_named": {
-              "noise_seed": 866566963105197,
+              "noise_seed": 295524414327063,
               "control_after_generate": "randomize"
             }
           },
@@ -36522,6 +36659,15 @@
                   "name": "mode"
                 },
                 "link": null
+              },
+              {
+                "localized_name": "scale",
+                "name": "mode.scale",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "mode.scale"
+                },
+                "link": 2224
               },
               {
                 "label": "Align",
@@ -37486,78 +37632,6 @@
             "type": "INT"
           },
           {
-            "id": 1900,
-            "origin_id": -10,
-            "origin_slot": 17,
-            "target_id": 596,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 1901,
-            "origin_id": -10,
-            "origin_slot": 18,
-            "target_id": 596,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1904,
-            "origin_id": -10,
-            "origin_slot": 20,
-            "target_id": 590,
-            "target_slot": 4,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1905,
-            "origin_id": -10,
-            "origin_slot": 21,
-            "target_id": 590,
-            "target_slot": 5,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1902,
-            "origin_id": -10,
-            "origin_slot": 19,
-            "target_id": 590,
-            "target_slot": 6,
-            "type": "INT"
-          },
-          {
-            "id": 1903,
-            "origin_id": -10,
-            "origin_slot": 19,
-            "target_id": 590,
-            "target_slot": 7,
-            "type": "INT"
-          },
-          {
-            "id": 1906,
-            "origin_id": -10,
-            "origin_slot": 22,
-            "target_id": 590,
-            "target_slot": 8,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1920,
-            "origin_id": -10,
-            "origin_slot": 25,
-            "target_id": 983,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 1921,
-            "origin_id": -10,
-            "origin_slot": 26,
-            "target_id": 983,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
             "id": 1875,
             "origin_id": -10,
             "origin_slot": 0,
@@ -37732,6 +37806,86 @@
             "target_id": 591,
             "target_slot": 13,
             "type": "INT"
+          },
+          {
+            "id": 1900,
+            "origin_id": -10,
+            "origin_slot": 17,
+            "target_id": 596,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 1901,
+            "origin_id": -10,
+            "origin_slot": 18,
+            "target_id": 596,
+            "target_slot": 2,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1904,
+            "origin_id": -10,
+            "origin_slot": 20,
+            "target_id": 590,
+            "target_slot": 4,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1905,
+            "origin_id": -10,
+            "origin_slot": 21,
+            "target_id": 590,
+            "target_slot": 5,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1902,
+            "origin_id": -10,
+            "origin_slot": 19,
+            "target_id": 590,
+            "target_slot": 6,
+            "type": "INT"
+          },
+          {
+            "id": 1903,
+            "origin_id": -10,
+            "origin_slot": 19,
+            "target_id": 590,
+            "target_slot": 7,
+            "type": "INT"
+          },
+          {
+            "id": 1906,
+            "origin_id": -10,
+            "origin_slot": 22,
+            "target_id": 590,
+            "target_slot": 8,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1920,
+            "origin_id": -10,
+            "origin_slot": 25,
+            "target_id": 983,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 1921,
+            "origin_id": -10,
+            "origin_slot": 26,
+            "target_id": 983,
+            "target_slot": 2,
+            "type": "FLOAT"
+          },
+          {
+            "id": 2224,
+            "origin_id": -10,
+            "origin_slot": 24,
+            "target_id": 984,
+            "target_slot": 3,
+            "type": "FLOAT"
           }
         ],
         "extra": {}
@@ -37742,7 +37896,7 @@
         "state": {
           "lastGroupId": 128,
           "lastNodeId": 1140,
-          "lastLinkId": 2218,
+          "lastLinkId": 2225,
           "lastRerouteId": 0
         },
         "revision": 2,
@@ -37754,7 +37908,7 @@
             317.48548073250606,
             5393.587490546094,
             210.984375,
-            488
+            628
           ]
         },
         "outputNode": {
@@ -37762,8 +37916,8 @@
           "bounding": [
             2509.102040669519,
             5513.587490546094,
-            157.3125,
-            108
+            241.6875,
+            148
           ]
         },
         "inputs": [
@@ -38114,12 +38268,14 @@
             "id": "ef137ce5-a425-4331-bc1d-139b1819125a",
             "name": "pass2_scale",
             "type": "FLOAT",
-            "linkIds": [],
+            "linkIds": [
+              2225
+            ],
             "localized_name": "pass2_scale",
             "label": "Upscale Scale",
             "pos": [
               504.46985573250606,
-              5917.587490546094
+              5897.587490546094
             ]
           },
           {
@@ -38133,7 +38289,7 @@
             "label": "Pass2 Steps",
             "pos": [
               504.46985573250606,
-              5937.587490546094
+              5917.587490546094
             ]
           },
           {
@@ -38147,7 +38303,7 @@
             "label": "Pass2 Denoise",
             "pos": [
               504.46985573250606,
-              5957.587490546094
+              5937.587490546094
             ]
           },
           {
@@ -38161,7 +38317,7 @@
             "label": "Pass2 Sampler",
             "pos": [
               504.46985573250606,
-              5977.587490546094
+              5957.587490546094
             ]
           },
           {
@@ -38175,7 +38331,7 @@
             "label": "Use Face Refine",
             "pos": [
               504.46985573250606,
-              6137.587490546094
+              5977.587490546094
             ]
           }
         ],
@@ -38230,8 +38386,8 @@
             "localized_name": "crossfade_images",
             "label": "Motion Context Crossfade Images",
             "pos": [
-              5391.262673841039,
-              6302.104039404001
+              2533.102040669519,
+              5597.587490546094
             ]
           },
           {
@@ -38244,8 +38400,8 @@
             "localized_name": "crossfade_frames",
             "label": "Motion Context Crossfade Frames",
             "pos": [
-              5391.262673841039,
-              6322.104039404001
+              2533.102040669519,
+              5617.587490546094
             ]
           }
         ],
@@ -39680,11 +39836,11 @@
               "cnr_id": "comfy-core"
             },
             "widgets_values": [
-              1073876601003354,
+              551727505059189,
               "randomize"
             ],
             "widgets_values_named": {
-              "noise_seed": 1073876601003354,
+              "noise_seed": 551727505059189,
               "control_after_generate": "randomize"
             }
           },
@@ -40140,6 +40296,15 @@
                   "name": "mode"
                 },
                 "link": null
+              },
+              {
+                "localized_name": "scale",
+                "name": "mode.scale",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "mode.scale"
+                },
+                "link": 2225
               },
               {
                 "label": "Align",
@@ -41104,78 +41269,6 @@
             "type": "INT"
           },
           {
-            "id": 1967,
-            "origin_id": -10,
-            "origin_slot": 17,
-            "target_id": 609,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 1968,
-            "origin_id": -10,
-            "origin_slot": 18,
-            "target_id": 609,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1971,
-            "origin_id": -10,
-            "origin_slot": 20,
-            "target_id": 603,
-            "target_slot": 4,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1972,
-            "origin_id": -10,
-            "origin_slot": 21,
-            "target_id": 603,
-            "target_slot": 5,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1969,
-            "origin_id": -10,
-            "origin_slot": 19,
-            "target_id": 603,
-            "target_slot": 6,
-            "type": "INT"
-          },
-          {
-            "id": 1970,
-            "origin_id": -10,
-            "origin_slot": 19,
-            "target_id": 603,
-            "target_slot": 7,
-            "type": "INT"
-          },
-          {
-            "id": 1973,
-            "origin_id": -10,
-            "origin_slot": 22,
-            "target_id": 603,
-            "target_slot": 8,
-            "type": "FLOAT"
-          },
-          {
-            "id": 1987,
-            "origin_id": -10,
-            "origin_slot": 25,
-            "target_id": 988,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 1988,
-            "origin_id": -10,
-            "origin_slot": 26,
-            "target_id": 988,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
             "id": 1940,
             "origin_id": -10,
             "origin_slot": 0,
@@ -41350,6 +41443,86 @@
             "target_id": 604,
             "target_slot": 13,
             "type": "INT"
+          },
+          {
+            "id": 1967,
+            "origin_id": -10,
+            "origin_slot": 17,
+            "target_id": 609,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 1968,
+            "origin_id": -10,
+            "origin_slot": 18,
+            "target_id": 609,
+            "target_slot": 2,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1971,
+            "origin_id": -10,
+            "origin_slot": 20,
+            "target_id": 603,
+            "target_slot": 4,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1972,
+            "origin_id": -10,
+            "origin_slot": 21,
+            "target_id": 603,
+            "target_slot": 5,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1969,
+            "origin_id": -10,
+            "origin_slot": 19,
+            "target_id": 603,
+            "target_slot": 6,
+            "type": "INT"
+          },
+          {
+            "id": 1970,
+            "origin_id": -10,
+            "origin_slot": 19,
+            "target_id": 603,
+            "target_slot": 7,
+            "type": "INT"
+          },
+          {
+            "id": 1973,
+            "origin_id": -10,
+            "origin_slot": 22,
+            "target_id": 603,
+            "target_slot": 8,
+            "type": "FLOAT"
+          },
+          {
+            "id": 1987,
+            "origin_id": -10,
+            "origin_slot": 25,
+            "target_id": 988,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 1988,
+            "origin_id": -10,
+            "origin_slot": 26,
+            "target_id": 988,
+            "target_slot": 2,
+            "type": "FLOAT"
+          },
+          {
+            "id": 2225,
+            "origin_id": -10,
+            "origin_slot": 24,
+            "target_id": 989,
+            "target_slot": 3,
+            "type": "FLOAT"
           }
         ],
         "extra": {}
@@ -41360,7 +41533,7 @@
         "state": {
           "lastGroupId": 128,
           "lastNodeId": 1140,
-          "lastLinkId": 2218,
+          "lastLinkId": 2225,
           "lastRerouteId": 0
         },
         "revision": 2,
@@ -41712,7 +41885,9 @@
             "id": "e0c50525-8969-495a-b90b-1c15198fb3f5",
             "name": "pass2_scale",
             "type": "FLOAT",
-            "linkIds": [],
+            "linkIds": [
+              2219
+            ],
             "localized_name": "pass2_scale",
             "label": "Upscale Scale",
             "pos": [
@@ -41887,7 +42062,9 @@
             ],
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced"
-            }
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
           },
           {
             "id": 136,
@@ -42846,11 +43023,11 @@
               "cnr_id": "comfy-core"
             },
             "widgets_values": [
-              695324965691367,
+              14378993192915,
               "randomize"
             ],
             "widgets_values_named": {
-              "noise_seed": 695324965691367,
+              "noise_seed": 14378993192915,
               "control_after_generate": "randomize"
             }
           },
@@ -43542,6 +43719,15 @@
                 "link": null
               },
               {
+                "localized_name": "scale",
+                "name": "mode.scale",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "mode.scale"
+                },
+                "link": 2219
+              },
+              {
                 "label": "Align",
                 "localized_name": "align",
                 "name": "align",
@@ -43807,7 +43993,9 @@
             "properties": {
               "Node name for S&R": "SamplerCustomAdvanced",
               "cnr_id": "comfy-core"
-            }
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
           },
           {
             "id": 1090,
@@ -44408,78 +44596,6 @@
             "type": "LATENT"
           },
           {
-            "id": 2033,
-            "origin_id": -10,
-            "origin_slot": 19,
-            "target_id": 709,
-            "target_slot": 4,
-            "type": "FLOAT"
-          },
-          {
-            "id": 2034,
-            "origin_id": -10,
-            "origin_slot": 20,
-            "target_id": 709,
-            "target_slot": 5,
-            "type": "FLOAT"
-          },
-          {
-            "id": 2031,
-            "origin_id": -10,
-            "origin_slot": 18,
-            "target_id": 709,
-            "target_slot": 6,
-            "type": "INT"
-          },
-          {
-            "id": 2032,
-            "origin_id": -10,
-            "origin_slot": 18,
-            "target_id": 709,
-            "target_slot": 7,
-            "type": "INT"
-          },
-          {
-            "id": 2035,
-            "origin_id": -10,
-            "origin_slot": 21,
-            "target_id": 709,
-            "target_slot": 8,
-            "type": "FLOAT"
-          },
-          {
-            "id": 2029,
-            "origin_id": -10,
-            "origin_slot": 16,
-            "target_id": 658,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 2030,
-            "origin_id": -10,
-            "origin_slot": 17,
-            "target_id": 658,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
-            "id": 2048,
-            "origin_id": -10,
-            "origin_slot": 24,
-            "target_id": 932,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 2049,
-            "origin_id": -10,
-            "origin_slot": 25,
-            "target_id": 932,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
             "id": 2002,
             "origin_id": -10,
             "origin_slot": 0,
@@ -44600,6 +44716,46 @@
             "type": "INT"
           },
           {
+            "id": 2033,
+            "origin_id": -10,
+            "origin_slot": 19,
+            "target_id": 709,
+            "target_slot": 4,
+            "type": "FLOAT"
+          },
+          {
+            "id": 2034,
+            "origin_id": -10,
+            "origin_slot": 20,
+            "target_id": 709,
+            "target_slot": 5,
+            "type": "FLOAT"
+          },
+          {
+            "id": 2031,
+            "origin_id": -10,
+            "origin_slot": 18,
+            "target_id": 709,
+            "target_slot": 6,
+            "type": "INT"
+          },
+          {
+            "id": 2032,
+            "origin_id": -10,
+            "origin_slot": 18,
+            "target_id": 709,
+            "target_slot": 7,
+            "type": "INT"
+          },
+          {
+            "id": 2035,
+            "origin_id": -10,
+            "origin_slot": 21,
+            "target_id": 709,
+            "target_slot": 8,
+            "type": "FLOAT"
+          },
+          {
             "id": 2006,
             "origin_id": -10,
             "origin_slot": 5,
@@ -44630,6 +44786,46 @@
             "target_id": 705,
             "target_slot": 13,
             "type": "INT"
+          },
+          {
+            "id": 2029,
+            "origin_id": -10,
+            "origin_slot": 16,
+            "target_id": 658,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 2030,
+            "origin_id": -10,
+            "origin_slot": 17,
+            "target_id": 658,
+            "target_slot": 2,
+            "type": "FLOAT"
+          },
+          {
+            "id": 2048,
+            "origin_id": -10,
+            "origin_slot": 24,
+            "target_id": 932,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 2049,
+            "origin_id": -10,
+            "origin_slot": 25,
+            "target_id": 932,
+            "target_slot": 2,
+            "type": "FLOAT"
+          },
+          {
+            "id": 2219,
+            "origin_id": -10,
+            "origin_slot": 23,
+            "target_id": 933,
+            "target_slot": 3,
+            "type": "FLOAT"
           }
         ],
         "extra": {}
@@ -44647,10 +44843,10 @@
       "favorites": []
     },
     "ds": {
-      "scale": 0.22650351437635388,
+      "scale": 0.24915386581399512,
       "offset": [
-        2944.3837111856596,
-        -4193.846015954034
+        2576.6737362688455,
+        -4160.666103836818
       ]
     }
   },
